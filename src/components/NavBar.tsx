@@ -9,11 +9,10 @@ export default function NavBar({
   day: string;
   session: string;
 }) {
-
-  function lastDayInMonth(month:number){
-    switch(month){
+  function lastDayInMonth(m: number) {
+    switch (m) {
       case 2:
-          return 28;
+        return 28;
       case 1:
       case 3:
       case 5:
@@ -27,9 +26,14 @@ export default function NavBar({
     }
   }
 
-  const tomorrow = +day === lastDayInMonth(+month) ? `${+month+1}/1` : `${month}/${+day + 1}`;
-  const yesterday = +day === 1? `${+month-1}/${lastDayInMonth(+month-1)}` : `${month}/${+day + 1}`;
-
+  const tomorrow =
+    +day === lastDayInMonth(+month)
+      ? `${+month + 1}/1`
+      : `${month}/${+day + 1}`;
+  const yesterday =
+    +day === 1
+      ? `${+month - 1}/${lastDayInMonth(+month - 1)}`
+      : `${month}/${+day + 1}`;
 
   return (
     <nav className="grid grid-cols-6 justify-center gap-y-2 pb-8">

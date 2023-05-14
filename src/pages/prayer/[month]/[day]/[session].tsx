@@ -78,27 +78,24 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 export default function SessionPage(
   props: InferGetStaticPropsType<typeof getStaticProps>
 ) {
-
-  const { month, day, session, psalms, sessionInfo } = props;
+  const { month, day, session, psalms } = props;
 
   if (!session) {
     return null;
   }
-
-  function getDayOfTheWeek(){
-    const d = new Date(`${getMonthName(month)} ${day}, 2023`);
-    return d.getDay();
-  }
-
-  const elderPrayer = elders.find((x: any) =>
-    x.id==getDayOfTheWeek()+1
-  );
 
   function getMonthName(m: number) {
     const date = new Date();
     date.setMonth(m - 1);
     return date.toLocaleString('en-US', { month: 'long' });
   }
+
+  function getDayOfTheWeek() {
+    const d = new Date(`${getMonthName(month)} ${day}, 2023`);
+    return d.getDay();
+  }
+
+  const elderPrayer = elders.find((x: any) => x.id === getDayOfTheWeek() + 1);
 
   return (
     <Main meta={<Meta title={props.slug} description="Lorem ipsum" />}>
@@ -108,7 +105,7 @@ export default function SessionPage(
           {getMonthName(month)}, {day}
         </h1>
         <NavBar month={month} day={day} session={session} />
-        <Prayer prayer={elderPrayer}/>
+        <Prayer prayer={elderPrayer} />
         {psalms.passages.map((x: any, i: number) => {
           return (
             <Psalm

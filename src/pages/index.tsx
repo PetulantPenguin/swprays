@@ -13,15 +13,16 @@ import { fetchPsalms } from '@/utils/fetchPsalms';
 export const getServerSideProps: GetServerSideProps = async () => {
   // @ts-ignore
   const now = new Date();
-  let month, day, session;
-  if(now < new Date('05/21/2023')){
+  let month;
+  let day;
+  const session = now.getHours() > 12 ? 'evening' : 'morning';
+  if (now < new Date('05/21/2023')) {
     month = 5;
     day = 21;
-  }else{
+  } else {
     month = now.getMonth();
     day = now.getDate();
   }
-    session = now.getHours() > 12 ? 'evening' : 'morning';
 
   const sessionInfo = getSessionInfo({
     month,
@@ -44,27 +45,24 @@ export const getServerSideProps: GetServerSideProps = async () => {
 const Index = (
   props: InferGetServerSidePropsType<typeof getServerSideProps>
 ) => {
-
-  const { month, day, session, psalms, sessionInfo } = props;
+  const { month, day, session, psalms } = props;
 
   if (!session) {
     return null;
   }
-
-  function getDayOfTheWeek(){
-    const d = new Date(`${getMonthName(month)} ${day}, 2023`);
-    return d.getDay();
-  }
-
-  const elderPrayer = elders.find((x: any) =>
-    x.id==getDayOfTheWeek()+1
-  );
 
   function getMonthName(m: number) {
     const date = new Date();
     date.setMonth(m - 1);
     return date.toLocaleString('en-US', { month: 'long' });
   }
+
+  function getDayOfTheWeek() {
+    const d = new Date(`${getMonthName(month)} ${day}, 2023`);
+    return d.getDay();
+  }
+
+  const elderPrayer = elders.find((x: any) => x.id === getDayOfTheWeek() + 1);
 
   return (
     <Main
@@ -81,7 +79,7 @@ const Index = (
           {getMonthName(month)}, {day}
         </h1>
         <NavBar month={month} day={day} session={session} />
-        <Prayer prayer={elderPrayer}/>
+        <Prayer prayer={elderPrayer} />
         {psalms.passages.map((x: any, i: number) => {
           return (
             <Psalm
