@@ -50,8 +50,8 @@ const elders: Prayer[] = [
     text: "Father, fill me (and everyone in our church) with overflowing gratitude for your love and deep recognition of the cost of being separated from you so that the overflow of our hearts will lead us to share your love and glory with others.  Help us to see how you are working in the lives of the people around us and how you want us to point them to you. Give me (and everyone in our church) a greater appreciation of the Gospel, and by your Holy Spirit, empower us to share the Gospel with boldness and love. Reveal to those around us the greatness of your love for them, their desperate need for Jesus, and the joy of belonging to you. Help us as a church to be good at welcoming people who are far from you and showing them the reality of your Spirit's presence in our midst as you use us to draw them into a relationship with you.",
     scripture: [
       {
-        reference: 'Matthew 28:18-20',
-        text: `And Jesus came and said to them, “All authority in heaven and on earth has been given to me. Go therefore and make disciples of all nations, baptizing them in the name of the Father and of the Son and of the Holy Spirit, teaching them to observe all that I have commanded you. And behold, I am with you always, to the end of the age.”`,
+        reference: '2 Corinthians 5:18-21',
+        text: `All this is from God, who through Christ reconciled us to himself and gave us the ministry of reconciliation; that is, in Christ God was reconciling the world to himself, not counting their trespasses against them, and entrusting to us the message of reconciliation. Therefore, we are ambassadors for Christ, God making his appeal through us. We implore you on behalf of Christ, be reconciled to God. For our sake he made him to be sin who knew no sin, so that in him we might become the righteousness of God.`,
       },
     ],
   },
@@ -83,7 +83,7 @@ const elders: Prayer[] = [
   },
   {
     id: 6,
-    title: 'Prayer for the lost',
+    title: 'Prayer for the Lost',
     blurb: '',
     text: 'Pray specifically, by name, for one (or more) of the following to enter into a relationship with Jesus: Friends, Relatives, Acquaintances, Neighbors, Co-workers, Everyone else',
     scripture: [
@@ -95,7 +95,7 @@ const elders: Prayer[] = [
   },
   {
     id: 7,
-    title: '',
+    title: 'Prayer for fellow Christian facing Persecution',
     blurb: '',
     text: 'Father, we pray for our brothers and sisters facing persecution for their faith in you. We pray that by the power of the Holy Spirit, they will meet whatever this week holds with faith, hope, and love. Keep them firm in their commitment to Jesus. Give them a joyful confidence in you that will be a powerful testimony to their persecutors. Comfort the families of those who are suffering. Protect those who are vulnerable. Guide fellow Christians to their aid. Show us how we can help them.',
     scripture: [
