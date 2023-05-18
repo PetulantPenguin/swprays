@@ -1,5 +1,6 @@
 import type { GetStaticProps, InferGetStaticPropsType } from 'next';
 
+import Alert from '@/components/Alert';
 import NavBar from '@/components/NavBar';
 import Prayer from '@/components/prayer';
 import Psalm from '@/components/psalm';
@@ -78,7 +79,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 export default function SessionPage(
   props: InferGetStaticPropsType<typeof getStaticProps>
 ) {
-  const { month, day, session, psalms } = props;
+  const { month, day, session, psalms, sessionInfo } = props;
 
   if (!session) {
     return null;
@@ -105,7 +106,18 @@ export default function SessionPage(
           {getMonthName(month)}, {day}
         </h1>
         <NavBar month={month} day={day} session={session} />
-        <Prayer prayer={elderPrayer} />
+        <br />
+        {sessionInfo.alerts &&
+          sessionInfo.alerts.length &&
+          sessionInfo.alerts.map((a: any, i: number) => (
+            <Alert {...a} key={i} />
+          ))}
+        {/* {session === 'morning' &&  */}
+        <>
+          <h2 className="text-xl font-bold">Prayer for Common Purpose</h2>
+          <Prayer prayer={elderPrayer} />
+        </>
+        {/* } */}
         {psalms.passages.map((x: any, i: number) => {
           return (
             <Psalm

@@ -1,14 +1,3 @@
-type Prayer = {
-  id: Number;
-  title: string;
-  blurb: string;
-  text: string;
-  scripture: Verse[];
-};
-type Verse = {
-  reference: string;
-  text: string;
-};
 const elders: Prayer[] = [
   {
     id: 1,

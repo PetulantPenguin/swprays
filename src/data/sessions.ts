@@ -1,17 +1,3 @@
-type Month = {
-  month: number;
-  days: Day[];
-};
-type Day = {
-  day: number;
-  sessions: Session[];
-};
-type Session = {
-  session: string;
-  psalms: number[];
-  elders: number[];
-  collects: number[];
-};
 const sessions: Month[] = [
   {
     month: 5,
@@ -24,6 +10,12 @@ const sessions: Month[] = [
             psalms: [1, 2],
             elders: [1],
             collects: [2],
+            alerts: [
+              {
+                message: 'Welcome to the first day of the Summer of Prayer!',
+                level: 'info',
+              },
+            ],
           },
           {
             session: 'evening',

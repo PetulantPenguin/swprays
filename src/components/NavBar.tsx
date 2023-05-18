@@ -26,6 +26,9 @@ export default function NavBar({
     }
   }
 
+  const now = new Date();
+  const startDate = new Date(`May 21, 2023`);
+
   const tomorrow =
     +day === lastDayInMonth(+month)
       ? `${+month + 1}/1`
@@ -34,6 +37,10 @@ export default function NavBar({
     +day === 1
       ? `${+month - 1}/${lastDayInMonth(+month - 1)}`
       : `${month}/${+day + 1}`;
+
+  if (now < startDate) {
+    return null;
+  }
 
   return (
     <nav className="grid grid-cols-6 justify-center gap-y-2 pb-8">
