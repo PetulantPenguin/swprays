@@ -84,11 +84,11 @@ const Index = (
             <h1 className="text-center text-3xl font-bold">
               Welcome to the Summer of Prayer!
             </h1>
+            <p>This summer, Southwest Bible is focused on the question,</p>
+            <div className="text-center font-bold italic">
+              &quot;How is your prayer life growing more meaningful?&quot;
+            </div>{' '}
             <p>
-              This summer, Southwest Bible is focused on the question,{' '}
-              <div className="text-center font-bold italic">
-                &quot;How is your prayer life growing more meaningful?&quot;
-              </div>{' '}
               To answer this question, we will put prayer into practice. The
               Bible wants each of us to be praying people, but sometimes
               it&apos;s hard to know where to start. This site is to help each
@@ -98,7 +98,6 @@ const Index = (
               This means you! You are invited to journey with us towards a more
               meaningful prayer life, no matter where you are starting today!
             </p>
-
             <h2 className="text-2xl font-semibold">How it works</h2>
             <p>
               Each day is broken into two sections, Morning and Evening, each
@@ -112,7 +111,6 @@ const Index = (
               <li>Questions for reflection</li>
               <li>Special events and challenges</li>
             </ul>
-
             <h2 className="text-2xl font-semibold">We will be praying for:</h2>
             <ul>
               <li>
@@ -143,7 +141,6 @@ const Index = (
                 Christians facing Persecution
               </li>
             </ul>
-
             <div className="flex justify-center">
               <Link href={`/prayer/5/21/morning`} className="p-4 font-bold">
                 Take a Peek!
