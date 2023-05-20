@@ -23,7 +23,7 @@ const may: Month = {
           alerts: [
             {
               message:
-                'The key to prayer is to pray! This morning, you will see a section called "Pray with Common Purpose." Prayer is better together? Each day, every person at SWBC will be praying for something together. Today is for JOY. Yes! You can pray for joy. Join the rest of your church family praying for joy today! Come back tomorrow morning for the next Common Purpose.',
+                'The key to prayer is to pray! This morning, you will see a section called "Pray with Common Purpose." Prayer is better together! Each day, each person at SWBC will be praying for something together. Today is for JOY in our service and worship. Yes! You can pray for joy. Join the rest of your church family praying for joy today! The verses below are to help you think through what we are praying for. Come back tomorrow morning for the next Common Purpose.',
               level: 'commentary',
             },
           ],
