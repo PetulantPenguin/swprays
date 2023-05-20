@@ -4,7 +4,7 @@ import { getDayOfTheWeek, getMonthName } from '@/utils/utilities';
 import Alert from './Alert';
 import Collects from './Collects';
 import NavBar from './NavBar';
-import Prayer from './Prayer_adf';
+import Prayer from './Prayer';
 import Psalm from './Psalm';
 
 type Props = {

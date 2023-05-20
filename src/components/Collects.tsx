@@ -1,6 +1,6 @@
 import collects from '@/data/collects';
 
-import Prayer from './Prayer_adf';
+import Prayer from './Prayer';
 
 export default function Collects({ collectList }: { collectList: number[] }) {
   if (!collectList.length) {
