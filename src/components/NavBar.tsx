@@ -26,21 +26,14 @@ export default function NavBar({
     }
   }
 
-  const now = new Date();
-  const startDate = new Date(`May 21, 2023`);
-
   const tomorrow =
-    +day === lastDayInMonth(+month)
-      ? `${+month + 1}/1`
-      : `${month}/${+day + 1}`;
+    Number(day) === lastDayInMonth(Number(month))
+      ? `${Number(month) + 1}/1`
+      : `${month}/${Number(day) + 1}`;
   const yesterday =
-    +day === 1
-      ? `${+month - 1}/${lastDayInMonth(+month - 1)}`
-      : `${month}/${+day + 1}`;
-
-  if (now < startDate) {
-    return null;
-  }
+    Number(day) === 1
+      ? `${Number(month) - 1}/${lastDayInMonth(Number(month) - 1)}`
+      : `${month}/${Number(day) + 1}`;
 
   return (
     <nav className="grid grid-cols-6 justify-center gap-y-2 pb-8">

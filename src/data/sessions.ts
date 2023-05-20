@@ -4,23 +4,21 @@ const sessions: Month[] = [
     days: [
       {
         day: 21,
+        alerts: [
+          {
+            message: 'Welcome to the first day of the Summer of Prayer!',
+            level: 'info',
+          },
+        ],
         sessions: [
           {
             session: 'morning',
-            psalms: [1, 2],
-            elders: [1],
+            psalms: [],
             collects: [2],
-            alerts: [
-              {
-                message: 'Welcome to the first day of the Summer of Prayer!',
-                level: 'info',
-              },
-            ],
           },
           {
             session: 'evening',
-            psalms: [3],
-            elders: [1, 2, 3],
+            psalms: [],
             collects: [2],
           },
         ],
@@ -30,14 +28,12 @@ const sessions: Month[] = [
         sessions: [
           {
             session: 'morning',
-            psalms: [4, 5],
-            elders: [2],
+            psalms: [],
             collects: [3],
           },
           {
             session: 'evening',
-            psalms: [6],
-            elders: [4, 5],
+            psalms: [],
             collects: [1],
           },
         ],
@@ -47,14 +43,12 @@ const sessions: Month[] = [
         sessions: [
           {
             session: 'morning',
-            psalms: [7, 8],
-            elders: [1],
+            psalms: [],
             collects: [2],
           },
           {
             session: 'evening',
-            psalms: [9],
-            elders: [1, 2, 3],
+            psalms: [],
             collects: [2],
           },
         ],
@@ -64,14 +58,12 @@ const sessions: Month[] = [
         sessions: [
           {
             session: 'morning',
-            psalms: [10, 11],
-            elders: [1],
+            psalms: [],
             collects: [2],
           },
           {
             session: 'evening',
-            psalms: [12],
-            elders: [1, 2, 3],
+            psalms: [],
             collects: [2],
           },
         ],
@@ -81,14 +73,12 @@ const sessions: Month[] = [
         sessions: [
           {
             session: 'morning',
-            psalms: [13, 14],
-            elders: [1],
+            psalms: [],
             collects: [2],
           },
           {
             session: 'evening',
-            psalms: [15],
-            elders: [1, 2, 3],
+            psalms: [],
             collects: [2],
           },
         ],
@@ -98,14 +88,12 @@ const sessions: Month[] = [
         sessions: [
           {
             session: 'morning',
-            psalms: [16, 17],
-            elders: [1],
+            psalms: [],
             collects: [2],
           },
           {
             session: 'evening',
-            psalms: [18],
-            elders: [1, 2, 3],
+            psalms: [],
             collects: [2],
           },
         ],
@@ -115,14 +103,12 @@ const sessions: Month[] = [
         sessions: [
           {
             session: 'morning',
-            psalms: [19, 20],
-            elders: [1],
+            psalms: [],
             collects: [2],
           },
           {
             session: 'evening',
-            psalms: [21],
-            elders: [1, 2, 3],
+            psalms: [],
             collects: [2],
           },
         ],
@@ -132,14 +118,12 @@ const sessions: Month[] = [
         sessions: [
           {
             session: 'morning',
-            psalms: [22, 23],
-            elders: [1],
+            psalms: [1, 2],
             collects: [2],
           },
           {
             session: 'evening',
-            psalms: [24],
-            elders: [1, 2, 3],
+            psalms: [3],
             collects: [2],
           },
         ],
@@ -149,14 +133,12 @@ const sessions: Month[] = [
         sessions: [
           {
             session: 'morning',
-            psalms: [25, 26],
-            elders: [1],
+            psalms: [4, 5],
             collects: [2],
           },
           {
             session: 'evening',
-            psalms: [27],
-            elders: [1, 2, 3],
+            psalms: [6],
             collects: [2],
           },
         ],
@@ -166,14 +148,12 @@ const sessions: Month[] = [
         sessions: [
           {
             session: 'morning',
-            psalms: [28, 29],
-            elders: [1],
+            psalms: [7, 8],
             collects: [2],
           },
           {
             session: 'evening',
-            psalms: [930],
-            elders: [1, 2, 3],
+            psalms: [9],
             collects: [2],
           },
         ],
@@ -183,14 +163,12 @@ const sessions: Month[] = [
         sessions: [
           {
             session: 'morning',
-            psalms: [31],
-            elders: [1],
+            psalms: [10, 11],
             collects: [2],
           },
           {
             session: 'evening',
-            psalms: [32],
-            elders: [1, 2, 3],
+            psalms: [12],
             collects: [2],
           },
         ],
@@ -205,14 +183,12 @@ const sessions: Month[] = [
         sessions: [
           {
             session: 'morning',
-            psalms: [33],
-            elders: [],
+            psalms: [13, 14],
             collects: [],
           },
           {
             session: 'evening',
-            psalms: [34],
-            elders: [],
+            psalms: [15],
             collects: [],
           },
         ],
@@ -222,14 +198,12 @@ const sessions: Month[] = [
         sessions: [
           {
             session: 'morning',
-            psalms: [35],
-            elders: [],
+            psalms: [16, 17],
             collects: [],
           },
           {
             session: 'evening',
-            psalms: [36],
-            elders: [],
+            psalms: [18],
             collects: [],
           },
         ],
@@ -239,14 +213,12 @@ const sessions: Month[] = [
         sessions: [
           {
             session: 'morning',
-            psalms: [37],
-            elders: [],
+            psalms: [19, 20],
             collects: [],
           },
           {
             session: 'evening',
-            psalms: [38],
-            elders: [],
+            psalms: [21],
             collects: [],
           },
         ],
@@ -256,14 +228,12 @@ const sessions: Month[] = [
         sessions: [
           {
             session: 'morning',
-            psalms: [39, 40],
-            elders: [],
+            psalms: [22, 23],
             collects: [],
           },
           {
             session: 'evening',
-            psalms: [41],
-            elders: [],
+            psalms: [24],
             collects: [],
           },
         ],
@@ -273,14 +243,12 @@ const sessions: Month[] = [
         sessions: [
           {
             session: 'morning',
-            psalms: [42, 43],
-            elders: [],
+            psalms: [25, 26],
             collects: [],
           },
           {
             session: 'evening',
-            psalms: [44],
-            elders: [],
+            psalms: [27],
             collects: [],
           },
         ],
@@ -290,14 +258,12 @@ const sessions: Month[] = [
         sessions: [
           {
             session: 'morning',
-            psalms: [45, 46],
-            elders: [],
+            psalms: [28, 29],
             collects: [],
           },
           {
             session: 'evening',
-            psalms: [47],
-            elders: [],
+            psalms: [30],
             collects: [],
           },
         ],
@@ -307,14 +273,12 @@ const sessions: Month[] = [
         sessions: [
           {
             session: 'morning',
-            psalms: [48, 49],
-            elders: [],
+            psalms: [31],
             collects: [],
           },
           {
             session: 'evening',
-            psalms: [50],
-            elders: [],
+            psalms: [32],
             collects: [],
           },
         ],
@@ -324,14 +288,12 @@ const sessions: Month[] = [
         sessions: [
           {
             session: 'morning',
-            psalms: [51, 52],
-            elders: [],
+            psalms: [33],
             collects: [],
           },
           {
             session: 'evening',
-            psalms: [53],
-            elders: [],
+            psalms: [34],
             collects: [],
           },
         ],
@@ -341,155 +303,342 @@ const sessions: Month[] = [
         sessions: [
           {
             session: 'morning',
-            psalms: [],
-            elders: [],
+            psalms: [35],
             collects: [],
           },
           {
             session: 'evening',
-            psalms: [],
-            elders: [],
+            psalms: [36],
             collects: [],
           },
         ],
       },
       {
-        day: 1,
+        day: 10,
         sessions: [
           {
             session: 'morning',
-            psalms: [],
-            elders: [],
+            psalms: [37],
             collects: [],
           },
           {
             session: 'evening',
-            psalms: [],
-            elders: [],
+            psalms: [38],
             collects: [],
           },
         ],
       },
       {
-        day: 1,
+        day: 11,
         sessions: [
           {
             session: 'morning',
-            psalms: [],
-            elders: [],
+            psalms: [39, 40],
             collects: [],
           },
           {
             session: 'evening',
-            psalms: [],
-            elders: [],
+            psalms: [41],
             collects: [],
           },
         ],
       },
       {
-        day: 1,
+        day: 12,
         sessions: [
           {
             session: 'morning',
-            psalms: [],
-            elders: [],
+            psalms: [42, 43],
             collects: [],
           },
           {
             session: 'evening',
-            psalms: [],
-            elders: [],
+            psalms: [44],
             collects: [],
           },
         ],
       },
       {
-        day: 1,
+        day: 13,
         sessions: [
           {
             session: 'morning',
-            psalms: [],
-            elders: [],
+            psalms: [45, 46],
             collects: [],
           },
           {
             session: 'evening',
-            psalms: [],
-            elders: [],
+            psalms: [47],
             collects: [],
           },
         ],
       },
       {
-        day: 1,
+        day: 14,
         sessions: [
           {
             session: 'morning',
-            psalms: [],
-            elders: [],
+            psalms: [48, 49],
             collects: [],
           },
           {
             session: 'evening',
-            psalms: [],
-            elders: [],
+            psalms: [50],
             collects: [],
           },
         ],
       },
       {
-        day: 1,
+        day: 15,
         sessions: [
           {
             session: 'morning',
-            psalms: [],
-            elders: [],
+            psalms: [51, 52],
             collects: [],
           },
           {
             session: 'evening',
-            psalms: [],
-            elders: [],
+            psalms: [53],
             collects: [],
           },
         ],
       },
       {
-        day: 1,
+        day: 16,
         sessions: [
           {
             session: 'morning',
-            psalms: [],
-            elders: [],
+            psalms: [54, 55],
             collects: [],
           },
           {
             session: 'evening',
-            psalms: [],
-            elders: [],
+            psalms: [56],
             collects: [],
           },
         ],
       },
       {
-        day: 1,
+        day: 17,
+        alerts: [
+          {
+            message: '2.5 hour prayer challenge!!!',
+            level: 'error',
+          },
+        ],
         sessions: [
           {
             session: 'morning',
             psalms: [],
-            elders: [],
             collects: [],
           },
           {
             session: 'evening',
             psalms: [],
-            elders: [],
+            collects: [],
+          },
+        ],
+      },
+      {
+        day: 18,
+        sessions: [
+          {
+            session: 'morning',
+            psalms: [57, 58],
+            collects: [],
+          },
+          {
+            session: 'evening',
+            psalms: [59],
+            collects: [],
+          },
+        ],
+      },
+      {
+        day: 19,
+        sessions: [
+          {
+            session: 'morning',
+            psalms: [60, 61],
+            collects: [],
+          },
+          {
+            session: 'evening',
+            psalms: [62],
+            collects: [],
+          },
+        ],
+      },
+      {
+        day: 20,
+        sessions: [
+          {
+            session: 'morning',
+            psalms: [63, 64],
+            collects: [],
+          },
+          {
+            session: 'evening',
+            psalms: [65],
+            collects: [],
+          },
+        ],
+      },
+      {
+        day: 21,
+        sessions: [
+          {
+            session: 'morning',
+            psalms: [66, 67],
+            collects: [],
+          },
+          {
+            session: 'evening',
+            psalms: [68],
+            collects: [],
+          },
+        ],
+      },
+      {
+        day: 22,
+        sessions: [
+          {
+            session: 'morning',
+            psalms: [69],
+            collects: [],
+          },
+          {
+            session: 'evening',
+            psalms: [70],
+            collects: [],
+          },
+        ],
+      },
+      {
+        day: 23,
+        sessions: [
+          {
+            session: 'morning',
+            psalms: [71],
+            collects: [],
+          },
+          {
+            session: 'evening',
+            psalms: [72],
+            collects: [],
+          },
+        ],
+      },
+      {
+        day: 24,
+        sessions: [
+          {
+            session: 'morning',
+            psalms: [73],
+            collects: [],
+          },
+          {
+            session: 'evening',
+            psalms: [74],
+            collects: [],
+          },
+        ],
+      },
+      {
+        day: 25,
+        sessions: [
+          {
+            session: 'morning',
+            psalms: [75, 76],
+            collects: [],
+          },
+          {
+            session: 'evening',
+            psalms: [77],
+            collects: [],
+          },
+        ],
+      },
+      {
+        day: 26,
+        sessions: [
+          {
+            session: 'morning',
+            psalms: [78],
+            collects: [],
+          },
+          {
+            session: 'evening',
+            psalms: [79],
+            collects: [],
+          },
+        ],
+      },
+      {
+        day: 27,
+        sessions: [
+          {
+            session: 'morning',
+            psalms: [80],
+            collects: [],
+          },
+          {
+            session: 'evening',
+            psalms: [81],
+            collects: [],
+          },
+        ],
+      },
+      {
+        day: 28,
+        sessions: [
+          {
+            session: 'morning',
+            psalms: [82, 83],
+            collects: [],
+          },
+          {
+            session: 'evening',
+            psalms: [84],
+            collects: [],
+          },
+        ],
+      },
+      {
+        day: 29,
+        sessions: [
+          {
+            session: 'morning',
+            psalms: [85],
+            collects: [],
+          },
+          {
+            session: 'evening',
+            psalms: [86],
+            collects: [],
+          },
+        ],
+      },
+      {
+        day: 30,
+        sessions: [
+          {
+            session: 'morning',
+            psalms: [87],
+            collects: [],
+          },
+          {
+            session: 'evening',
+            psalms: [88],
             collects: [],
           },
         ],
       },
     ],
+  },
+  {
+    month: 7,
+    days: [],
   },
 ];
 

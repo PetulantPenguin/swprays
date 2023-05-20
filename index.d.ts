@@ -17,6 +17,7 @@ type Month = {
 type Day = {
   day: number;
   sessions: Session[];
+  alerts?: Alert[];
 };
 
 type Alert = {
@@ -31,7 +32,6 @@ type Question = {
 type Session = {
   session: string;
   psalms: number[];
-  elders: number[];
   collects: number[];
   alerts?: Alert[];
   questions?: Question[];

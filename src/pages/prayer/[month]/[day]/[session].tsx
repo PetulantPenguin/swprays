@@ -8,7 +8,7 @@ import elders from '@/data/elders';
 import sessions from '@/data/sessions';
 import { Meta } from '@/layouts/Meta';
 import { Main } from '@/templates/Main';
-import { getSessionInfo } from '@/utils/data_utils';
+import { getDayInfo, getSessionInfo } from '@/utils/data_utils';
 import { fetchPsalms } from '@/utils/fetchPsalms';
 
 export async function getStaticPaths() {
@@ -50,6 +50,10 @@ export async function getStaticPaths() {
 export const getStaticProps: GetStaticProps = async ({ params }) => {
   // @ts-ignore
   const { month, day, session } = params;
+  const dayInfo = getDayInfo({
+    month: parseInt(month, 10),
+    day: parseInt(day, 10),
+  });
   const sessionInfo = getSessionInfo({
     month: parseInt(month, 10),
     day: parseInt(day, 10),
@@ -70,6 +74,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
       month: params!.month,
       day: params!.day,
       session: params!.session,
+      dayInfo,
       sessionInfo,
       psalms,
     },
@@ -79,7 +84,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 export default function SessionPage(
   props: InferGetStaticPropsType<typeof getStaticProps>
 ) {
-  const { month, day, session, psalms, sessionInfo } = props;
+  const { month, day, session, psalms, sessionInfo, dayInfo } = props;
 
   if (!session) {
     return null;
@@ -97,6 +102,10 @@ export default function SessionPage(
   }
 
   const elderPrayer = elders.find((x: any) => x.id === getDayOfTheWeek() + 1);
+  const alerts = [
+    ...(Array.isArray(dayInfo?.alerts) ? dayInfo.alerts : []),
+    ...(Array.isArray(sessionInfo?.alerts) ? sessionInfo.alerts : []),
+  ];
 
   return (
     <Main meta={<Meta title={props.slug} description="Lorem ipsum" />}>
@@ -107,26 +116,36 @@ export default function SessionPage(
         </h1>
         <NavBar month={month} day={day} session={session} />
         <br />
-        {sessionInfo.alerts &&
-          sessionInfo.alerts.length &&
-          sessionInfo.alerts.map((a: any, i: number) => (
-            <Alert {...a} key={i} />
-          ))}
-        {/* {session === 'morning' &&  */}
-        <>
-          <h2 className="text-xl font-bold">Prayer for Common Purpose</h2>
-          <Prayer prayer={elderPrayer} />
-        </>
-        {/* } */}
-        {psalms.passages.map((x: any, i: number) => {
-          return (
-            <Psalm
-              psalm={x}
-              key={i}
-              canonical={psalms.passage_meta[i].canonical}
-            />
-          );
-        })}
+        {alerts.length ? (
+          <div className="pb-2">
+            {alerts.map((a: any, i: number) => (
+              <Alert {...a} key={i} />
+            ))}
+          </div>
+        ) : null}
+
+        {session === 'morning' && (
+          <>
+            <h2>Pray with Common Purpose</h2>
+            <Prayer prayer={elderPrayer} />
+            <hr className="mb-4 border border-black" />
+          </>
+        )}
+        {psalms?.length && (
+          <>
+            <h2>Psalms</h2>
+            {psalms.passages.map((x: any, i: number) => {
+              return (
+                <Psalm
+                  psalm={x}
+                  key={i}
+                  canonical={psalms.passage_meta[i].canonical}
+                />
+              );
+            })}
+            <hr className="mb-4 border border-black" />
+          </>
+        )}
       </div>
     </Main>
   );
