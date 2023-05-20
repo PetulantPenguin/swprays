@@ -16,8 +16,8 @@ a:hover {
   @apply mb-2 text-2xl font-bold;
 }
 
-.content blockquote {
-  @apply p-4 my-4 border-l-4 border-gray-300 bg-gray-50 dark:border-gray-500 dark:bg-gray-800;
+.content hr {
+  @apply mb-4 border border-gray-600;
 }
 
 .content ul {

@@ -1,9 +1,10 @@
 type Prayer = {
-  id: Number;
-  title: string;
-  blurb: string;
+  id: number;
+  title?: string;
+  blurb?: string;
   text: string;
-  scripture: Verse[];
+  commentary?: string;
+  scripture?: Verse[];
 };
 type Verse = {
   reference: string;
@@ -18,11 +19,12 @@ type Day = {
   day: number;
   sessions: Session[];
   alerts?: Alert[];
+  questions?: Question[];
 };
 
 type Alert = {
   message: string;
-  level: 'info' | 'warn' | 'error';
+  level: 'info' | 'warn' | 'error' | 'commentary';
 };
 
 type Question = {
@@ -36,4 +38,10 @@ type Session = {
   alerts?: Alert[];
   questions?: Question[];
   verses?: Verse[];
+};
+type Psalms = {
+  query: string;
+  canonical: string;
+  passage_meta: any[];
+  passages: string[];
 };

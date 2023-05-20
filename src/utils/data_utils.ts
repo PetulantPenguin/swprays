@@ -7,9 +7,7 @@ export function getDayInfo({
   month: number;
   day: number;
 }) {
-  console.log(month, day);
   const theMonth = sessions.find((x: any) => x.month === month);
-  console.log(theMonth);
   const theDay = theMonth?.days.find((x: any) => x.day === day);
   return theDay;
 }

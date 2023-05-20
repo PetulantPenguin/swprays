@@ -1,10 +1,7 @@
 import type { GetServerSideProps, InferGetServerSidePropsType } from 'next';
 import Link from 'next/link';
 
-import NavBar from '@/components/NavBar';
-import Prayer from '@/components/prayer';
-import Psalm from '@/components/psalm';
-import elders from '@/data/elders';
+import Session from '@/components/Session';
 import { Meta } from '@/layouts/Meta';
 import { Main } from '@/templates/Main';
 import { getSessionInfo } from '@/utils/data_utils';
@@ -31,7 +28,9 @@ export const getServerSideProps: GetServerSideProps = async () => {
     session,
   });
 
-  const psalms = await fetchPsalms(sessionInfo?.psalms || []);
+  const psalms = sessionInfo?.psalms.length
+    ? await fetchPsalms(sessionInfo?.psalms || [])
+    : [];
   return {
     props: {
       month,
@@ -46,39 +45,19 @@ export const getServerSideProps: GetServerSideProps = async () => {
 const Index = (
   props: InferGetServerSidePropsType<typeof getServerSideProps>
 ) => {
-  const { month, day, session, psalms } = props;
-
-  if (!session) {
-    return null;
-  }
-
-  function getMonthName(m: number) {
-    const date = new Date();
-    date.setMonth(m - 1);
-    return date.toLocaleString('en-US', { month: 'long' });
-  }
-
   const now = new Date();
   const startDate = new Date(`May 21, 2023`);
-
-  function getDayOfTheWeek() {
-    const d = new Date(`${getMonthName(month)} ${day}, 2023`);
-    return d.getDay();
-  }
-
-  const elderPrayer = elders.find((x: any) => x.id === getDayOfTheWeek() + 1);
 
   return (
     <Main
       meta={
         <Meta
-          title="Southwest Bible Summer of Prayer"
-          description="Prayer app for Southwest Bible Church Summer of Prayer"
+          title={`Home | App of Common Prayer | Summer of Prayer | Southwest Bible Church`}
+          description={`Home | App of Common Prayer | Summer of Prayer | Southwest Bible Church`}
         />
       }
     >
       <div className="mx-auto my-2 max-w-md px-2">
-        <NavBar month={month} day={day} session={session} />
         {now < startDate ? (
           <>
             <h1 className="text-center text-3xl font-bold">
@@ -148,22 +127,14 @@ const Index = (
             </div>
           </>
         ) : (
-          <>
-            <h1 className="text-center text-3xl font-bold">
-              {session === 'morning' ? 'Morning' : 'Evening'} of{' '}
-              {getMonthName(month)}, {day}
-            </h1>
-            <Prayer prayer={elderPrayer} />
-            {psalms.passages.map((x: any, i: number) => {
-              return (
-                <Psalm
-                  psalm={x}
-                  key={i}
-                  canonical={psalms.passage_meta[i].canonical}
-                />
-              );
-            })}
-          </>
+          <Session
+            month={props.month}
+            day={props.day}
+            session={props.session}
+            psalmText={props.psalmText}
+            sessionInfo={props.sessionInfo}
+            dayInfo={props.dayInfo}
+          />
         )}
       </div>
     </Main>
