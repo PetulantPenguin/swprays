@@ -9,7 +9,7 @@ export default function Collects({ collectList }: { collectList: number[] }) {
   const prayers = collects.filter((x) => collectList.includes(x.id));
   return (
     <>
-      <h2>Suggested Prayers</h2>
+      <h2>Common Prayers</h2>
       {prayers.map((prayer: Prayer, i: number) => (
         <Prayer prayer={prayer} key={i} />
       ))}
