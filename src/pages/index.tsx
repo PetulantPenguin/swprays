@@ -82,7 +82,7 @@ const Index = (
         {now < startDate ? (
           <>
             <h1 className="text-center text-3xl font-bold">
-              Welcome to the Summer of Prayer!
+              Welcostagign testme to the Summer of Prayer!
             </h1>
             <p>This summer, Southwest Bible is focused on the question,</p>
             <div className="text-center font-bold italic">
