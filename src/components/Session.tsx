@@ -5,7 +5,7 @@ import Alert from './Alert';
 import Collects from './Collects';
 import NavBar from './NavBar';
 import Prayer from './Prayer';
-import Psalm from './Psalm';
+import Psalm from './Psalmx';
 
 type Props = {
   month: number;
