@@ -106,7 +106,7 @@ export default function Session(props: Props) {
 
       {dayInfo.questions && <Questions questions={dayInfo.questions} />}
 
-      {session === 'evening' && sessionInfo.collects.length ? (
+      {session === 'evening' && sessionInfo.collects ? (
         <Collects collectList={sessionInfo.collects} />
       ) : null}
 

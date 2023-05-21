@@ -20,6 +20,13 @@ type Day = {
   sessions: Session[];
   alerts?: Alert[];
   questions?: Question[];
+  encouragements?: Quote[];
+};
+
+type Quote = {
+  comment: string;
+  text: string;
+  author: string;
 };
 
 type Alert = {
@@ -34,7 +41,7 @@ type Question = {
 type Session = {
   session: string;
   psalms: number[];
-  collects: number[];
+  collects?: number[];
   alerts?: Alert[];
   questions?: Question[];
   verses?: Verse[];

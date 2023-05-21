@@ -15,6 +15,13 @@ const may: Month = {
             'Do I tend to see prayer as an obligation or an opportunity, and why?',
         },
       ],
+      encouragements: [
+        {
+          comment: 'Concerned you might be praying worng?',
+          text: 'I like my way of doing it better than your way of not doing it.',
+          author: 'DL Moody',
+        },
+      ],
       sessions: [
         {
           session: 'morning',
