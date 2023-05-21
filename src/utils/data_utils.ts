@@ -13,7 +13,7 @@ export function getDayInfo({
 }
 
 export function getSessionInfo({
-  month = new Date().getMonth(),
+  month = new Date().getMonth() + 1,
   day = new Date().getDate(),
   session,
 }: {
@@ -21,8 +21,8 @@ export function getSessionInfo({
   day: number;
   session: string;
 }) {
-  const theSession = getDayInfo({ month, day })?.sessions.find(
-    (x: any) => x.session === session
-  );
+  const theMonth = sessions.find((x: any) => x.month === month);
+  const theDay = theMonth?.days.find((x: any) => x.day === day);
+  const theSession = theDay?.sessions.find((x: any) => x.session === session);
   return theSession;
 }

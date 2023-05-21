@@ -104,7 +104,7 @@ export default function Session(props: Props) {
         <CommonPrayer elderPrayer={elderPrayer} />
       )}
 
-      {dayInfo.questions && <Questions questions={dayInfo.questions} />}
+      {dayInfo?.questions && <Questions questions={dayInfo.questions} />}
 
       {session === 'evening' && sessionInfo.collects ? (
         <Collects collectList={sessionInfo.collects} />
