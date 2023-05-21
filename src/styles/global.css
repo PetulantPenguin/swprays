@@ -12,8 +12,12 @@ a:hover {
 
 @tailwind utilities;
 
-.content p {
-  @apply my-6;
+.content h2 {
+  @apply mb-2 text-2xl font-bold;
+}
+
+.content hr {
+  @apply mb-4 border border-gray-600;
 }
 
 .content ul {

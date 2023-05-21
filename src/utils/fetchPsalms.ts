@@ -1,4 +1,4 @@
-export async function fetchPsalms(passages: any) {
+export async function fetchPsalms(passages: any): Promise<Psalms> {
   const url = new URL('https://api.esv.org/v3/passage/html/');
   const search = new URLSearchParams({
     'include-audio-link': 'false',
@@ -12,6 +12,7 @@ export async function fetchPsalms(passages: any) {
       Authorization: 'Token d6eaa53c4ba338d11c33df8faa60e825e2a213c2',
     }),
   });
+
   return response.json();
 }
 
