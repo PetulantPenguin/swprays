@@ -13,7 +13,7 @@ export const getServerSideProps: GetServerSideProps = async () => {
   const now = new Date();
   const month = now.getMonth() + 1;
   const day = now.getDate();
-  const session = now.getHours() > 12 ? 'evening' : 'morning';
+  const session = now.getHours() - 5 > 12 ? 'evening' : 'morning';
 
   const sessionInfo = getSessionInfo({
     month,
