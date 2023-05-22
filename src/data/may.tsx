@@ -67,6 +67,13 @@ const may: Month = {
           session: 'evening',
           psalms: [],
           collects: [],
+          biblePrayers: [1],
+          alerts: [
+            {
+              message: `Scripture doesn't just work alongside prayer. You can even pray Scripture! Here is an example to try this evening. You can pray the prayer below, or pray the words God gives you as you think and meditate on Phillipians 4:6-7.`,
+              level: 'commentary',
+            },
+          ],
         },
       ],
     },

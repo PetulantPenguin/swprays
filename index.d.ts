@@ -4,6 +4,7 @@ type Prayer = {
   blurb?: string;
   text: string;
   commentary?: string;
+  reference?: string;
   scripture?: Verse[];
 };
 type Verse = {
@@ -42,6 +43,7 @@ type Session = {
   session: string;
   psalms: number[];
   collects?: number[];
+  biblePrayers?: number[];
   alerts?: Alert[];
   questions?: Question[];
   verses?: Verse[];

@@ -1,11 +1,13 @@
+import biblePrayers from '@/data/biblePrayers';
 import elders from '@/data/elders';
 import { getDayOfTheWeek, getMonthName } from '@/utils/utilities';
 
 import Alert from './Alert';
+import BiblePrayer from './BiblePrayer';
 import Collects from './Collects';
 import NavBar from './NavBar';
 import Prayer from './Prayer';
-import Psalm from './Psalmx';
+import Psalm from './Psalm';
 
 type Props = {
   month: number;
@@ -42,6 +44,21 @@ function CommonPrayer({ elderPrayer }: { elderPrayer?: Prayer }) {
     <>
       <h2>Pray with Common Purpose</h2>
       <Prayer prayer={elderPrayer} />
+      <hr />
+    </>
+  );
+}
+
+function BiblePrayers({ biblePrayerList }: { biblePrayerList: Prayer[] }) {
+  if (!biblePrayerList?.length) {
+    return null;
+  }
+  return (
+    <>
+      <h2>Praying Scripture</h2>
+      {biblePrayerList.map((x: any, i: number) => {
+        return <BiblePrayer prayer={x} key={i} />;
+      })}
       <hr />
     </>
   );
@@ -85,10 +102,16 @@ export default function Session(props: Props) {
   const elderPrayer = elders.find(
     (x: any) => x.id === getDayOfTheWeek(month, day) + 1
   );
+
+  const biblePrayerList = !sessionInfo.biblePrayers
+    ? []
+    : biblePrayers.filter((x: any) => sessionInfo.biblePrayers?.includes(x.id));
+
   const alerts = [
     ...(Array.isArray(dayInfo?.alerts) ? dayInfo.alerts : []),
     ...(Array.isArray(sessionInfo?.alerts) ? sessionInfo.alerts : []),
   ];
+
   return (
     <div className="mx-auto my-2 max-w-md px-2">
       <h1 className="mb-4 text-center text-3xl font-bold">
@@ -108,6 +131,10 @@ export default function Session(props: Props) {
 
       {session === 'evening' && sessionInfo.collects ? (
         <Collects collectList={sessionInfo.collects} />
+      ) : null}
+
+      {session === 'evening' && biblePrayerList?.length ? (
+        <BiblePrayers biblePrayerList={biblePrayerList} />
       ) : null}
 
       {psalmText?.passages?.length && <Psalms psalmText={psalmText} />}
