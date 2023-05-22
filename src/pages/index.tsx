@@ -4,7 +4,7 @@ import Link from 'next/link';
 import Session from '@/components/Session';
 import { Meta } from '@/layouts/Meta';
 import { Main } from '@/templates/Main';
-import { getSessionInfo } from '@/utils/data_utils';
+import { getDayInfo, getSessionInfo } from '@/utils/data_utils';
 import { fetchPsalms } from '@/utils/fetchPsalms';
 
 export const getServerSideProps: GetServerSideProps = async () => {
@@ -13,6 +13,11 @@ export const getServerSideProps: GetServerSideProps = async () => {
   const month = adjustedTime.getMonth() + 1;
   const day = adjustedTime.getDate();
   const session = adjustedTime.getHours() > 12 ? 'evening' : 'morning';
+
+  const dayInfo = getDayInfo({
+    month,
+    day,
+  });
 
   const sessionInfo = getSessionInfo({
     month,
@@ -31,6 +36,7 @@ export const getServerSideProps: GetServerSideProps = async () => {
       session,
       sessionInfo,
       psalms,
+      dayInfo,
     },
   };
 };
