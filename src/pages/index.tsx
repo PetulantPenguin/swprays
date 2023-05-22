@@ -14,7 +14,7 @@ export const getServerSideProps: GetServerSideProps = async () => {
   const month = now.getMonth() + 1;
   const day = now.getDate();
   const session = now.getHours() - 5 > 12 ? 'evening' : 'morning';
-  console.log(now);
+  console.log(now, month, day, now.getHours());
 
   const sessionInfo = getSessionInfo({
     month,
