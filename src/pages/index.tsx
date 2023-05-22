@@ -14,7 +14,6 @@ export const getServerSideProps: GetServerSideProps = async () => {
   const month = now.getMonth() + 1;
   const day = now.getDate();
   const session = now.getHours() - 5 > 12 ? 'evening' : 'morning';
-  console.log(now, month, day, now.getHours());
 
   const sessionInfo = getSessionInfo({
     month,
@@ -32,6 +31,7 @@ export const getServerSideProps: GetServerSideProps = async () => {
       session,
       sessionInfo,
       psalms,
+      now,
     },
   };
 };
@@ -41,7 +41,7 @@ const Index = (
 ) => {
   const now = new Date();
   const startDate = new Date(`May 21, 2023`);
-
+  console.log(props.now);
   return (
     <Main
       meta={
