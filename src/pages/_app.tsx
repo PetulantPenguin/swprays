@@ -7,11 +7,16 @@ import { QueryClient, QueryClientProvider } from 'react-query';
 
 const queryClient = new QueryClient();
 
+const analyticsMode =
+  process.env.NEXT_PUBLIC_ANALYTICS_MODE === 'production'
+    ? 'production'
+    : 'development';
+
 const MyApp = ({ Component, pageProps }: AppProps) => {
   return (
     <QueryClientProvider client={queryClient}>
       <Component {...pageProps} />
-      <Analytics />
+      <Analytics mode={analyticsMode} />
     </QueryClientProvider>
   );
 };
