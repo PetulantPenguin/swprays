@@ -36,13 +36,13 @@ function Questions({ questions }: { questions: Question[] }) {
   );
 }
 
-function CommonPrayer({ elderPrayer }: { elderPrayer?: Prayer }) {
+function SharedPurpose({ elderPrayer }: { elderPrayer?: Prayer }) {
   if (!elderPrayer) {
     return null;
   }
   return (
     <>
-      <h2>Pray with Common Purpose</h2>
+      <h2>SWBC Shared Purpose</h2>
       <Prayer prayer={elderPrayer} />
       <hr />
     </>
@@ -124,7 +124,7 @@ export default function Session(props: Props) {
       {alerts.length ? <Alerts alerts={alerts} /> : null}
 
       {session === 'morning' && elderPrayer && (
-        <CommonPrayer elderPrayer={elderPrayer} />
+        <SharedPurpose elderPrayer={elderPrayer} />
       )}
 
       {dayInfo?.questions && <Questions questions={dayInfo.questions} />}

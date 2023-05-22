@@ -81,7 +81,7 @@ const Index = (
               with its own content.
             </p>
             <ul className="list-inside list-disc">
-              <li>Prayers for Common Purpose</li>
+              <li>SWBC Shared Purpose</li>
               <li>Verses</li>
               <li>Psalms</li>
               <li>Written prayers used by the Church across history</li>
