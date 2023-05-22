@@ -1,4 +1,3 @@
-/* tslint:disable */
 import Link from 'next/link';
 
 export default function NavBar({
@@ -10,58 +9,74 @@ export default function NavBar({
   day: number;
   session: string;
 }) {
-  const thisSession = session === 'morning';
-  if (thisSession) {
-    console.log('morning');
+  function lastDayInMonth(m: number) {
+    switch (m) {
+      case 2:
+        return 28;
+      case 1:
+      case 3:
+      case 5:
+      case 7:
+      case 8:
+      case 10:
+      case 12:
+        return 31;
+      default:
+        return 30;
+    }
   }
+
+  const yesterday =
+    day === 1
+      ? `${month - 1}/${lastDayInMonth(month - 1)}`
+      : `${month}/${day - 1}`;
+  const tomorrow =
+    day === lastDayInMonth(month)
+      ? `${month + 1}/1`
+      : `${month}/${Number(day) + 1}`;
+
   return (
-    <nav className="grid grid-cols-6 justify-center gap-y-2 pb-8">
-      {/* {!yesterdayToEarly?
-      (<Link
-        href={`/prayer/${yesterday}/${session}`}
-        className={classNames(
-          tomorrowFuture ? 'col-span-4' : 'col-span-2',
-          'border text-center leading-8'
-        )}
-      >
-        ◀ Previous
-        <br />
-      </Link>):null}
-      <Link
-        href={`/prayer/${
-          new Date().getMonth() + 1
-        }/${new Date().getDate()}/${session}`}
-        className={classNames(
-          `col-span-${2+(2*(Number(yesterdayToEarly)+Number(tomorrowFuture)))}`,
-          "border text-center leading-8"
-        )}
-      >
-        Today
-        <br />
-      </Link>
-      {!tomorrowFuture && (
+    <nav className="grid gap-y-2 pb-8">
+      <div className="col-span-full flex">
+        {yesterday !== '5/20' ? (
+          <Link
+            href={`/prayer/${yesterday}/${session}`}
+            className="grow border text-center leading-8"
+          >
+            ◀ Previous
+          </Link>
+        ) : null}
         <Link
-          href={`/prayer/${tomorrow}/${session}`}
-          className="col-span-2 border text-center align-middle leading-8"
+          href={`/prayer/${
+            new Date().getMonth() + 1
+          }/${new Date().getDate()}/${session}`}
+          className="grow border text-center leading-8"
         >
-          Next ▶
-          <br />
+          Today
         </Link>
-      )} */}
-      <Link
-        href={`/prayer/${month}/${day}/morning`}
-        className="col-span-3 border text-center leading-8"
-      >
-        ☀️ Morning
-        <br />
-      </Link>
-      <Link
-        href={`/prayer/${month}/${day}/evening`}
-        className="col-span-3 border text-center leading-8"
-      >
-        Evening 🌙
-        <br />
-      </Link>
+        {tomorrow !== '5/23' ? (
+          <Link
+            href={`/prayer/${tomorrow}/${session}`}
+            className="grow border text-center align-middle leading-8"
+          >
+            Next ▶
+          </Link>
+        ) : null}
+      </div>
+      <div className="flex">
+        <Link
+          href={`/prayer/${month}/${day}/morning`}
+          className="grow border text-center leading-8"
+        >
+          ☀️ Morning
+        </Link>
+        <Link
+          href={`/prayer/${month}/${day}/evening`}
+          className="grow border text-center leading-8"
+        >
+          Evening 🌙
+        </Link>
+      </div>
     </nav>
   );
 }
