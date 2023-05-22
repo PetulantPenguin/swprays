@@ -88,7 +88,13 @@ const may: Month = {
         {
           session: 'evening',
           psalms: [],
-          collects: [],
+          collects: [2],
+          alerts: [
+            {
+              message: `You saw a "Common Prayer" on Sunday. Here is another one. These prayers are written prayers prayed by Christians in various times and seasons. They give us a chance to pray for things we may not think of on our own, with words we might not have used, and with people we may have never met.`,
+              level: 'commentary',
+            },
+          ],
         },
       ],
     },

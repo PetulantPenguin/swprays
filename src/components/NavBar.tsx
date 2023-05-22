@@ -54,7 +54,7 @@ export default function NavBar({
         >
           Today
         </Link>
-        {tomorrow !== '5/23' ? (
+        {tomorrow !== '5/24' ? (
           <Link
             href={`/prayer/${tomorrow}/${session}`}
             className="grow border text-center align-middle leading-8"
