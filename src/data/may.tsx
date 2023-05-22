@@ -121,6 +121,12 @@ const may: Month = {
     },
     {
       day: 25,
+      alerts: [
+        {
+          message: `Psalms are coming...`,
+          level: 'commentary',
+        },
+      ],
       sessions: [
         {
           session: 'morning',
@@ -136,6 +142,12 @@ const may: Month = {
     },
     {
       day: 26,
+      alerts: [
+        {
+          message: `Psalms are coming.`,
+          level: 'info',
+        },
+      ],
       sessions: [
         {
           session: 'morning',
@@ -151,6 +163,12 @@ const may: Month = {
     },
     {
       day: 27,
+      alerts: [
+        {
+          message: `Psalms are coming!`,
+          level: 'warn',
+        },
+      ],
       sessions: [
         {
           session: 'morning',
@@ -166,6 +184,13 @@ const may: Month = {
     },
     {
       day: 28,
+      alerts: [
+        {
+          title: 'Psalms are here!',
+          message: `We know the Book of Psalms as the song book of God's people. Throughout time, Psalms has also been the PRAYER book of God's people. Believers have sung, chanted, read, and, yes, prayed the Psalms. And believers throughout the world to this day continue singing and praying the Psalms! Today begins 60 days through of the Psalms. As you read the Psalms with others at SWBC, pray for what God is showing you in each verse.`,
+          level: 'commentary',
+        },
+      ],
       sessions: [
         {
           session: 'morning',

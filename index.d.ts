@@ -32,6 +32,7 @@ type Quote = {
 };
 
 type Alert = {
+  title?: string;
   message: string;
   level: 'info' | 'warn' | 'error' | 'commentary';
 };

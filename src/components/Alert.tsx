@@ -1,12 +1,6 @@
 import classNames from 'classnames';
 
-export default function Alert({
-  message,
-  level,
-}: {
-  message: string;
-  level: string;
-}) {
+export default function Alert({ title, message, level }: Alert) {
   return (
     <div
       className={classNames(
@@ -17,6 +11,7 @@ export default function Alert({
         level === 'commentary' && 'text-gray-800 bg-gray-100'
       )}
     >
+      {title && <p className="font-bold">{title}</p>}
       {message}
     </div>
   );
