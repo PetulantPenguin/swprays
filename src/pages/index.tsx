@@ -10,8 +10,8 @@ import { fetchPsalms } from '@/utils/fetchPsalms';
 export const getServerSideProps: GetServerSideProps = async () => {
   const now = new Date();
   const adjustedTime = new Date(now.getTime() + -5 * 60 * 60 * 1000);
-  const month = now.getMonth() + 1;
-  const day = now.getDate();
+  const month = adjustedTime.getMonth() + 1;
+  const day = adjustedTime.getDate();
   const session = adjustedTime.getHours() > 12 ? 'evening' : 'morning';
 
   const sessionInfo = getSessionInfo({
