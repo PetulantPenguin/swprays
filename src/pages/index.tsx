@@ -7,13 +7,12 @@ import { Main } from '@/templates/Main';
 import { getSessionInfo } from '@/utils/data_utils';
 import { fetchPsalms } from '@/utils/fetchPsalms';
 
-// @ts-ignore
 export const getServerSideProps: GetServerSideProps = async () => {
-  // @ts-ignore
   const now = new Date();
+  const adjustedTime = new Date(now.getTime() + -5 * 60 * 60 * 1000);
   const month = now.getMonth() + 1;
   const day = now.getDate();
-  const session = now.getHours() - 5 > 12 ? 'evening' : 'morning';
+  const session = adjustedTime.getHours() > 12 ? 'evening' : 'morning';
 
   const sessionInfo = getSessionInfo({
     month,
@@ -24,6 +23,7 @@ export const getServerSideProps: GetServerSideProps = async () => {
   const psalms = sessionInfo?.psalms.length
     ? await fetchPsalms(sessionInfo?.psalms || [])
     : [];
+
   return {
     props: {
       month,
@@ -31,7 +31,6 @@ export const getServerSideProps: GetServerSideProps = async () => {
       session,
       sessionInfo,
       psalms,
-      now,
     },
   };
 };
@@ -41,7 +40,6 @@ const Index = (
 ) => {
   const now = new Date();
   const startDate = new Date(`May 21, 2023`);
-  console.log(props.now);
   return (
     <Main
       meta={
