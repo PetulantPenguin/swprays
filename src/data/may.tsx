@@ -17,7 +17,7 @@ const may: Month = {
       ],
       encouragements: [
         {
-          comment: 'Concerned you might be praying worng?',
+          comment: 'Concerned you might be praying wrong?',
           text: 'I like my way of doing it better than your way of not doing it.',
           author: 'DL Moody',
         },
@@ -30,7 +30,7 @@ const may: Month = {
           alerts: [
             {
               message:
-                'The key to prayer is to pray! This morning, you will see a section called "Pray with Common Purpose." Prayer is better together! Each day, each person at SWBC will be praying for something together. Today is for JOY in our service and worship. Yes! You can pray for joy. Join the rest of your church family praying for joy today! The verses below are to help you think through what we are praying for. Come back tomorrow morning for the next Common Purpose.',
+                'The key to prayer is to pray! This morning, you will see a section called "SWBC Shared Purpose." Prayer is better together! Each day, each person at SWBC will be praying for something together. Today is for JOY in our service and worship. Yes! You can pray for joy. Join the rest of your church family praying for joy today! The verses below are to help you think through what we are praying for. Come back tomorrow morning for the next Common Purpose.',
               level: 'commentary',
             },
           ],
@@ -51,6 +51,12 @@ const may: Month = {
     },
     {
       day: 22,
+      questions: [
+        {
+          question:
+            'In what ways am I reading Scripture and allowing it to shape my prayers?',
+        },
+      ],
       alerts: [
         {
           message: `Missed yesterday's prayer? No problem! Click the "Previous" button above to see what you missed!`,
@@ -88,7 +94,13 @@ const may: Month = {
         {
           session: 'evening',
           psalms: [],
-          collects: [],
+          collects: [2],
+          alerts: [
+            {
+              message: `You saw a "Common Prayer" on Sunday. Here is another one. These prayers are written prayers prayed by Christians in various times, places, and seasons. Common prayers give us a chance to pray for things we may not have thought on our own, with words we may not have used on our own, and with people we may not have met on our own.`,
+              level: 'commentary',
+            },
+          ],
         },
       ],
     },

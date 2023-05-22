@@ -6,6 +6,7 @@ type Prayer = {
   commentary?: string;
   reference?: string;
   scripture?: Verse[];
+  where?: string;
 };
 type Verse = {
   reference: string;
