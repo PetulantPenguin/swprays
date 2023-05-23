@@ -2,16 +2,19 @@ type Prayer = {
   id: number;
   title?: string;
   blurb?: string;
-  text: string;
+  intro?: string;
+  text?: any;
   commentary?: string;
   reference?: string;
   scripture?: Verse[];
   where?: string;
 };
+
 type Verse = {
   reference: string;
-  text: string;
+  text: any;
 };
+
 type Month = {
   month: number;
   days: Day[];
@@ -23,6 +26,7 @@ type Day = {
   alerts?: Alert[];
   questions?: Question[];
   encouragements?: Quote[];
+  biblePrayers?: number[];
 };
 
 type Quote = {

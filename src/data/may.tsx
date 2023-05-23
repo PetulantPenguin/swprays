@@ -106,6 +106,7 @@ const may: Month = {
     },
     {
       day: 24,
+      biblePrayers: [3],
       sessions: [
         {
           session: 'morning',
@@ -127,6 +128,7 @@ const may: Month = {
           level: 'commentary',
         },
       ],
+      biblePrayers: [2],
       sessions: [
         {
           session: 'morning',
