@@ -1,11 +1,16 @@
+import biblePrayers from '@/data/biblePrayers';
+
 import Verse from './Verse';
 
-export default function BiblePrayer({ prayer }: { prayer: Prayer }) {
-  const { blurb, text, scripture, commentary } = prayer;
-
+function BiblePrayerFormat({ prayer }: { prayer?: Prayer }) {
+  if (!prayer) {
+    return null;
+  }
+  const { blurb, text, scripture, commentary, intro } = prayer;
   return (
     <div className="pb-8">
-      <p className="pl-2">{text}</p>
+      {intro && <p className="text-base">{intro}</p>}
+      {text && <p className="pl-2">{text}</p>}
       {scripture?.map((x: any, i: number) => (
         <Verse verse={x} key={i} />
       ))}
@@ -13,4 +18,17 @@ export default function BiblePrayer({ prayer }: { prayer: Prayer }) {
       {commentary && <p className="text-base">{commentary}</p>}
     </div>
   );
+}
+
+export default function BiblePrayer({ prayer }: { prayer: Prayer | number }) {
+  let thePrayer: Prayer | undefined;
+  if (typeof prayer === 'number') {
+    thePrayer = biblePrayers.find((x) => x.id === prayer) as Prayer;
+  } else {
+    thePrayer = prayer as Prayer;
+  }
+  if (!thePrayer) {
+    return null;
+  }
+  return <BiblePrayerFormat prayer={thePrayer} />;
 }

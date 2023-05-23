@@ -1,4 +1,3 @@
-import biblePrayers from '@/data/biblePrayers';
 import elders from '@/data/elders';
 import { getDayOfTheWeek, getMonthName } from '@/utils/utilities';
 
@@ -36,10 +35,15 @@ function Questions({ questions }: { questions: Question[] }) {
   );
 }
 
-function SharedPurpose({ elderPrayer }: { elderPrayer?: Prayer }) {
+function SharedPurpose({ month, day }: { month: number; day: number }) {
+  const elderPrayer = elders.find(
+    (x: any) => x.id === getDayOfTheWeek(month, day) + 1
+  );
+
   if (!elderPrayer) {
     return null;
   }
+
   return (
     <>
       <h2>SWBC Shared Purpose</h2>
@@ -49,14 +53,14 @@ function SharedPurpose({ elderPrayer }: { elderPrayer?: Prayer }) {
   );
 }
 
-function BiblePrayers({ biblePrayerList }: { biblePrayerList: Prayer[] }) {
-  if (!biblePrayerList?.length) {
+function BiblePrayers({ biblePrayerIds }: { biblePrayerIds: number[] }) {
+  if (!biblePrayerIds.length) {
     return null;
   }
   return (
     <>
       <h2>Praying Scripture</h2>
-      {biblePrayerList.map((x: any, i: number) => {
+      {biblePrayerIds.map((x: number, i: number) => {
         return <BiblePrayer prayer={x} key={i} />;
       })}
       <hr />
@@ -99,13 +103,12 @@ export default function Session(props: Props) {
     return null;
   }
 
-  const elderPrayer = elders.find(
-    (x: any) => x.id === getDayOfTheWeek(month, day) + 1
-  );
-
-  const biblePrayerList = !sessionInfo.biblePrayers
-    ? []
-    : biblePrayers.filter((x: any) => sessionInfo.biblePrayers?.includes(x.id));
+  const biblePrayerIds = [
+    ...(Array.isArray(dayInfo?.biblePrayers) ? dayInfo.biblePrayers : []),
+    ...(Array.isArray(sessionInfo?.biblePrayers)
+      ? sessionInfo.biblePrayers
+      : []),
+  ];
 
   const alerts = [
     ...(Array.isArray(dayInfo?.alerts) ? dayInfo.alerts : []),
@@ -123,9 +126,7 @@ export default function Session(props: Props) {
 
       {alerts.length ? <Alerts alerts={alerts} /> : null}
 
-      {session === 'morning' && elderPrayer && (
-        <SharedPurpose elderPrayer={elderPrayer} />
-      )}
+      {session === 'morning' && <SharedPurpose month={month} day={day} />}
 
       {dayInfo?.questions && <Questions questions={dayInfo.questions} />}
 
@@ -133,9 +134,7 @@ export default function Session(props: Props) {
         <Collects collectList={sessionInfo.collects} />
       ) : null}
 
-      {session === 'evening' && biblePrayerList?.length ? (
-        <BiblePrayers biblePrayerList={biblePrayerList} />
-      ) : null}
+      <BiblePrayers biblePrayerIds={biblePrayerIds} />
 
       {psalmText?.passages?.length && <Psalms psalmText={psalmText} />}
     </div>

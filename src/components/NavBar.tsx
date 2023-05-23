@@ -9,7 +9,7 @@ export default function NavBar({
   day: number;
   session: string;
 }) {
-  function lastDayInMonth(m: number) {
+  function lastDayInMonth(m: number): number {
     switch (m) {
       case 2:
         return 28;
@@ -27,12 +27,13 @@ export default function NavBar({
   }
 
   const yesterday =
-    day === 1
-      ? `${month - 1}/${lastDayInMonth(month - 1)}`
+    Number(day) === 1
+      ? `${Number(month) - 1}/${lastDayInMonth(Number(month) - 1)}`
       : `${month}/${day - 1}`;
+
   const tomorrow =
-    day === lastDayInMonth(month)
-      ? `${month + 1}/1`
+    Number(day) === lastDayInMonth(Number(month))
+      ? `${Number(month) + 1}/1`
       : `${month}/${Number(day) + 1}`;
 
   return (
@@ -54,7 +55,7 @@ export default function NavBar({
         >
           Today
         </Link>
-        {tomorrow !== '5/24' ? (
+        {tomorrow !== '5/25' ? (
           <Link
             href={`/prayer/${tomorrow}/${session}`}
             className="grow border text-center align-middle leading-8"
