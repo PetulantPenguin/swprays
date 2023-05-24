@@ -37,25 +37,43 @@ const biblePrayers: Prayer[] = [
   },
   {
     id: 3,
-    intro: `The Lord's Prayer`,
+    intro: `The Lord’s Prayer`,
     scripture: [
       {
         reference: 'Matthew 6:9-13',
         text: (
           <div className="text-center">
             <div>Our Father in heaven,</div>
-            <div className="pb-3">Hallowed by Your name.</div>
-            <div>Your kingdom come.</div>
-            <div>Your will be done</div>
-            <div className="pb-3">On earth as it is in heaven.</div>
-            <div className="pb-3">Give us this day our daily bread.</div>
-            <div>And forgive us our debts,</div>
-            <div className="pb-3">As we forgive our debtors.</div>
-            <div>And do not lead us into temptation,</div>
-            <div className="pb-3">But deliver us from the evil one.</div>
-            <div>For Yours is the kingdom</div>
-            <div className="pb-3">and the power and the glory forever.</div>
+            <div className="pb-3">hallowed be your name.</div>
+            <div>Your kingdom come,</div>
+            <div>your will be done,</div>
+            <div className="pb-3 pl-4">on earth as it is in heaven.</div>
+            <div className="pb-3">Give us this day our daily bread,</div>
+            <div>and forgive us our debts,</div>
+            <div className="pb-3 pl-4">
+              as we also have forgiven our debtors.
+            </div>
+            <div>And lead us not into temptation,</div>
+            <div className="pb-3 pl-4">but deliver us from evil.</div>
+            <div>For yours is the kingdom</div>
+            <div className="pb-3">and the power and the glory, forever.</div>
             <div>Amen</div>
+          </div>
+        ) as ReactNode,
+      },
+    ],
+    commentary: `This is how Jesus answered the disciples when they said, "Lord, teach us to pray." Read it. Pray it. Meditate on each line. Read it again. Pray it again.`,
+  },
+  {
+    id: 4,
+    intro: '',
+    scripture: [
+      {
+        reference: 'Psalm 119:105',
+        text: (
+          <div>
+            <div>Your word is a lamp to my feet</div>
+            <div>and a light to my path.</div>
           </div>
         ) as ReactNode,
       },

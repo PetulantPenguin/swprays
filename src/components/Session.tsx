@@ -22,13 +22,20 @@ function Questions({ questions }: { questions: Question[] }) {
     <>
       <h2>Questions for Reflection</h2>
       {questions.map((q: Question, i: number) => (
-        <div
-          key={i}
-          className="mb-2 flex items-center rounded-lg border-blue-800 bg-blue-100 p-4 text-blue-800"
-        >
-          <div className="p-3 text-4xl text-orange-700">?</div>
-          <div>{q.question}</div>
-        </div>
+        <>
+          <div
+            key={i}
+            className="mb-2 flex items-center rounded-lg border-blue-800 bg-blue-100 p-4 text-blue-800"
+          >
+            <div className="p-3 text-4xl text-orange-700">?</div>
+            <div>{q.question}</div>
+          </div>
+          {q.comment ? (
+            <p className="m-4 border border-blue-100 p-2 text-sm">
+              {q.comment}
+            </p>
+          ) : null}
+        </>
       ))}
       <hr />
     </>
@@ -116,8 +123,8 @@ export default function Session(props: Props) {
   ];
 
   return (
-    <div className="mx-auto my-2 max-w-md px-2">
-      <h1 className="mb-4 text-center text-3xl font-bold">
+    <div className="my-2">
+      <h1>
         {session === 'morning' ? 'Morning' : 'Evening'} of {getMonthName(month)}
         , {day}
       </h1>

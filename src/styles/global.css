@@ -12,6 +12,10 @@ a:hover {
 
 @tailwind utilities;
 
+.content h1 {
+  @apply mb-4 text-center text-3xl font-bold;
+}
+
 .content h2 {
   @apply mb-2 text-2xl font-bold;
 }
