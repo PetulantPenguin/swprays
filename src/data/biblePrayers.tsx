@@ -62,7 +62,7 @@ const biblePrayers: Prayer[] = [
         ) as ReactNode,
       },
     ],
-    commentary: `This is how Jesus answered the disciples when they said, "Lord, teach us to pray."`,
+    commentary: `This is how Jesus answered the disciples when they said, "Lord, teach us to pray." Read it. Pray it. Meditate on each line. Read it again. Pray it again.`,
   },
   {
     id: 4,
