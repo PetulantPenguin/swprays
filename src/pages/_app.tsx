@@ -5,6 +5,8 @@ import type { AppProps } from 'next/app';
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { QueryClient, QueryClientProvider } from 'react-query';
 
+import Layout from '@/components/Layout';
+
 const queryClient = new QueryClient();
 
 const analyticsMode =
@@ -15,7 +17,9 @@ const analyticsMode =
 const MyApp = ({ Component, pageProps }: AppProps) => {
   return (
     <QueryClientProvider client={queryClient}>
-      <Component {...pageProps} />
+      <Layout>
+        <Component {...pageProps} />
+      </Layout>
       <Analytics mode={analyticsMode} />
     </QueryClientProvider>
   );

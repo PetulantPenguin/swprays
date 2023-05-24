@@ -25,9 +25,8 @@ const Main = (props: IMainProps) => {
   return (
     <div className="w-full px-1 antialiased">
       {props.meta}
-
       <div className="mx-auto max-w-screen-md">
-        <main className="content py-5 text-xl">{props.children}</main>
+        <main className="content mx-2 py-5 text-xl">{props.children}</main>
       </div>
     </div>
   );

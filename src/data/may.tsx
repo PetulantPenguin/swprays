@@ -180,7 +180,9 @@ const may: Month = {
         {
           session: 'evening',
           psalms: [],
-          collects: [],
+          collects: [
+            3, // Preparation for Worship
+          ],
         },
       ],
     },

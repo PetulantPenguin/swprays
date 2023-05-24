@@ -1,9 +1,34 @@
+import type { ReactNode } from 'react';
+
 const elders: Prayer[] = [
   {
     id: 1,
     title: 'Prayer for Joyful Worship',
     blurb: 'Pray that our church will worship and serve Jesus with joy.',
-    text: 'Father, help our church to see the many reasons you have given us to rejoice. May your Holy Spirit fill our hearts with awe at your glory and with praise to Jesus as we serve His Bride and celebrate the good news that we are loved by you and adopted as your children. Help us to serve and celebrate you as a church family in ways that strengthen one another through our shared rejoicing.  May this church family worship you Lord within every aspect of our lives; not just our voices, but also our time, talents, and treasures.',
+    text: (
+      <div>
+        <div className="mb-3 font-bold">Father,</div>
+        <div className="mb-3">
+          Help our church to see the many reasons you have given us to rejoice.
+        </div>
+        <div className="mb-3">
+          May your Holy Spirit fill our hearts with awe at your glory and with
+          praise to Jesus as we serve His Bride and celebrate the good news that
+          we are loved by you and adopted as your children.
+        </div>
+        <div className="mb-3">
+          Help us to serve and celebrate you as a church family in ways that
+          strengthen one another through our shared rejoicing.
+        </div>
+        <div>May this church family worship you Lord</div>
+        <div>within every aspect of our lives;</div>
+        <div>not just our voices,</div>
+        <div className="mb-3">but also our time, talents, and treasures.</div>
+        <div>
+          <span className="font-bold">Amen.</span>
+        </div>
+      </div>
+    ) as ReactNode,
     scripture: [
       {
         reference: '1 Peter 1:8',
@@ -19,7 +44,37 @@ const elders: Prayer[] = [
     id: 2,
     title: 'Prayer for Church Planting',
     blurb: 'Pray for church planters and church plants',
-    text: 'Father, we pray that those serving you by planting churches will be kept fresh and renewed in the riches of your grace. By the power of the Holy Spirit, we pray for the gospel to be powerfully at work in them and through them as they serve as ambassadors of your Son. We pray specifically for James, Joseph, Mason, Travis, and Venu as they prepare to plant churches in the greater Austin area; please give them an awareness of your presence with them and of your goodness to them as they act as your witnesses. Give them joy, wisdom, and endurance in the midst of challenges and spiritual attacks they face. Help them to trust you, and guard their families to serve you together in unity.',
+    text: (
+      <div>
+        <div className="mb-3 font-bold">Father,</div>
+        <div className="mb-3">
+          We pray that those serving you by planting churches will be kept fresh
+          and renewed in the riches of your grace.
+        </div>
+        <div className="mb-3">
+          By the power of the Holy Spirit, we pray for the gospel to be
+          powerfully at work in them and through them as they serve as
+          ambassadors of your Son.
+        </div>
+        <div className="mb-3">
+          We pray specifically for James, Joseph, Mason, Travis, and Venu as
+          they prepare to plant churches in the greater Austin area; please give
+          them an awareness of your presence with them and of your goodness to
+          them as they act as your witnesses.
+        </div>
+        <div className="mb-3">
+          Give them joy, wisdom, and endurance in the midst of challenges and
+          spiritual attacks they face.
+        </div>
+        <div className="mb-3">
+          Help them to trust you, and guard their families to serve you together
+          in unity.
+        </div>
+        <div>
+          <span className="font-bold">Amen.</span>
+        </div>
+      </div>
+    ) as ReactNode,
     scripture: [
       {
         reference: '2 Corinthians 1:8-11',

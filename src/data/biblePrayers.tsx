@@ -61,6 +61,21 @@ const biblePrayers: Prayer[] = [
       },
     ],
   },
+  {
+    id: 4,
+    intro: '',
+    scripture: [
+      {
+        reference: 'Psalm 119:105',
+        text: (
+          <div>
+            <div>Your word is a lamp to my feet</div>
+            <div>and a light to my path.</div>
+          </div>
+        ) as ReactNode,
+      },
+    ],
+  },
 ];
 
 export default biblePrayers;
