@@ -42,7 +42,7 @@ export default function NavBar({
         {yesterday !== '5/20' ? (
           <Link
             href={`/prayer/${yesterday}/${session}`}
-            className="grow border text-center leading-8"
+            className="grow border text-center leading-10"
           >
             ◀ Previous
           </Link>
@@ -51,14 +51,14 @@ export default function NavBar({
           href={`/prayer/${
             new Date().getMonth() + 1
           }/${new Date().getDate()}/${session}`}
-          className="grow border text-center leading-8"
+          className="grow border text-center leading-10"
         >
           Today
         </Link>
         {tomorrow !== '5/25' ? (
           <Link
             href={`/prayer/${tomorrow}/${session}`}
-            className="grow border text-center align-middle leading-8"
+            className="grow border text-center align-middle leading-10"
           >
             Next ▶
           </Link>
@@ -67,13 +67,13 @@ export default function NavBar({
       <div className="flex">
         <Link
           href={`/prayer/${month}/${day}/morning`}
-          className="grow border text-center leading-8"
+          className="grow border text-center leading-10"
         >
           ☀️ Morning
         </Link>
         <Link
           href={`/prayer/${month}/${day}/evening`}
-          className="grow border text-center leading-8"
+          className="grow border text-center leading-10"
         >
           Evening 🌙
         </Link>

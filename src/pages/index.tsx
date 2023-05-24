@@ -52,16 +52,14 @@ const Index = (
         />
       }
     >
-      <div className="mx-auto my-2 max-w-md px-2">
-        <Session
-          month={props.month}
-          day={props.day}
-          session={props.session}
-          psalmText={props.psalmText}
-          sessionInfo={props.sessionInfo}
-          dayInfo={props.dayInfo}
-        />
-      </div>
+      <Session
+        month={props.month}
+        day={props.day}
+        session={props.session}
+        psalmText={props.psalmText}
+        sessionInfo={props.sessionInfo}
+        dayInfo={props.dayInfo}
+      />
     </Main>
   );
 };

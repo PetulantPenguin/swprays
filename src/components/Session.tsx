@@ -116,7 +116,7 @@ export default function Session(props: Props) {
   ];
 
   return (
-    <div className="my-2 max-w-md">
+    <div className="my-2">
       <h1>
         {session === 'morning' ? 'Morning' : 'Evening'} of {getMonthName(month)}
         , {day}
