@@ -43,6 +43,7 @@ type Alert = {
 
 type Question = {
   question: string;
+  comment?: string;
 };
 
 type Session = {

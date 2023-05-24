@@ -107,6 +107,13 @@ const may: Month = {
     {
       day: 24,
       biblePrayers: [3],
+      questions: [
+        {
+          question:
+            'In what ways does the Enemy sidetrack my prayer life? Be specific.',
+          comment: `Read the words in the Lord’s Prayer below "...but deliver us from evil..." Have you considered the Evil One my be distracting you from prayer? Good news! You can pray to the Father to deliver you from the distractions of Satan and into a more intimate prayer life.`,
+        },
+      ],
       sessions: [
         {
           session: 'morning',
