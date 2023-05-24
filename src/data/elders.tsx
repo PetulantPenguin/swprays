@@ -24,9 +24,7 @@ const elders: Prayer[] = [
         <div>within every aspect of our lives;</div>
         <div>not just our voices,</div>
         <div className="mb-3">but also our time, talents, and treasures.</div>
-        <div>
-          <span className="font-bold">Amen.</span>
-        </div>
+        <div className="font-bold">Amen.</div>
       </div>
     ) as ReactNode,
     scripture: [
@@ -70,9 +68,7 @@ const elders: Prayer[] = [
           Help them to trust you, and guard their families to serve you together
           in unity.
         </div>
-        <div>
-          <span className="font-bold">Amen.</span>
-        </div>
+        <div className="font-bold">Amen.</div>
       </div>
     ) as ReactNode,
     scripture: [
@@ -91,7 +87,36 @@ const elders: Prayer[] = [
     title: 'Prayer for Evangelism',
     blurb:
       'Pray that God would place a burden on His Church to tell others about Jesus, to preach the Gospel, and to recognize the deep significance of rejecting Him.',
-    text: "Father, fill me (and everyone in our church) with overflowing gratitude for your love and deep recognition of the cost of being separated from you so that the overflow of our hearts will lead us to share your love and glory with others.  Help us to see how you are working in the lives of the people around us and how you want us to point them to you. Give me (and everyone in our church) a greater appreciation of the Gospel, and by your Holy Spirit, empower us to share the Gospel with boldness and love. Reveal to those around us the greatness of your love for them, their desperate need for Jesus, and the joy of belonging to you. Help us as a church to be good at welcoming people who are far from you and showing them the reality of your Spirit's presence in our midst as you use us to draw them into a relationship with you.",
+    text: (
+      <div>
+        <div className="mb-3 font-bold">Father,</div>
+        <div className="mb-3">
+          Fill me (and everyone in our church) with overflowing gratitude for
+          your love and deep recognition of the cost of being separated from you
+          so that the overflow of our hearts will lead us to share your love and
+          glory with others.
+        </div>
+        <div className="mb-3">
+          Help us to see how you are working in the lives of the people around
+          us and how you want us to point them to you.
+        </div>
+        <div className="mb-3">
+          Give me (and everyone in our church) a greater appreciation of the
+          Gospel, and by your Holy Spirit, empower us to share the Gospel with
+          boldness and love.
+        </div>
+        <div className="mb-3">
+          Reveal to those around us the greatness of your love for them, their
+          desperate need for Jesus, and the joy of belonging to you.
+        </div>
+        <div className="mb-3">
+          Help us as a church to be good at welcoming people who are far from
+          you and showing them the reality of your Spirit’s presence in our
+          midst as you use us to draw them into a relationship with you.
+        </div>
+        <div className="font-bold">Amen.</div>
+      </div>
+    ) as ReactNode,
     scripture: [
       {
         reference: '2 Corinthians 5:18-21',
@@ -104,7 +129,33 @@ const elders: Prayer[] = [
     title: 'Prayer for Discipleship',
     blurb:
       'Pray for God’s grace to enable us to glorify Him by making disciples of Jesus Christ among all peoples.',
-    text: 'Father, we ask you to empower us by your Holy Spirit to joyfully come under the authority of Jesus as we help others do the same through discipleship. Guide us into opportunities to be ambassadors of Christ to people from all kinds of places and walks of life. Give us the joy of seeing people come to faith and be baptized. Give us joy in obeying all you have commanded us and lead us to teach others how to enter that joy as well. Help us to have confidence that you are with us and lead us to invite others to share in the security and joy of knowing you are always with us.',
+    text: (
+      <div>
+        <div className="mb-3 font-bold">Father,</div>
+        <div className="mb-3">
+          We ask you to empower us by your Holy Spirit to joyfully come under
+          the authority of Jesus as we help others do the same through
+          discipleship.
+        </div>
+        <div className="mb-3">
+          Guide us into opportunities to be ambassadors of Christ to people from
+          all kinds of places and walks of life.
+        </div>
+        <div className="mb-3">
+          Give us the joy of seeing people come to faith and be baptized.
+        </div>
+        <div className="mb-3">
+          Give us joy in obeying all you have commanded us and lead us to teach
+          others how to enter that joy as well.
+        </div>
+        <div className="mb-3">
+          Help us to have confidence that you are with us and lead us to invite
+          others to share in the security and joy of knowing you are always with
+          us.
+        </div>
+        <div className="font-bold">Amen.</div>
+      </div>
+    ) as ReactNode,
     scripture: [
       {
         reference: 'Matthew 28:18-20',
@@ -117,11 +168,36 @@ const elders: Prayer[] = [
     title: 'Prayer for Families and Church Family',
     blurb:
       'Pray that God will protect and encourage families, marriages, and singles in the Church body, and grow as a community.',
-    text: 'Father, we thank you for the community you have given us, focused on you with a shared passion and love for one another.  Please watch over our families and help us to grow closer to you, following your love and guidance.  We ask for you to be present in our marriages, strengthening and growing our relationship with you.  We ask for wisdom and focus through singleness, that you will build a strong foundation and heart for the community built on your love.  Show us how to love each other well and allow us to help others see your love through our lives.',
+    text: (
+      <div>
+        <div className="mb-3 font-bold">Father,</div>
+        <div className="mb-3">
+          We thank you for the community you have given us, focused on you with
+          a shared passion and love for one another.
+        </div>
+        <div className="mb-3">
+          Please watch over our families and help us to grow closer to you,
+          following your love and guidance.
+        </div>
+        <div className="mb-3">
+          We ask for you to be present in our marriages, strengthening and
+          growing our relationship with you.
+        </div>
+        <div className="mb-3">
+          We ask for wisdom and focus through singleness, that you will build a
+          strong foundation and heart for the community built on your love.
+        </div>
+        <div className="mb-3">
+          Show us how to love each other well and allow us to help others see
+          your love through our lives.
+        </div>
+        <div className="font-bold">Amen.</div>
+      </div>
+    ) as ReactNode,
     scripture: [
       {
         reference: 'Colossians 3:12',
-        text: "Put on then, as God's chosen ones, holy and beloved, compassionate hearts, kindness, humility, meekness, and patience,",
+        text: 'Put on then, as God’s chosen ones, holy and beloved, compassionate hearts, kindness, humility, meekness, and patience,',
       },
     ],
   },
@@ -129,7 +205,31 @@ const elders: Prayer[] = [
     id: 6,
     title: 'Prayer for the Lost',
     blurb: '',
-    text: 'Pray specifically, by name, for one (or more) of the following to enter into a relationship with Jesus: Friends, Relatives, Acquaintances, Neighbors, Co-workers, Everyone else',
+
+    text: (
+      <div>
+        Pray specifically, by name, for one (or more) of the following to enter
+        into a relationship with Jesus:
+        <div className="pl-8">
+          <span className="text-2xl font-bold">F</span>riends
+        </div>
+        <div className="pl-8">
+          <span className="text-2xl font-bold">R</span>elatives
+        </div>
+        <div className="pl-8">
+          <span className="text-2xl font-bold">A</span>cquaintances
+        </div>
+        <div className="pl-8">
+          <span className="text-2xl font-bold">N</span>eighbors
+        </div>
+        <div className="pl-8">
+          <span className="text-2xl font-bold">C</span>o-workers
+        </div>
+        <div className="pl-8">
+          <span className="text-2xl font-bold">E</span>veryone else
+        </div>
+      </div>
+    ) as ReactNode,
     scripture: [
       {
         reference: 'Luke 15:1-7',
@@ -141,7 +241,29 @@ const elders: Prayer[] = [
     id: 7,
     title: 'Prayer for fellow Christian facing Persecution',
     blurb: '',
-    text: 'Father, we pray for our brothers and sisters facing persecution for their faith in you. We pray that by the power of the Holy Spirit, they will meet whatever this week holds with faith, hope, and love. Keep them firm in their commitment to Jesus. Give them a joyful confidence in you that will be a powerful testimony to their persecutors. Comfort the families of those who are suffering. Protect those who are vulnerable. Guide fellow Christians to their aid. Show us how we can help them.',
+    text: (
+      <div>
+        <div className="mb-3 font-bold">Father,</div>
+        <div className="mb-3">
+          We pray for our brothers and sisters facing persecution for their
+          faith in you.
+        </div>
+        <div className="mb-3">
+          We pray that by the power of the Holy Spirit, they will meet whatever
+          this week holds with faith, hope, and love.
+        </div>
+        <div>Keep them firm in their commitment to Jesus.</div>
+        <div>
+          Give them a joyful confidence in you that will be a powerful testimony
+          to their persecutors.
+        </div>
+        <div>Comfort the families of those who are suffering.</div>
+        <div>Protect those who are vulnerable.</div>
+        <div>Guide fellow Christians to their aid.</div>
+        <div className="mb-3">Show us how we can help them.</div>
+        <div className="font-bold">Amen.</div>
+      </div>
+    ) as ReactNode,
     scripture: [
       {
         reference: 'Psalm 46:1-3',
