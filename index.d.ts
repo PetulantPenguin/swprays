@@ -23,6 +23,7 @@ type Month = {
 type Day = {
   day: number;
   sessions: Session[];
+  quotes?: number[];
   alerts?: Alert[];
   questions?: Question[];
   encouragements?: Quote[];
@@ -30,9 +31,11 @@ type Day = {
 };
 
 type Quote = {
-  comment: string;
-  text: string;
-  author: string;
+  id?: number;
+  comment?: string;
+  text: any;
+  author?: string;
+  where?: string;
 };
 
 type Alert = {
@@ -49,6 +52,7 @@ type Question = {
 type Session = {
   session: string;
   psalms: number[];
+  quotes?: number[];
   collects?: number[];
   biblePrayers?: number[];
   alerts?: Alert[];

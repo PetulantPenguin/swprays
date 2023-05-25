@@ -66,14 +66,51 @@ const biblePrayers: Prayer[] = [
   },
   {
     id: 4,
-    intro: '',
+    intro:
+      'Walking through a Psalm in prayer can take on many forms. Give this one a try! Read one verse. Pray a short prayer about the content of that verse. Then read the next verse, pray. And repeat through the whole Psalm. You can try the example below. Verse in italic. Sample prayer in normal font.)',
     scripture: [
       {
-        reference: 'Psalm 119:105',
+        reference: 'Psalm 23',
         text: (
           <div>
-            <div>Your word is a lamp to my feet</div>
-            <div>and a light to my path.</div>
+            <div>1 The LORD is my shepherd; I shall not want.</div>
+            <div className="py-3 font-bold not-italic">
+              Lord, you care for me. I know I will not be in need because you
+              care for me.
+            </div>
+            <div>2 He makes me lie down in green pastures.</div>
+            <div>He leads me beside still waters.</div>
+            <div className="py-3 font-bold not-italic">
+              Father, you give me rest and lead me in places of piece. Thank
+              you.
+            </div>
+
+            <div>3 He restores my soul.</div>
+            <div>He leads me in paths of righteousness</div>
+            <div>for his name’s sake.</div>
+            <div className="py-3 font-bold not-italic">
+              God, I praise you for how you continually refresh me. God, glorify
+              Your name as you make me holy as You are Holy.
+            </div>
+
+            <div className="py-3 font-bold not-italic underline">
+              Try the rest on your own!!!
+            </div>
+            <div>
+              4 Even though I walk through the valley of the shadow of death,
+            </div>
+            <div>I will fear no evil,</div>
+            <div>for you are with me;</div>
+            <div>your rod and your staff,</div>
+            <div>they comfort me.</div>
+            <div>5 You prepare a table before me</div>
+            <div>in the presence of my enemies;</div>
+            <div>you anoint my head with oil;</div>
+            <div>my cup overflows.</div>
+            <div>6 Surely goodness and mercy shall follow me</div>
+            <div>all the days of my life,</div>
+            <div>and I shall dwell in the house of the LORD</div>
+            <div>forever.</div>
           </div>
         ) as ReactNode,
       },
