@@ -81,7 +81,7 @@ const biblePrayers: Prayer[] = [
             <div>2 He makes me lie down in green pastures.</div>
             <div>He leads me beside still waters.</div>
             <div className="py-3 font-bold not-italic">
-              Father, you give me rest and lead me in places of piece. Thank
+              Father, you give me rest and lead me in places of peace. Thank
               you.
             </div>
 
