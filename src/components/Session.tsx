@@ -82,7 +82,7 @@ function Quotes({ quoteIds }: { quoteIds: number[] }) {
   }
   return (
     <>
-      <h2>Thoughts of Others</h2>
+      <h2>A Word from the Brethren</h2>
       {quoteIds.map((x: number, i: number) => {
         return <Quote quoteId={x} key={i} />;
       })}
