@@ -7,6 +7,7 @@ import Collects from './Collects';
 import NavBar from './NavBar';
 import Prayer from './Prayer';
 import Psalm from './Psalm';
+import Quote from './Quote';
 
 type Props = {
   month: number;
@@ -75,6 +76,21 @@ function BiblePrayers({ biblePrayerIds }: { biblePrayerIds: number[] }) {
   );
 }
 
+function Quotes({ quoteIds }: { quoteIds: number[] }) {
+  if (!quoteIds.length) {
+    return null;
+  }
+  return (
+    <>
+      <h2>Thoughts of Others</h2>
+      {quoteIds.map((x: number, i: number) => {
+        return <Quote quoteId={x} key={i} />;
+      })}
+      <hr />
+    </>
+  );
+}
+
 function Psalms({ psalmText }: { psalmText: Psalms }) {
   return (
     <>
@@ -117,6 +133,11 @@ export default function Session(props: Props) {
       : []),
   ];
 
+  const quotes = [
+    ...(Array.isArray(dayInfo?.quotes) ? dayInfo.quotes : []),
+    ...(Array.isArray(sessionInfo?.quotes) ? sessionInfo.quotes : []),
+  ];
+
   const alerts = [
     ...(Array.isArray(dayInfo?.alerts) ? dayInfo.alerts : []),
     ...(Array.isArray(sessionInfo?.alerts) ? sessionInfo.alerts : []),
@@ -142,6 +163,8 @@ export default function Session(props: Props) {
       ) : null}
 
       <BiblePrayers biblePrayerIds={biblePrayerIds} />
+
+      {quotes.length ? <Quotes quoteIds={quotes} /> : null}
 
       {psalmText?.passages?.length && <Psalms psalmText={psalmText} />}
     </div>

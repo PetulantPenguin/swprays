@@ -131,20 +131,25 @@ const may: Month = {
       day: 25,
       alerts: [
         {
-          message: `Psalms are coming...`,
+          title: 'Psalms are coming...',
+          message: `We know the Book of Psalms as the song book of God's people. Throughout time, Psalms has also been the PRAYER book of God's people. This Sunday we will begin reading through the Psalms in 60 days. Start today with a short psalm to practice!`,
           level: 'commentary',
         },
+        {
+          message: `At the bottom of the page, you will see the full text of Psalm 23 with an audio player. This is how all Psalms will appear through this summer.`,
+          level: 'info',
+        },
       ],
-      biblePrayers: [2],
+      biblePrayers: [4],
       sessions: [
         {
           session: 'morning',
-          psalms: [],
+          psalms: [23],
           collects: [],
         },
         {
           session: 'evening',
-          psalms: [],
+          psalms: [23],
           collects: [],
         },
       ],
@@ -157,6 +162,7 @@ const may: Month = {
           level: 'info',
         },
       ],
+      quotes: [1],
       sessions: [
         {
           session: 'morning',
