@@ -24,18 +24,17 @@ export const getServerSideProps: GetServerSideProps = async () => {
     session,
   });
 
-  const psalms = sessionInfo?.psalms.length
+  const psalmText = sessionInfo?.psalms.length
     ? await fetchPsalms(sessionInfo?.psalms || [])
     : [];
-
   return {
     props: {
       month,
       day,
       session,
       sessionInfo,
-      psalms,
       dayInfo,
+      psalmText,
     },
   };
 };
