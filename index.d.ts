@@ -51,7 +51,7 @@ type Question = {
 
 type Session = {
   session: string;
-  psalms: number[];
+  psalms: number[] | string[];
   quotes?: number[];
   collects?: number[];
   biblePrayers?: number[];

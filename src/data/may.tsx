@@ -158,21 +158,22 @@ const may: Month = {
       day: 26,
       alerts: [
         {
-          message: `Psalms are coming.`,
-          level: 'info',
+          title: `Psalms are coming.`,
+          level: 'commentary',
+          message: `The Psalms have been prayed by Christians everywhere for thousands of years. We join each other in prayer as Southwest Bible Church. But, God's people are not just here and now. We are part of a family spanning continents and eons. We speak words spoken in all places and at all times--words of praise to the one King, the Lord Jesus Christ.`,
         },
       ],
-      quotes: [1],
       sessions: [
         {
           session: 'morning',
-          psalms: [],
+          psalms: ['103:1-6'],
           collects: [],
         },
         {
           session: 'evening',
-          psalms: [],
-          collects: [],
+          psalms: ['103:19-22'],
+          collects: [4],
+          quotes: [1],
         },
       ],
     },

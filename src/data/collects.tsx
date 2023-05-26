@@ -84,6 +84,40 @@ const collects: Prayer[] = [
     ) as ReactNode,
     where: 'Book of Common Worship (1993)',
   },
+  {
+    id: 4,
+    blurb: 'Salvation Offered Freely to All',
+    text: (
+      <div>
+        O God, you have created all things by the power of your Word, and you
+        renew the earth by your Spirit: Give the water of life to all who thirst
+        for you, that they may bring forth abundant fruit in your glorious
+        kingdom; through Jesus Christ our Lord.{' '}
+        <span className="font-bold">Amen.</span>
+      </div>
+    ) as ReactNode,
+    where: 'Book of Common Prayer (2019)',
+  },
+  {
+    id: 5,
+    blurb: 'For the Whole Church',
+    text: (
+      <div>
+        Let us pray for the holy Church throughout the world: that the Lord our
+        God may preserve her in unity, peace, and safety, bringing into divine
+        subjection all powers and principalities; and that he may grant us to
+        dwell in such peace and tranquility that we may show forth the glory of
+        God. Silence Almighty Father, we pray for your holy catholic Church.
+        Fill it with all truth, in all truth, with all peace. Where it is
+        corrupt, purify it; where it is in error, direct it; where in anything
+        it is amiss, reform it; where it is right, strengthen it; where it is in
+        want, provide for it; where it is divided, reunite it; for the sake of
+        Jesus Christ your Son our Savior.{' '}
+        <span className="font-bold">Amen.</span>
+      </div>
+    ) as ReactNode,
+    where: 'Book of Common Prayer (2019)',
+  },
 ];
 
 export default collects;
