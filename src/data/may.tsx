@@ -188,12 +188,12 @@ const may: Month = {
       sessions: [
         {
           session: 'morning',
-          psalms: [],
+          psalms: [43],
           collects: [],
         },
         {
           session: 'evening',
-          psalms: [],
+          psalms: [43],
           collects: [
             3, // Preparation for Worship
           ],
