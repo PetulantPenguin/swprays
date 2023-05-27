@@ -20,10 +20,29 @@ a:hover {
   @apply mb-2 text-2xl font-bold;
 }
 
+.content h3 {
+  @apply mb-2 text-xl font-bold;
+}
+
 .content hr {
   @apply mb-4 border border-gray-600;
 }
 
 .content ul {
   @apply my-6;
+}
+
+.video-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+
+.video-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
 }
