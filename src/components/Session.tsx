@@ -1,4 +1,6 @@
 import elders from '@/data/elders';
+import fromSWBC from '@/data/fromSWBC';
+import videos from '@/data/videos';
 import { getDayOfTheWeek, getMonthName } from '@/utils/utilities';
 
 import Alert from './Alert';
@@ -8,6 +10,7 @@ import NavBar from './NavBar';
 import Prayer from './Prayer';
 import Psalm from './Psalm';
 import Quote from './Quote';
+import YoutubeEmbed from './YoutubeEmbed';
 
 type Props = {
   month: number;
@@ -109,6 +112,54 @@ function Psalms({ psalmText }: { psalmText: Psalms }) {
   );
 }
 
+function FromSouthwest({ fromSouthwest }: { fromSouthwest: number[] }) {
+  if (!fromSouthwest.length) {
+    return null;
+  }
+  const froms = fromSWBC.filter((x: FromSWBC) => fromSouthwest.includes(x.id));
+  return (
+    <>
+      <h2>From Southwest Bible</h2>
+      {froms.map((x: any, i: number) => {
+        const { who, comment, text, video } = x;
+        return (
+          <div key={i}>
+            {who && <h3>{who} &mdash;</h3>}
+            {text && <blockquote className="px-8">{text}</blockquote>}
+            {video &&
+              video.map((v: string, j: number) => (
+                <YoutubeEmbed embedId={v} key={j} />
+              ))}
+            {comment && <div className="p-8">{comment}</div>}
+          </div>
+        );
+      })}
+      <hr />
+    </>
+  );
+}
+
+function Videos({ vIds }: { vIds: number[] }) {
+  if (!vIds.length) {
+    return null;
+  }
+  const theVideos = videos.filter((x: Video) => vIds.includes(x.id));
+  return (
+    <>
+      {theVideos.map((x: any, i: number) => {
+        const { comment, videoId } = x;
+        return (
+          <div key={i}>
+            <YoutubeEmbed embedId={videoId} />
+            {comment && <div className="p-8">{comment}</div>}
+          </div>
+        );
+      })}
+      <hr />
+    </>
+  );
+}
+
 function Alerts({ alerts }: { alerts: Alert[] }) {
   return (
     <div className="pb-2">
@@ -143,6 +194,16 @@ export default function Session(props: Props) {
     ...(Array.isArray(sessionInfo?.alerts) ? sessionInfo.alerts : []),
   ];
 
+  const froms = [
+    ...(Array.isArray(dayInfo?.fromSWBC) ? dayInfo.fromSWBC : []),
+    ...(Array.isArray(sessionInfo?.fromSWBC) ? sessionInfo.fromSWBC : []),
+  ];
+
+  const vIds = [
+    ...(Array.isArray(dayInfo?.video) ? dayInfo.video : []),
+    ...(Array.isArray(sessionInfo?.video) ? sessionInfo.video : []),
+  ];
+
   return (
     <div className="my-2">
       <h1>
@@ -162,9 +223,13 @@ export default function Session(props: Props) {
         <Collects collectList={sessionInfo.collects} />
       ) : null}
 
+      <FromSouthwest fromSouthwest={froms} />
+
       <BiblePrayers biblePrayerIds={biblePrayerIds} />
 
       {quotes.length ? <Quotes quoteIds={quotes} /> : null}
+
+      <Videos vIds={vIds} />
 
       {psalmText?.passages?.length && <Psalms psalmText={psalmText} />}
     </div>

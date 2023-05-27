@@ -28,6 +28,8 @@ type Day = {
   questions?: Question[];
   encouragements?: Quote[];
   biblePrayers?: number[];
+  fromSWBC?: number[];
+  video?: number[];
 };
 
 type Quote = {
@@ -50,6 +52,7 @@ type Question = {
 };
 
 type Session = {
+  fromSWBC?: number[];
   session: string;
   psalms: number[] | string[];
   quotes?: number[];
@@ -58,10 +61,25 @@ type Session = {
   alerts?: Alert[];
   questions?: Question[];
   verses?: Verse[];
+  video?: number[];
 };
 type Psalms = {
   query: string;
   canonical: string;
   passage_meta: any[];
   passages: string[];
+};
+
+type FromSWBC = {
+  id: number;
+  video?: string[];
+  comment?: any;
+  text?: any;
+  who?: string;
+};
+
+type Video = {
+  id: number;
+  videoId: string;
+  comment?: any;
 };
