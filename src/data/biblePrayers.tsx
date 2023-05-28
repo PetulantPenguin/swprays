@@ -127,7 +127,7 @@ const biblePrayers: Prayer[] = [
             <div>the Lord holds them in derision.</div>
             <div className="mb-4 mt-2 text-left font-bold italic">
               Lord, You are seeated in Heaven. The best of human device is so
-              far below you tha tit is laughable. I praise Your for your
+              far below you that it is laughable. I praise Your for your
               majesty. You are so much greater and high than even the biggest
               human accomplishments.
             </div>
@@ -148,7 +148,6 @@ const biblePrayers: Prayer[] = [
         ) as ReactNode,
       },
     ],
-    commentary: `This is how Jesus answered the disciples when they said, &lsquo;Lord, teach us to pray.&rsquo; Read it. Pray it. Meditate on each line. Read it again. Pray it again.`,
   },
 ];
 
