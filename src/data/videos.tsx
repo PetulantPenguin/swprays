@@ -43,5 +43,25 @@ const videos: Video[] = [
       </div>
     ) as ReactNode,
   },
+  {
+    id: 3,
+    videoId: 'ZI8Ul-bt1k8',
+    title: 'Psalm 1',
+    comment: (
+      <div>
+        <p>Psalms are songs. Sing them! 😁</p>
+      </div>
+    ) as ReactNode,
+  },
+  {
+    id: 4,
+    videoId: 'chTGdEiG3R0',
+    title: 'Psalm 4',
+  },
+  {
+    id: 5,
+    videoId: 'BFWjFsxp4Sc',
+    title: '"As for Me" adapted for Psalm 2',
+  },
 ];
 export default videos;
