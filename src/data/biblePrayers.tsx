@@ -116,6 +116,40 @@ const biblePrayers: Prayer[] = [
       },
     ],
   },
+  {
+    id: 5,
+    scripture: [
+      {
+        reference: 'Psalm 2:4-6',
+        text: (
+          <div className="text-center">
+            <div>4 He who sits in the heavens laughs;</div>
+            <div>the Lord holds them in derision.</div>
+            <div className="mb-4 mt-2 text-left font-bold italic">
+              Lord, You are seeated in Heaven. The best of human device is so
+              far below you tha tit is laughable. I praise Your for your
+              majesty. You are so much greater and high than even the biggest
+              human accomplishments.
+            </div>
+            <div>5 Then he will speak to them in his wrath,</div>
+            <div>and terrify them in his fury, saying,</div>
+            <div className="mb-4 mt-2 text-left font-bold italic">
+              God, I trust that even when things seem terrible, You care. You
+              will not let evil go unpunished. You can and will make all things
+              right. Vengence is Yours, Lord.
+            </div>
+            <div>6 “As for me, I have set my King</div>
+            <div>on Zion, my holy hill.”</div>
+            <div className="mb-4 mt-2 text-left font-bold italic">
+              Lord, I praise you seated on the throne. You are the one in charge
+              I rest in your control.
+            </div>
+          </div>
+        ) as ReactNode,
+      },
+    ],
+    commentary: `This is how Jesus answered the disciples when they said, &lsquo;Lord, teach us to pray.&rsquo; Read it. Pray it. Meditate on each line. Read it again. Pray it again.`,
+  },
 ];
 
 export default biblePrayers;

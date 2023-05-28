@@ -81,5 +81,6 @@ type FromSWBC = {
 type Video = {
   id: number;
   videoId: string;
+  title?: string;
   comment?: any;
 };

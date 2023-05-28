@@ -118,6 +118,54 @@ const collects: Prayer[] = [
     ) as ReactNode,
     where: 'Book of Common Prayer (2019)',
   },
+  {
+    id: 6,
+    blurb: 'For Joy',
+    text: (
+      <div className="text-center">
+        <div>O CHRIST,</div>
+        <div>All thy ways of mercy tend to and end in</div>
+        <div>my delight.</div>
+        <div>Thou didst weep, sorrow, suffer that I might rejoice.</div>
+        <div>For my joy thou hast sent the Comforter,</div>
+        <div>multiplied thy promises,</div>
+        <div>shown me my future happiness,</div>
+        <div>given me a living fountain.</div>
+        <div>Thou art preparing joy for me and me for joy;</div>
+        <div>I pray for joy, wait for joy, long for joy;</div>
+        <div>give me more than I can hold, desire, or think of.</div>
+        <div>Measure out to me my times and degrees of joy,</div>
+        <div>at my work, business, duties.</div>
+        <div>If I weep at night, give me joy in the morning.</div>
+        <div>Let me rest in the thought of thy love,</div>
+        <div>pardon for sin, my title to heaven,</div>
+        <div>my future unspotted state.</div>
+        <div>I am an unworthy recipient of thy grace.</div>
+        <div>I often disesteem thy blood and slight thy love,</div>
+        <div>but can in repentance draw water</div>
+        <div>from the wells of thy joyous forgiveness.</div>
+        <div>Let my heart leap towards the eternal sabbath,</div>
+        <div>where the work of redemption, sanctiﬁcation,</div>
+        <div>preservation, gloriﬁcation is ﬁnished</div>
+        <div>and perfected for ever,</div>
+        <div>where thou wilt rejoice over me with joy.</div>
+        <div>There is no joy like the joy of heaven,</div>
+        <div>for in that state are no sad divisions,</div>
+        <div>unchristian quarrels,</div>
+        <div>contentions, evil designs,</div>
+        <div>weariness, hunger, cold,</div>
+        <div>sadness, sin, suffering,</div>
+        <div>persecutions, toils of duty.</div>
+        <div>O healthful place where none are sick!</div>
+        <div>O happy land where all are kings!</div>
+        <div>O holy assembly where all are priests!</div>
+        <div>How free a state where none are servants</div>
+        <div>except to thee!</div>
+        <div>Bring me speedily to the land of joy.</div>
+      </div>
+    ) as ReactNode,
+    where: 'Valley of Vision',
+  },
 ];
 
 export default collects;

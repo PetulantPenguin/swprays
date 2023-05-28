@@ -216,11 +216,13 @@ const may: Month = {
           session: 'morning',
           psalms: [1, 2],
           collects: [],
+          video: [3, 5],
+          biblePrayers: [5],
         },
         {
           session: 'evening',
           psalms: [3],
-          collects: [],
+          collects: [6],
         },
       ],
     },
@@ -231,6 +233,7 @@ const may: Month = {
           session: 'morning',
           psalms: [4, 5],
           collects: [],
+          video: [4],
         },
         {
           session: 'evening',

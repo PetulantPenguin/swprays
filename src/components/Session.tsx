@@ -147,9 +147,10 @@ function Videos({ vIds }: { vIds: number[] }) {
   return (
     <>
       {theVideos.map((x: any, i: number) => {
-        const { comment, videoId } = x;
+        const { comment, videoId, title } = x;
         return (
           <div key={i}>
+            {title && <h3>{title}</h3>}
             <YoutubeEmbed embedId={videoId} />
             {comment && <div className="p-8">{comment}</div>}
           </div>
