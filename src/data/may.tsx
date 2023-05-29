@@ -249,7 +249,7 @@ const may: Month = {
       alerts: [
         {
           title: 'Prayer Arena - 🌴 Root, ✂️ Prune, 🍇 Fruit',
-          message: `This Summer of Prayer is not merely a chance to pray, but a chance to grow in your prayer life. You will begin to see a new 🌴 Root, ✂️ Prune, 🍇 Fruit section. Here you will find questions to consider, teachign from the elders, verses to inform your transoformation, and chances to obey God in how He directing your prayer life.`,
+          message: `This Summer of Prayer is not merely a chance to pray, but a chance to grow in your prayer life. You will begin to see a new 🌴 Root, ✂️ Prune, 🍇 Fruit section. Here you will find questions to consider, teaching from the elders, verses to inform your transformation, and chances to obey God in how He directing your prayer life.`,
           level: 'commentary',
         },
       ],
@@ -275,7 +275,7 @@ const may: Month = {
       alerts: [
         {
           title: 'Prayer Arena - 🌴 Root, ✂️ Prune, 🍇 Fruit',
-          message: `This Summer of Prayer is not merely a chance to pray, but a chance to grow in your prayer life. You will begin to see a new 🌴 Root, ✂️ Prune, 🍇 Fruit section. Here you will find questions to consider, teachign from the elders, verses to inform your transoformation, and chances to obey God in how He directing your prayer life.`,
+          message: `This Summer of Prayer is not merely a chance to pray, but a chance to grow in your prayer life. You will begin to see a new 🌴 Root, ✂️ Prune, 🍇 Fruit section. Here you will find questions to consider, teaching from the elders, verses to inform your transformation, and chances to obey God in how He directing your prayer life.`,
           level: 'warn',
         },
       ],

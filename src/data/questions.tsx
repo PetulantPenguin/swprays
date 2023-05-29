@@ -103,8 +103,8 @@ const questions: Question[] = [
             <h4>Opportunity to Obey</h4>
             <p>
               As we seek to grow in confidence that God loves us and cares for
-              us, we can memorize and meditate on places in His Word where He
-              tells us what He is doing.
+              us, we can memorize and meditate on His Word where He tells us
+              what He is doing.
             </p>
             <Verse
               verse={{
