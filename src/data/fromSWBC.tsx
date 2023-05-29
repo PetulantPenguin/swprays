@@ -31,7 +31,7 @@ const fromSWBC: FromSWBC[] = [
           Purpose prayer today.
         </div>
         <ul className="list-inside list-disc pb-4">
-          <li>Listen below to his message &quotFamily on Mission.&quot</li>
+          <li>Listen below to his message &quot;Family on Mission.&quot;</li>
           <li>
             Check out the new church:{' '}
             <a href="https://taylorbible.org/">Taylor Bible Church</a>
