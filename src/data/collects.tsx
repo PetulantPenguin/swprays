@@ -185,7 +185,7 @@ const collects: Prayer[] = [
   },
   {
     id: 8,
-    blurb: 'Memorial Day & Remembrance Day',
+    blurb: 'Memorial Day',
     text: (
       <div className="text-center">
         O King and Judge of the nations: We remember before you with grateful
