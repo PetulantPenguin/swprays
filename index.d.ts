@@ -20,11 +20,17 @@ type Month = {
   days: Day[];
 };
 
+type PacketQuestion = {
+  questionIds: string[];
+  days: number[];
+};
+
 type Day = {
   day: number;
   sessions: Session[];
   quotes?: number[];
   alerts?: Alert[];
+  packetQuestions?: PacketQuestion;
   questions?: Question[];
   encouragements?: Quote[];
   biblePrayers?: number[];
@@ -47,8 +53,11 @@ type Alert = {
 };
 
 type Question = {
-  question: string;
+  id?: string;
+  question: any;
   comment?: string;
+  scriptures?: any[];
+  readings?: any[];
 };
 
 type Session = {
@@ -60,6 +69,7 @@ type Session = {
   biblePrayers?: number[];
   alerts?: Alert[];
   questions?: Question[];
+  packetQuestions?: PacketQuestion[];
   verses?: Verse[];
   video?: number[];
 };

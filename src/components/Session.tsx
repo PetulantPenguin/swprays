@@ -1,5 +1,6 @@
 import elders from '@/data/elders';
 import fromSWBC from '@/data/fromSWBC';
+import questions from '@/data/questions';
 import videos from '@/data/videos';
 import { getDayOfTheWeek, getMonthName } from '@/utils/utilities';
 
@@ -10,6 +11,7 @@ import NavBar from './NavBar';
 import Prayer from './Prayer';
 import Psalm from './Psalm';
 import Quote from './Quote';
+import Verse from './Verse';
 import YoutubeEmbed from './YoutubeEmbed';
 
 type Props = {
@@ -21,11 +23,48 @@ type Props = {
   dayInfo: Day;
 };
 
-function Questions({ questions }: { questions: Question[] }) {
+function PacketInfo({ packetQuestions }: { packetQuestions?: PacketQuestion }) {
+  if (!packetQuestions) {
+    return null;
+  }
+  const theQuestions = questions.filter((x: any) =>
+    packetQuestions.questionIds.includes(x.id)
+  );
+
+  if (!theQuestions) {
+    return null;
+  }
   return (
     <>
-      <h2>Questions for Reflection</h2>
-      {questions.map((q: Question, i: number) => (
+      <h2>🌴 Root, ✂️ Prune, 🍇 Fruit</h2>
+      {theQuestions.map((q: Question, i: number) => (
+        <div key={i} className="mb-4 border-b border-black p-6">
+          <div key={i} className="font-semibold italic">
+            {q.question}
+          </div>
+          {q.scriptures?.map((x: any, j: number) => {
+            if (x.id === 0 || packetQuestions.days.includes(x.id)) {
+              return (
+                <>
+                  {x.reference ? <Verse key={j} verse={x} /> : null}
+                  {x.comment ? (
+                    <div className="text-base">{x.comment}</div>
+                  ) : null}
+                </>
+              );
+            }
+            return null;
+          })}
+        </div>
+      ))}
+    </>
+  );
+}
+
+function Questions({ quests }: { quests: Question[] }) {
+  return (
+    <>
+      {quests.map((q: Question, i: number) => (
         <>
           <div
             key={i}
@@ -218,7 +257,9 @@ export default function Session(props: Props) {
 
       {session === 'morning' && <SharedPurpose month={month} day={day} />}
 
-      {dayInfo?.questions && <Questions questions={dayInfo.questions} />}
+      <PacketInfo packetQuestions={dayInfo.packetQuestions} />
+
+      {dayInfo?.questions && <Questions quests={dayInfo.questions} />}
 
       {session === 'evening' && sessionInfo.collects ? (
         <Collects collectList={sessionInfo.collects} />
