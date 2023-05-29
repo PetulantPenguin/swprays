@@ -183,6 +183,22 @@ const collects: Prayer[] = [
     ) as ReactNode,
     where: 'Book of Common Prayer (2019)',
   },
+  {
+    id: 8,
+    blurb: 'Memorial Day & Remembrance Day',
+    text: (
+      <div className="text-center">
+        O King and Judge of the nations: We remember before you with grateful
+        hearts the men and women of our armed forces, who in the day of decision
+        ventured much for the liberties we now enjoy; grant that we may not rest
+        until all the people of this land share the benefits of true freedom and
+        gladly accept its disciplines; through Jesus Christ our Lord, who with
+        you and the Holy Spirit lives and reigns, now and for ever.{' '}
+        <span className="font-bold">Amen.</span>
+      </div>
+    ) as ReactNode,
+    where: 'Book of Common Prayer (2019)',
+  },
 ];
 
 export default collects;
