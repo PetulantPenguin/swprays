@@ -228,6 +228,7 @@ const may: Month = {
     },
     {
       day: 29,
+      fromSWBC: [2],
       sessions: [
         {
           session: 'morning',
@@ -238,7 +239,8 @@ const may: Month = {
         {
           session: 'evening',
           psalms: [6],
-          collects: [],
+          collects: [7],
+          video: [6],
         },
       ],
     },

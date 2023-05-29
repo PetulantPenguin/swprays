@@ -63,5 +63,15 @@ const videos: Video[] = [
     videoId: 'BFWjFsxp4Sc',
     title: '"As for Me" adapted for Psalm 2',
   },
+  {
+    id: 6,
+    videoId: '9q9ByPsXezM',
+    title: 'Reading of Psalm 1-41',
+    comment: (
+      <div>
+        <p>A reading of the Psalms as you prepare for the end of day.</p>
+      </div>
+    ) as ReactNode,
+  },
 ];
 export default videos;
