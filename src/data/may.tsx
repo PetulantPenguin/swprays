@@ -239,7 +239,7 @@ const may: Month = {
         {
           session: 'evening',
           psalms: [6],
-          collects: [7],
+          collects: [7, 8],
           video: [6],
         },
       ],
