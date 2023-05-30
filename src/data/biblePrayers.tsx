@@ -98,7 +98,7 @@ const biblePrayers: Prayer[] = [
             <div>2 He makes me lie down in green pastures.</div>
             <div>He leads me beside still waters.</div>
             <div className="py-3 font-bold not-italic">
-              Father, you give me rest and lead me in places of piece. Thank
+              Father, you give me rest and lead me in places of peace. Thank
               you.
             </div>
 
@@ -143,9 +143,9 @@ const biblePrayers: Prayer[] = [
             <div>4 He who sits in the heavens laughs;</div>
             <div>the Lord holds them in derision.</div>
             <div className="mb-4 mt-2 text-left font-bold italic">
-              Lord, You are seeated in Heaven. The best of human device is so
-              far below you tha tit is laughable. I praise Your for your
-              majesty. You are so much greater and high than even the biggest
+              Lord, You are seated in Heaven. The best of human devices is so
+              far below you that it is laughable. I praise Your for your
+              majesty. You are so much greater and higher than even the biggest
               human accomplishments.
             </div>
             <div>5 Then he will speak to them in his wrath,</div>
