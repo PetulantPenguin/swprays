@@ -199,6 +199,57 @@ const collects: Prayer[] = [
     ) as ReactNode,
     where: 'Book of Common Prayer (2019)',
   },
+  {
+    id: 9,
+    blurb: 'Knowing Desiring Loving',
+    text: (
+      <>
+        I beg you, most loving Savior, to reveal yourself to us, that knowing
+        you we may desire you, that desiring you we may love you, that loving
+        you we may ever hold you in our thoughts.{' '}
+        <span className="font-bold">Amen.</span>
+      </>
+    ) as ReactNode,
+    where: 'Saint Columbanus (543-615)',
+  },
+  {
+    id: 10,
+    blurb: 'Shepherd through the Night',
+    text: (
+      <div className="text-center">
+        Watch, O Lord,
+        <br />
+        with those who wake,
+        <br />
+        or watch or weep tonight,
+        <br />
+        and give your angels charge
+        <br />
+        over those who sleep.
+        <br />
+        <br />
+        Tend your sick ones,
+        <br />
+        O Lord Jesus Christ;
+        <br />
+        rest your weary ones;
+        <br />
+        bless your dying ones;
+        <br />
+        soothe your suffering ones;
+        <br />
+        pity your afflicted ones;
+        <br />
+        shield your joyous ones;
+        <br />
+        and all for your love&apos;s sake.
+        <br />
+        <br />
+        Amen.
+      </div>
+    ) as ReactNode,
+    where: 'St. Augustine',
+  },
 ];
 
 export default collects;

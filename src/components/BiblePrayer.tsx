@@ -9,13 +9,13 @@ function BiblePrayerFormat({ prayer }: { prayer?: Prayer }) {
   const { blurb, text, scripture, commentary, intro } = prayer;
   return (
     <div className="pb-8">
-      {intro && <p className="text-base">{intro}</p>}
-      {text && <p className="pl-2">{text}</p>}
+      {intro && <div className="text-base">{intro}</div>}
+      {text && <div className="pl-2">{text}</div>}
       {scripture?.map((x: any, i: number) => (
         <Verse verse={x} key={i} />
       ))}
       {blurb && <p className="text-xl font-bold italic">{blurb}</p>}
-      {commentary && <p className="text-base">{commentary}</p>}
+      {commentary && <div className="text-base">{commentary}</div>}
     </div>
   );
 }

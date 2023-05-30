@@ -3,6 +3,10 @@ const june: Month = {
   days: [
     {
       day: 1,
+      packetQuestions: {
+        questionIds: ['A5'],
+        days: [3],
+      },
       sessions: [
         {
           session: 'morning',
@@ -18,6 +22,10 @@ const june: Month = {
     },
     {
       day: 2,
+      packetQuestions: {
+        questionIds: ['A5'],
+        days: [4],
+      },
       sessions: [
         {
           session: 'morning',
@@ -33,6 +41,10 @@ const june: Month = {
     },
     {
       day: 3,
+      packetQuestions: {
+        questionIds: ['A5'],
+        days: [5],
+      },
       sessions: [
         {
           session: 'morning',
