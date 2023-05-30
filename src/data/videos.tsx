@@ -73,5 +73,15 @@ const videos: Video[] = [
       </div>
     ) as ReactNode,
   },
+  {
+    id: 7,
+    videoId: 'bPSv8vredVs',
+    title: 'Psalm 8 (How Majestic Is Your Name) | Shane & Shane',
+  },
+  {
+    id: 8,
+    videoId: 's7fYvt1PAV8',
+    title: 'The Corner Room - "Psalm 11" (Lyric Video)',
+  },
 ];
 export default videos;

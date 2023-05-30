@@ -47,8 +47,36 @@ const questions: Question[] = [
             know that we have the requests that we have asked of Him.”
           </>
         ),
-        comment:
-          'That is amazing! The God of the universe hears us! And we have confidence that He will give us good things. He even says it in His Word that He works for our good:',
+        comment: (
+          <>
+            That is amazing! The God of the universe hears us! He wants to know
+            what we need. He cares about what we care about. So, when God says
+            He will give us the things we ask for, He actually wants to know
+            what we want. And He delights to hear our prayers:
+          </>
+        ) as ReactNode,
+      },
+      {
+        id: 3,
+        reference: 'Proverbs 15:8 (NKJV)',
+        text: (
+          <>
+            The sacrifice of the wicked is an abomination to the Lord,
+            <br />
+            <span className="font-bold">
+              But the prayer of the upright is His delight.
+            </span>
+          </>
+        ),
+        comment: (
+          <>
+            God wants to hear your prayers. And God enjoys hearing your prayers.{' '}
+            <span className="font-bold">
+              What does it mean to you when you hear that your prayers bring God
+              joy?
+            </span>
+          </>
+        ) as ReactNode,
       },
       {
         id: 4,
@@ -123,7 +151,7 @@ const questions: Question[] = [
                     filled with all the fullness of God.
                     <div>
                       <span className="font-bold underline">
-                        Bonus: Ephesians 20-21
+                        Bonus: Ephesians 3:20-21
                       </span>
                       <div>
                         Now to him who is able to do far more abundantly than
@@ -144,5 +172,3 @@ const questions: Question[] = [
   },
 ];
 export default questions;
-
-// For this reason I bow my knees before the Father, from whom every family in heaven and on earth is named, that according to the riches of his glory he may grant you to be strengthened with power through his Spirit in your inner being, so that Christ may dwell in your hearts through faith—that you, being rooted and grounded in love, may have strength to comprehend with all the saints what is the breadth and length and height and depth, and to know the love of Christ that surpasses knowledge, that you may be filled with all the fullness of God.

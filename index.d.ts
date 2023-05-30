@@ -2,9 +2,9 @@ type Prayer = {
   id: number;
   title?: string;
   blurb?: string;
-  intro?: string;
+  intro?: any;
   text?: any;
-  commentary?: string;
+  commentary?: any;
   reference?: string;
   scripture?: Verse[];
   where?: string;

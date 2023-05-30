@@ -1,3 +1,5 @@
+import { Fragment } from 'react';
+
 import elders from '@/data/elders';
 import fromSWBC from '@/data/fromSWBC';
 import questions from '@/data/questions';
@@ -45,12 +47,12 @@ function PacketInfo({ packetQuestions }: { packetQuestions?: PacketQuestion }) {
           {q.scriptures?.map((x: any, j: number) => {
             if (x.id === 0 || packetQuestions.days.includes(x.id)) {
               return (
-                <>
-                  {x.reference ? <Verse key={j} verse={x} /> : null}
+                <Fragment key={j}>
+                  {x.reference ? <Verse verse={x} /> : null}
                   {x.comment ? (
                     <div className="text-base">{x.comment}</div>
                   ) : null}
-                </>
+                </Fragment>
               );
             }
             return null;

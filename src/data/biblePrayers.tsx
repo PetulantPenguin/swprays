@@ -17,12 +17,29 @@ const biblePrayers: Prayer[] = [
       },
     ],
     blurb: 'One way to pray this scripture:',
-    commentary: `Lord, I thank you that I don’t have to be anxious about anything. I thank you that I can lay every burden and every care at your feet. Instead of trying to fix my problems on my own, I thank you that I can give them to you. Thank you Lord that when I give you my anxiety and my worries, you give me your peace. Even when things may be going wrong, internally I can have peace. And Lord, help me to do this. Help me to lay these anxieties at your feet. Help me to give them to you even when I’d much rather hang on to them. Help me to trust you to do what only you can do instead of trying to do what I cannot do. Thank you Lord. Amen.`,
+    commentary: (
+      <>
+        Lord, I thank you that I don&apos;t have to be anxious about anything. I
+        thank you that I can lay every burden and every care at your feet.
+        Instead of trying to fix my problems on my own, I thank you that I can
+        give them to you. Thank you Lord that when I give you my anxiety and my
+        worries, you give me your peace. Even when things may be going wrong,
+        internally I can have peace. And Lord, help me to do this. Help me to
+        lay these anxieties at your feet. Help me to give them to you even when
+        I&apos;d much rather hang on to them. Help me to trust you to do what
+        only you can do instead of trying to do what I cannot do. Thank you
+        Lord. Amen.
+      </>
+    ) as ReactNode,
   },
   {
     id: 2,
-    intro:
-      'Short passages and verses can be meditated on and prayed over multiple times throughout the day. Give it a try with this one verse!',
+    intro: (
+      <>
+        Short passages and verses can be meditated on and prayed over multiple
+        times throughout the day. Give it a try with this one verse!
+      </>
+    ) as ReactNode,
     scripture: [
       {
         reference: 'Psalm 119:105',
@@ -148,7 +165,58 @@ const biblePrayers: Prayer[] = [
         ) as ReactNode,
       },
     ],
-    commentary: `This is how Jesus answered the disciples when they said, &lsquo;Lord, teach us to pray.&rsquo; Read it. Pray it. Meditate on each line. Read it again. Pray it again.`,
+    commentary: (
+      <>
+        This is how Jesus answered the disciples when they said, &lsquo;Lord,
+        teach us to pray.&rsquo; Read it. Pray it. Meditate on each line. Read
+        it again. Pray it again.
+      </>
+    ) as ReactNode,
+  },
+  {
+    id: 6,
+    intro: (
+      <>
+        <span className="underline">About Lament</span>: You will find many
+        Psalms where the Psalmist cries out to God in pain. These are Psalms of
+        Lament. Psalm 10 is one of these. The heart-felt emotion comes from deep
+        pain of a man, even a king, living in a troubled world. The Psalmists
+        were real people just like us, crying out to God about the pain of
+        everyday life.
+      </>
+    ) as ReactNode,
+    scripture: [
+      {
+        reference: 'Psalm 10:1',
+        text: (
+          <>
+            Why, O LORD, do you stand far away? Why do you hide yourself in
+            times of trouble?
+          </>
+        ) as ReactNode,
+      },
+    ],
+    commentary: (
+      <>
+        <div></div>
+        <div className="p-6">
+          As you study Lamentations, out hope is that you might begin to become
+          fluent in the dialect of lament. Just as you use other prayer
+          dialects&mdash;adoration, thanksgiving, confession, and so
+          on&mdash;lament is a biblical and needed form of prayer. It is pouring
+          out your complaint to God.
+          <div className="mb-4 text-right font-bold italic">
+            From <span className="underline">Lamentations</span> (page 11)
+            <br />
+            by Blanton & Gordon
+          </div>
+          <div>
+            📕 Southwest Bible Church women are meeting for a study of lament
+            this summer. Contact Megan McCarthy for more info!
+          </div>
+        </div>
+      </>
+    ) as ReactNode,
   },
 ];
 
