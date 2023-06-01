@@ -83,5 +83,10 @@ const videos: Video[] = [
     videoId: 's7fYvt1PAV8',
     title: 'The Corner Room - "Psalm 11" (Lyric Video)',
   },
+  {
+    id: 9,
+    videoId: 'mBv21Q_WJp0',
+    title: 'The Corner Room - "Psalm 13" (Lyric Video)',
+  },
 ];
 export default videos;
