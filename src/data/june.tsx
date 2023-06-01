@@ -12,11 +12,13 @@ const june: Month = {
           session: 'morning',
           psalms: [13, 14],
           collects: [],
+          video: [9],
         },
         {
           session: 'evening',
           psalms: [15],
           collects: [],
+          biblePrayers: [7, 8],
         },
       ],
     },

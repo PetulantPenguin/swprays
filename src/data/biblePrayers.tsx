@@ -218,6 +218,47 @@ const biblePrayers: Prayer[] = [
       </>
     ) as ReactNode,
   },
+  {
+    id: 7,
+    intro: 'Your prayers are offered to God like incense.',
+    scripture: [
+      {
+        reference: 'Revelation 8:3-4',
+        text: (
+          <div>
+            And another angel came and stood at the altar with a golden censer,
+            and he was given much incense to offer with the prayers of all the
+            saints on the golden altar before the throne, and the smoke of the
+            incense, with the prayers of the saints, rose before God from the
+            hand of the angel.
+          </div>
+        ) as ReactNode,
+      },
+    ],
+  },
+  {
+    id: 8,
+    intro: 'Incense is described as a pleasing aroma to the Lord.',
+    scripture: [
+      {
+        reference: 'Leviticus 6:15',
+        text: (
+          <div>
+            And one shall take from it a handful of the fine flour of the grain
+            offering and its oil and all the frankincense that is on the grain
+            offering and burn this as its memorial portion on the altar, a
+            pleasing aroma to the Lord.
+          </div>
+        ) as ReactNode,
+      },
+    ],
+    commentary: (
+      <>
+        What difference does it make to think of your prayers as an offering
+        that is pleasing to God?
+      </>
+    ) as ReactNode,
+  },
 ];
 
 export default biblePrayers;
