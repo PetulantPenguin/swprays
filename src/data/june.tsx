@@ -33,11 +33,12 @@ const june: Month = {
           session: 'morning',
           psalms: [16, 17],
           collects: [],
+          video: [10],
         },
         {
           session: 'evening',
           psalms: [18],
-          collects: [],
+          collects: [11],
         },
       ],
     },
