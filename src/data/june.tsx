@@ -67,12 +67,14 @@ const june: Month = {
         {
           session: 'morning',
           psalms: [22, 23],
-          collects: [],
+          collects: [12],
+          video: [11, 12, 13],
         },
         {
           session: 'evening',
           psalms: [24],
           collects: [],
+          video: [14, 15, 16],
         },
       ],
     },
@@ -267,22 +269,7 @@ const june: Month = {
       sessions: [
         {
           session: 'morning',
-          psalms: [],
-          collects: [],
-        },
-        {
-          session: 'evening',
-          psalms: [],
-          collects: [],
-        },
-      ],
-    },
-    {
-      day: 18,
-      sessions: [
-        {
-          session: 'morning',
-          psalms: [57, 58],
+          psalms: [57.58],
           collects: [],
         },
         {
@@ -293,7 +280,7 @@ const june: Month = {
       ],
     },
     {
-      day: 19,
+      day: 18,
       sessions: [
         {
           session: 'morning',
@@ -308,7 +295,7 @@ const june: Month = {
       ],
     },
     {
-      day: 20,
+      day: 19,
       sessions: [
         {
           session: 'morning',
@@ -323,7 +310,7 @@ const june: Month = {
       ],
     },
     {
-      day: 21,
+      day: 20,
       sessions: [
         {
           session: 'morning',
@@ -338,7 +325,7 @@ const june: Month = {
       ],
     },
     {
-      day: 22,
+      day: 21,
       sessions: [
         {
           session: 'morning',
@@ -353,7 +340,7 @@ const june: Month = {
       ],
     },
     {
-      day: 23,
+      day: 22,
       sessions: [
         {
           session: 'morning',
@@ -368,7 +355,7 @@ const june: Month = {
       ],
     },
     {
-      day: 24,
+      day: 23,
       sessions: [
         {
           session: 'morning',
@@ -378,6 +365,21 @@ const june: Month = {
         {
           session: 'evening',
           psalms: [74],
+          collects: [],
+        },
+      ],
+    },
+    {
+      day: 24,
+      sessions: [
+        {
+          session: 'morning',
+          psalms: [],
+          collects: [],
+        },
+        {
+          session: 'evening',
+          psalms: [],
           collects: [],
         },
       ],
