@@ -93,5 +93,35 @@ const videos: Video[] = [
     videoId: 'apLjJIfLq-o',
     title: 'The Corner Room - "Psalm 16" (Lyric Video)',
   },
+  {
+    id: 11,
+    videoId: 'GKgsJPAm3bg',
+    title: 'Psalm 23 | The Corner Room',
+  },
+  {
+    id: 12,
+    videoId: 'Xo0BiZ_63n0',
+    title: 'Shepherd (adapted from Psalm 23) - Lorshing',
+  },
+  {
+    id: 13,
+    videoId: 'Mo3HgtT_OiE',
+    title: 'Psalm 23 - Surely Goodness, Surely Mercy - by Shane & Shane',
+  },
+  {
+    id: 14,
+    videoId: 'FsOZ3UsUbNA',
+    title: 'Psalm 24 (The King of Glory) - Keith and Kristyn Getty',
+  },
+  {
+    id: 15,
+    videoId: 'Rv55qS7v2',
+    title: 'Give Us Clean Hands - Chris Tomlin',
+  },
+  {
+    id: 16,
+    videoId: 'GlIi90b4wIw',
+    title: 'King Of Glory - Third Day',
+  },
 ];
 export default videos;

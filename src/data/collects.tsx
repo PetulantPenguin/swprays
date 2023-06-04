@@ -265,6 +265,19 @@ const collects: Prayer[] = [
     ) as ReactNode,
     where: 'Book of Common Prayer (2019)',
   },
+  {
+    id: 12,
+    blurb: 'Preparation for Public Worship',
+    text: (
+      <div>
+        Guide and direct us, O Lord, always and everywhere with your holy light,
+        that we may discern with clear vision your presence among us, and
+        partake with worthy intention of your divine mysteries. We ask this for
+        Jesus Christ’s sake. <span className="font-bold">Amen.</span>
+      </div>
+    ) as ReactNode,
+    where: 'Book of Common Prayer (2019)',
+  },
 ];
 
 export default collects;
