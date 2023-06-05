@@ -29,10 +29,11 @@ function PacketInfo({ packetQuestions }: { packetQuestions?: PacketQuestion }) {
   if (!packetQuestions) {
     return null;
   }
+  console.log({ packetQuestions });
   const theQuestions = questions.filter((x: any) =>
     packetQuestions.questionIds.includes(x.id)
   );
-
+  console.log({ theQuestions });
   if (!theQuestions) {
     return null;
   }
