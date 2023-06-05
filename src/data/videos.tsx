@@ -123,5 +123,25 @@ const videos: Video[] = [
     videoId: 'GlIi90b4wIw',
     title: 'King Of Glory - Third Day',
   },
+  {
+    id: 17,
+    videoId: 'wGgsmCEgf4w',
+    title: 'Tori Kelly - Psalm 42 (Live) [Thanks, Christina Cohee!]',
+  },
+  {
+    id: 18,
+    videoId: '-9ZpEuUhSVc',
+    title: 'Psalm 25 (Show Me Your Ways) by The Psalms Project (Lyric Video)',
+  },
+  {
+    id: 19,
+    videoId: 'fLLGwt-wZbI',
+    title: 'Psalm 27 - Jonathan Ogden (Official Lyric Video)',
+  },
+  {
+    id: 20,
+    videoId: 'SbZOUtSiW80',
+    title: 'Psalm 27 | Motion Worship',
+  },
 ];
 export default videos;

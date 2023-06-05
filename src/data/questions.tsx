@@ -170,5 +170,70 @@ const questions: Question[] = [
       },
     ],
   },
+
+  {
+    id: 'B1',
+    question: (
+      <span>
+        Do I tend to see prayer as an obligation or an opportunity, and why?
+      </span>
+    ) as ReactNode,
+
+    scriptures: [
+      {
+        id: 1,
+        reference: 'Daniel 6:10b',
+        text: 'He got down on his knees three times a day and prayed and gave thanks before his God, as he had done previously.',
+        comment: (
+          <div className="text-xl">
+            <p>Does the thought of praying three times a day seem annoying?</p>
+            <p>What about &quot;ceaselessly&quot; day and night forever?</p>
+          </div>
+        ),
+      },
+      {
+        id: 1,
+        reference: 'Revelation 4:8-11',
+        text: (
+          <div>
+            <p>
+              And the four living creatures, each of them with six wings, are
+              full of eyes all around and within, and day and night they never
+              cease to say,
+            </p>
+            <p className="text-center">
+              “Holy, holy, holy, is the Lord God Almighty,
+              <br />
+              who was and is and is to come!”
+            </p>
+            <p>
+              9 And whenever the living creatures give glory and honor and
+              thanks to him who is seated on the throne, who lives forever and
+              ever, 10 the twenty-four elders fall down before him who is seated
+              on the throne and worship him who lives forever and ever. They
+              cast their crowns before the throne, saying,
+            </p>
+            <p className="text-center">
+              11 “Worthy are you, our Lord and God,
+              <br />
+              to receive glory and honor and power,
+              <br />
+              for you created all things,
+              <br />
+              and by your will they existed and were created.”
+            </p>
+          </div>
+        ) as ReactNode,
+        comment: (
+          <div className="text-xl">
+            <p>
+              <span className="font-bold italic">Question</span>: Do I see
+              prayer as a Chore or a chance to Adore?
+            </p>
+          </div>
+        ),
+      },
+    ],
+  },
 ];
 export default questions;
