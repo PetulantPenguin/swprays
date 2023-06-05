@@ -126,7 +126,25 @@ const videos: Video[] = [
   {
     id: 17,
     videoId: 'wGgsmCEgf4w',
-    title: 'Tori Kelly - Psalm 42 (Live) [Thanks, Christina Cohee!]',
+    title: 'Tori Kelly - Psalm 42 (Live)',
+    comment: (
+      <div>
+        <p>Thanks, Christina Cohee!</p>
+        <p>
+          If you have something you would like to say, share, add to the prayer
+          app, let me know!
+        </p>
+        <div>
+          Email:{' '}
+          <a
+            href="mailto:prayerapp@fastfox.aleeas.com"
+            className="dark:text-blue-400 dark:underline"
+          >
+            prayerapp@fastfox.aleeas.com
+          </a>
+        </div>
+      </div>
+    ) as ReactNode,
   },
   {
     id: 18,
@@ -142,6 +160,61 @@ const videos: Video[] = [
     id: 20,
     videoId: 'SbZOUtSiW80',
     title: 'Psalm 27 | Motion Worship',
+  },
+  {
+    id: 21,
+    videoId: 'UuuZMg6NVeA',
+    title: 'Every Praise | Hezekiah Walker',
+    comment: (
+      <div>
+        <p className="text-center font-bold italic">
+          Every praise is to our God
+          <br />
+          Every word of worship
+          <br />
+          With one accord
+        </p>
+        <p>
+          If you have something you would like to say, share, add to the prayer
+          app, let me know!
+        </p>
+        <div>
+          Email:{' '}
+          <a
+            href="mailto:prayerapp@fastfox.aleeas.com"
+            className="dark:text-blue-400 dark:underline"
+          >
+            prayerapp@fastfox.aleeas.com
+          </a>
+        </div>
+      </div>
+    ) as ReactNode,
+  },
+
+  {
+    id: 22,
+    videoId: 'qOC_IM4aB2I',
+    title: 'Matthew 11:28-30 | Corner Room',
+    comment: (
+      <div>
+        <p>
+          Phil asked us to memorize Matthew 11:28-29 this summer. Sometimes
+          memorization is easier in song, so this video will reappear throughout
+          the summer.
+        </p>
+        <p>
+          <span className="font-semibold">From Phil</span>: &quot;As you are
+          memorizing and reciting it back to yourself, pray and ask the Holy
+          Spirit to use the Word of God to lead you into the rest of God.&quot;
+        </p>
+      </div>
+    ) as ReactNode,
+  },
+
+  {
+    id: 23,
+    videoId: '4g_rd0aE8iQ',
+    title: 'Psalm 30 | Corner Room',
   },
 ];
 export default videos;
