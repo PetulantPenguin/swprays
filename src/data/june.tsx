@@ -95,27 +95,35 @@ const june: Month = {
           session: 'evening',
           psalms: [27],
           collects: [],
-          video: [19, 20],
+          video: [19, 20, 22],
         },
       ],
     },
     {
       day: 6,
+      packetQuestions: {
+        questionIds: ['A1'],
+        days: [1],
+      },
+      video: [22],
       sessions: [
         {
           session: 'morning',
           psalms: [28, 29],
           collects: [],
+          video: [21],
         },
         {
           session: 'evening',
           psalms: [30],
           collects: [],
+          video: [23, 24],
         },
       ],
     },
     {
       day: 7,
+      video: [23],
       sessions: [
         {
           session: 'morning',

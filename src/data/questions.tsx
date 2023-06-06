@@ -235,5 +235,92 @@ const questions: Question[] = [
       },
     ],
   },
+  {
+    id: 'A1',
+    question: (
+      <div>
+        <p>
+          When I pray, do I have a conversation with God, or have I reduced it
+          to “hitting repeat” and praying the same thing everyday? Why?
+        </p>
+      </div>
+    ) as ReactNode,
+    scriptures: [
+      {
+        id: 1,
+        comment: (
+          <>
+            <p className="pt-4 text-xl">
+              Summer of Prayer is in it&apos;s 3rd week!
+            </p>
+            <ul className="list-outside list-disc pl-10">
+              <li>Has it become formulaic to you?</li>
+              <li>Do you look forward to meeting with God each day?</li>
+              <li>Are you checking the box?</li>
+              <li>Are you worried that there are 7 more weeks?</li>
+              <li>
+                Have you met with God in the last week? Through this site or
+                otherwise?
+              </li>
+            </ul>
+            <p className="text-xl">
+              We would say that someone talking to a wall for 4 hours is crazy.
+              But, someone talking to a friend for 4 hours has a really good
+              relationship with their friend. Do you feel like talking to God is
+              more like talking to a wall or a good friend?
+            </p>
+          </>
+        ),
+      },
+      {
+        id: 1,
+        reference: '1 Kings 9:3a',
+        text: 'And the Lord said to him, “I have heard your prayer and your plea, which you have made before me.”',
+        comment: (
+          <div className="text-xl">
+            <p>What does it mean to know that God hears your prayer?</p>
+            <p>Not only does God listen, but He helps us pray too!</p>
+          </div>
+        ),
+      },
+      {
+        id: 1,
+        reference: 'Romans 8:26',
+        text: 'Likewise the Spirit helps us in our weakness. For we do not know what to pray for as we ought, but the Spirit himself intercedes for us with groanings too deep for words.”',
+        comment: (
+          <div className="text-xl">
+            <p>Not only does He hear, but He answers too!</p>
+          </div>
+        ),
+      },
+      {
+        id: 1,
+        reference: 'Psalm 138:3',
+        text: 'When I called, you answered me; you greatly emboldened me.',
+      },
+      {
+        id: 1,
+        reference: 'Psalm 91:15',
+        text: 'He will call on me, and I will answer him; I will be with him in trouble, I will deliver him and honor him.',
+        comment: (
+          <div className="text-xl">
+            <p>When you talk to God, He hears you.</p>
+            <p>When you ask, He answers.</p>
+            <p>
+              That sounds much more like a conversaiton with a friend than
+              talking to a wall.
+            </p>
+            <p>
+              So, as we go through the Summer of Prayer, let&apos;s remember
+              that prayer is a conversation WITH God. We pray and bring Him joy.
+              And He listens and responds to us. Praying the Psalms, common
+              prayers, etc. provide a starting place or a format. God wants you
+              to talk to Him and He wants to talk to you.
+            </p>
+          </div>
+        ),
+      },
+    ],
+  },
 ];
 export default questions;

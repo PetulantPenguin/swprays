@@ -29,11 +29,11 @@ function PacketInfo({ packetQuestions }: { packetQuestions?: PacketQuestion }) {
   if (!packetQuestions) {
     return null;
   }
-  console.log({ packetQuestions });
+
   const theQuestions = questions.filter((x: any) =>
     packetQuestions.questionIds.includes(x.id)
   );
-  console.log({ theQuestions });
+
   if (!theQuestions) {
     return null;
   }
@@ -191,7 +191,7 @@ function Videos({ vIds }: { vIds: number[] }) {
       {theVideos.map((x: any, i: number) => {
         const { comment, videoId, title } = x;
         return (
-          <div key={i}>
+          <div key={i} className="mb-8">
             {title && <h3>{title}</h3>}
             <YoutubeEmbed embedId={videoId} />
             {comment && <div className="p-8">{comment}</div>}
