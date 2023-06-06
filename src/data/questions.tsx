@@ -307,7 +307,7 @@ const questions: Question[] = [
             <p>When you talk to God, He hears you.</p>
             <p>When you ask, He answers.</p>
             <p>
-              That sounds much more like a conversaiton with a friend than
+              That sounds much more like a conversation with a friend than
               talking to a wall.
             </p>
             <p>
