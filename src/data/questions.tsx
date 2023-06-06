@@ -304,7 +304,7 @@ const questions: Question[] = [
         text: 'He will call on me, and I will answer him; I will be with him in trouble, I will deliver him and honor him.',
         comment: (
           <div className="text-xl">
-            <p>When you talk to God, He ehars you.</p>
+            <p>When you talk to God, He hears you.</p>
             <p>When you ask, He answers.</p>
             <p>
               That sounds much more like a conversaiton with a friend than
