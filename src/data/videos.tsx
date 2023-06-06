@@ -190,7 +190,6 @@ const videos: Video[] = [
       </div>
     ) as ReactNode,
   },
-
   {
     id: 22,
     videoId: 'qOC_IM4aB2I',
@@ -210,11 +209,15 @@ const videos: Video[] = [
       </div>
     ) as ReactNode,
   },
-
   {
     id: 23,
     videoId: '4g_rd0aE8iQ',
     title: 'Psalm 30 | Corner Room',
+  },
+  {
+    id: 24,
+    videoId: 'gHDix8HHWCg',
+    title: 'Trading My Sorrows | Darryl Evans',
   },
 ];
 export default videos;
