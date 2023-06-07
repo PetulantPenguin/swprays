@@ -50,3 +50,9 @@ a:hover {
   width: 100%;
   position: absolute;
 }
+
+.audio.extra_text,
+.footnotes.extra_text{
+  display:none;
+}
+
