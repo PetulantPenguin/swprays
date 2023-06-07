@@ -17,7 +17,7 @@ export default function fetchPsalmCache(passages: any): Psalms[] {
         passageCache.push(json);
       }
     } catch (err) {
-      console.log(`psalms ${x} not found`);
+      console.log(`### psalms ${x} not found`);
     }
   });
   return passageCache;

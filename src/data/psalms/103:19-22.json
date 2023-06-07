@@ -1,0 +1,19 @@
+{
+  "query": "Psalm 103:19–22",
+  "canonical": "Psalm 103:19–22",
+  "parsed": [[19103019, 19103022]],
+  "passage_meta": [
+    {
+      "canonical": "Psalm 103:19–22",
+      "chapter_start": [19103001, 19103022],
+      "chapter_end": [19103001, 19103022],
+      "prev_verse": 19103018,
+      "next_verse": 19104001,
+      "prev_chapter": [19102001, 19102028],
+      "next_chapter": [19104001, 19104035]
+    }
+  ],
+  "passages": [
+    "<h2 class=\"extra_text\">Psalm 103:19–22 <small class=\"audio extra_text\">(<a class=\"mp3link\" href=\"https://audio.esv.org/david-cochran-heath/mq/19103019-19103022.mp3\" title=\"Psalm 103:19–22\" type=\"audio/mpeg\">Listen</a>)</small></h2>\n<p class=\"block-indent\"><span class=\"begin-line-group\"></span>\n<span id=\"p19103019_01-1\" class=\"line\"><b class=\"verse-num inline\" id=\"v19103019-1\">19&nbsp;</b>&nbsp;&nbsp;The LORD has established his throne in the heavens,</span><br /><span id=\"p19103019_01-1\" class=\"indent line\">&nbsp;&nbsp;&nbsp;&nbsp;and his kingdom rules over all.</span><br /><span class=\"end-line-group\"></span>\n<span class=\"begin-line-group\"></span>\n<span id=\"p19103020_01-1\" class=\"line\"><b class=\"verse-num inline\" id=\"v19103020-1\">20&nbsp;</b>&nbsp;&nbsp;Bless the LORD, O you his angels,</span><br /><span id=\"p19103020_01-1\" class=\"indent line\">&nbsp;&nbsp;&nbsp;&nbsp;you mighty ones who do his word,</span><br /><span id=\"p19103020_01-1\" class=\"indent line\">&nbsp;&nbsp;&nbsp;&nbsp;obeying the voice of his word!</span><br /><span id=\"p19103021_01-1\" class=\"line\"><b class=\"verse-num inline\" id=\"v19103021-1\">21&nbsp;</b>&nbsp;&nbsp;Bless the LORD, all his hosts,</span><br /><span id=\"p19103021_01-1\" class=\"indent line\">&nbsp;&nbsp;&nbsp;&nbsp;his ministers, who do his will!</span><br /><span id=\"p19103022_01-1\" class=\"line\"><b class=\"verse-num inline\" id=\"v19103022-1\">22&nbsp;</b>&nbsp;&nbsp;Bless the LORD, all his works,</span><br /><span id=\"p19103022_01-1\" class=\"indent line\">&nbsp;&nbsp;&nbsp;&nbsp;in all places of his dominion.</span><br /><span id=\"p19103022_01-1\" class=\"line\">&nbsp;&nbsp;Bless the LORD, O my soul!</span><br /></p><span class=\"end-line-group\"></span>\n<p>(<a href=\"http://www.esv.org\" class=\"copyright\">ESV</a>)</p>"
+  ]
+}
