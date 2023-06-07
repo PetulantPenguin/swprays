@@ -320,6 +320,73 @@ const questions: Question[] = [
           </div>
         ),
       },
+
+      {
+        id: 2,
+        comment: (
+          <div className="text-xl">
+            <p>
+              If I talked to my spouse like I talked to God, would my spouse
+              feel I love them?
+            </p>
+            <p>
+              When I talk to God, am I talking as I would to someone I love?
+            </p>
+          </div>
+        ) as ReactNode,
+      },
+      {
+        id: 2,
+        reference: '1 John 3:1',
+        text: (
+          <>
+            See what kind of love the Father has given to us, that we should be
+            called children of God; and so we are....
+          </>
+        ) as ReactNode,
+        comment: (
+          <div className="text-xl">
+            <p>God loves us and calls us His children</p>
+          </div>
+        ) as ReactNode,
+      },
+      {
+        id: 2,
+        reference: 'Zephaniah 3:17',
+        text: (
+          <p className="text-center">
+            The Lord your God is in your midst,
+            <br />
+            a mighty one who will save;
+            <br />
+            he will rejoice over you with gladness;
+            <br />
+            he will quiet you by his love;
+            <br />
+            he will exult over you with loud singing.
+          </p>
+        ) as ReactNode,
+        comment: (
+          <div className="text-xl">
+            <p>God loves and sings over His children</p>
+            <p>God loves you.</p>
+          </div>
+        ) as ReactNode,
+      },
+      {
+        id: 2,
+        reference: '1 Peter 1:8',
+        text: (<>Though you have not seen him, you love him...</>) as ReactNode,
+        comment: (
+          <div className="text-xl">
+            <p>Do you love Him?</p>
+            <p>
+              How would your prayer life change if you thought, &quot;In prayer,
+              I get to talk with the love of my life?&quot;
+            </p>
+          </div>
+        ) as ReactNode,
+      },
     ],
   },
 ];

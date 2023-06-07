@@ -219,5 +219,16 @@ const videos: Video[] = [
     videoId: 'gHDix8HHWCg',
     title: 'Trading My Sorrows | Darryl Evans',
   },
+  {
+    id: 25,
+    videoId: '3ZHOeXHrsbg',
+    title: 'Psalm 32 | Corner Room',
+  },
+
+  {
+    id: 26,
+    videoId: 'Hirevcewwjk',
+    title: 'Psalm 31 (Into Your Hand) | Greg LaFollette',
+  },
 ];
 export default videos;
