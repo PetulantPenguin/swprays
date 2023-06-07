@@ -4,7 +4,7 @@ import Session from '@/components/Session';
 import { Meta } from '@/layouts/Meta';
 import { Main } from '@/templates/Main';
 import { getDayInfo, getSessionInfo } from '@/utils/data_utils';
-import { fetchPsalms } from '@/utils/fetchPsalms';
+import fetchPsalmCache from '@/utils/fetchPsalms';
 
 export const getServerSideProps: GetServerSideProps = async () => {
   const now = new Date();
@@ -25,7 +25,7 @@ export const getServerSideProps: GetServerSideProps = async () => {
   });
 
   const psalmText = sessionInfo?.psalms.length
-    ? await fetchPsalms(sessionInfo?.psalms || [])
+    ? fetchPsalmCache(sessionInfo?.psalms || [])
     : [];
   return {
     props: {

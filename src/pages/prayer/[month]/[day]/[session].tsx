@@ -5,7 +5,7 @@ import sessions from '@/data/sessions';
 import { Meta } from '@/layouts/Meta';
 import { Main } from '@/templates/Main';
 import { getDayInfo, getSessionInfo } from '@/utils/data_utils';
-import { fetchPsalms } from '@/utils/fetchPsalms';
+import fetchPsalmCache from '@/utils/fetchPsalms';
 import { getMonthName } from '@/utils/utilities';
 
 export async function getStaticPaths() {
@@ -66,8 +66,9 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
   }
 
   const psalmText = sessionInfo?.psalms.length
-    ? await fetchPsalms(sessionInfo?.psalms || [])
+    ? fetchPsalmCache(sessionInfo?.psalms || [])
     : [];
+
   return {
     props: {
       month: params!.month,

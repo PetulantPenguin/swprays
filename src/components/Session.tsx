@@ -20,7 +20,7 @@ type Props = {
   month: number;
   day: number;
   session: string;
-  psalmText: Psalms;
+  psalmText: Psalms[];
   sessionInfo: Session;
   dayInfo: Day;
 };
@@ -136,18 +136,12 @@ function Quotes({ quoteIds }: { quoteIds: number[] }) {
   );
 }
 
-function Psalms({ psalmText }: { psalmText: Psalms }) {
+function Psalms({ psalmText }: { psalmText: Psalms[] }) {
   return (
     <>
       <h2>Psalms</h2>
-      {psalmText.passages.map((x: any, i: number) => {
-        return (
-          <Psalm
-            psalm={x}
-            key={i}
-            canonical={psalmText.passage_meta[i].canonical}
-          />
-        );
+      {psalmText.map((x: any, i: number) => {
+        return <Psalm psalm={x.passages[0]} key={i} canonical={x.canonical} />;
       })}
       <hr />
     </>
@@ -276,7 +270,7 @@ export default function Session(props: Props) {
 
       <Videos vIds={vIds} />
 
-      {psalmText?.passages?.length && <Psalms psalmText={psalmText} />}
+      {psalmText?.length && <Psalms psalmText={psalmText} />}
     </div>
   );
 }
