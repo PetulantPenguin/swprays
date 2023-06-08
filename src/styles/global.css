@@ -52,7 +52,8 @@ a:hover {
 }
 
 .audio.extra_text,
-.footnotes.extra_text{
+.footnotes.extra_text,
+sup.footnote{
   display:none;
 }
 

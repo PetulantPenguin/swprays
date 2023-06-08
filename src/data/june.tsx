@@ -144,6 +144,10 @@ const june: Month = {
     },
     {
       day: 8,
+      packetQuestions: {
+        questionIds: ['B1'],
+        days: [2],
+      },
       sessions: [
         {
           session: 'morning',

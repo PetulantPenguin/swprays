@@ -233,8 +233,70 @@ const questions: Question[] = [
           </div>
         ),
       },
+
+      {
+        id: 2,
+        reference: 'Psalm 33:5',
+        text: (
+          <div>
+            He loves righteousness and justice;
+            <br />
+            the earth is full of the steadfast love of the LORD.
+          </div>
+        ) as ReactNode,
+      },
+      {
+        id: 2,
+        reference: 'Psalm 33:18',
+        text: (
+          <div>
+            Behold, the eye of the LORD is on those who fear him,
+            <br />
+            on those who hope in his steadfast love,
+          </div>
+        ) as ReactNode,
+      },
+      {
+        id: 2,
+        reference: 'Psalm 33:5',
+        text: (
+          <div>
+            Let your steadfast love, O LORD, be upon us,
+            <br />
+            even as we hope in you.
+          </div>
+        ) as ReactNode,
+      },
+      {
+        id: 2,
+        reference: 'Psalm 34:8',
+        text: (
+          <div>
+            Oh, taste and see that the LORD is good!
+            <br />
+            Blessed is the man who takes refuge in him!
+          </div>
+        ) as ReactNode,
+        comment: (
+          <div className="text-xl">
+            <p>
+              God loves you with a steadfast love that never changes and will
+              never change. He invites us into a relationship with Him.
+            </p>
+            <p className="py-2 text-center font-bold italic">
+              &quot;Taste and see that the Lord is good.&quot;
+            </p>
+            <p className="text-2xl">
+              Today, let&apos;s pray through these two psalms and thank and
+              praise God in our prayers for His goodness and steadfast love.
+              Let&apos;s taste and see that the Lord is good.
+            </p>
+          </div>
+        ),
+      },
     ],
   },
+
   {
     id: 'A1',
     question: (
