@@ -230,5 +230,17 @@ const videos: Video[] = [
     videoId: 'Hirevcewwjk',
     title: 'Psalm 31 (Into Your Hand) | Greg LaFollette',
   },
+
+  {
+    id: 27,
+    videoId: 'rjFIm_513t4',
+    title: 'Psalm 33 (Stand in Awe) (feat. Benjamin Ady) | The Psalms Project',
+  },
+
+  {
+    id: 28,
+    videoId: 'yOzf0VrDNGU',
+    title: 'Psalm 34 - Taste and See | Shane &amp; Shane',
+  },
 ];
 export default videos;
