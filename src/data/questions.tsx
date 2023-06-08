@@ -238,44 +238,44 @@ const questions: Question[] = [
         id: 2,
         reference: 'Psalm 33:5',
         text: (
-          <div>
+          <>
             He loves righteousness and justice;
             <br />
             the earth is full of the steadfast love of the LORD.
-          </div>
+          </>
         ) as ReactNode,
       },
       {
         id: 2,
         reference: 'Psalm 33:18',
         text: (
-          <div>
+          <>
             Behold, the eye of the LORD is on those who fear him,
             <br />
             on those who hope in his steadfast love,
-          </div>
+          </>
         ) as ReactNode,
       },
       {
         id: 2,
         reference: 'Psalm 33:5',
         text: (
-          <div>
+          <>
             Let your steadfast love, O LORD, be upon us,
             <br />
             even as we hope in you.
-          </div>
+          </>
         ) as ReactNode,
       },
       {
         id: 2,
         reference: 'Psalm 34:8',
         text: (
-          <div>
+          <>
             Oh, taste and see that the LORD is good!
             <br />
             Blessed is the man who takes refuge in him!
-          </div>
+          </>
         ) as ReactNode,
         comment: (
           <div className="text-xl">
