@@ -144,16 +144,22 @@ const june: Month = {
     },
     {
       day: 8,
+      packetQuestions: {
+        questionIds: ['B1'],
+        days: [2],
+      },
       sessions: [
         {
           session: 'morning',
           psalms: [33],
           collects: [],
+          video: [27],
         },
         {
           session: 'evening',
           psalms: [34],
           collects: [],
+          video: [28],
         },
       ],
     },
