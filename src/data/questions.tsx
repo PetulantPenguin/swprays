@@ -451,5 +451,58 @@ const questions: Question[] = [
       },
     ],
   },
+
+  {
+    id: 'C1',
+    question: (
+      <div>
+        <p>
+          Am I intentional about talking to God throughout the day? How can I
+          grow in this?
+        </p>
+      </div>
+    ) as ReactNode,
+    scriptures: [
+      {
+        id: 1,
+        comment: (
+          <span className="text-xl">
+            Is prayer my first response or my last resort?
+          </span>
+        ),
+      },
+      {
+        id: 1,
+        reference: 'Nehemiah 2:4-5',
+        text: (
+          <>
+            Then the king said to me, “What are you requesting?”{' '}
+            <span className="font-bold">So I prayed to the God of heaven</span>.
+            And I said to the king, “If it pleases the king, and if your servant
+            has found favor in your sight, that you send me to Judah, to the
+            city of my fathers&apos; graves, that I may rebuild it.”
+          </>
+        ) as ReactNode,
+        comment: (
+          <div className="text-xl">
+            <p>
+              The King asked Nehemiah a question in a normal conversation.
+              Rather than reply, Nehemiah prayed instead. Then he replied. Seems
+              pretty weird, huh?
+            </p>
+            <p>
+              Can you think of a time when a conversation you might have gone
+              differently if you had prayed before saying something? What did
+              you say? What do you wish you had said?
+            </p>
+            <p>
+              Is anything keeping you from praying while making small decisions
+              throughout your day?
+            </p>
+          </div>
+        ),
+      },
+    ],
+  },
 ];
 export default questions;

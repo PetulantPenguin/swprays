@@ -242,5 +242,35 @@ const videos: Video[] = [
     videoId: 'yOzf0VrDNGU',
     title: 'Psalm 34 - Taste and See | Shane &amp; Shane',
   },
+
+  {
+    id: 29,
+    videoId: 'YVL0aka7Bho',
+    title: 'Great Is The Lord | Michael W. Smith',
+  },
+
+  {
+    id: 30,
+    videoId: 'BwJI4hySK84',
+    title: 'Psalm 35 | The Psalms Project',
+  },
+
+  {
+    id: 31,
+    videoId: '-QyyGJ6RK1A',
+    title: 'Your Love Oh Lord | Third Day',
+  },
+
+  {
+    id: 32,
+    videoId: 'kqKVFYD8Obc',
+    title: 'Be Still My Soul (Hymn) | Eclipse 6',
+  },
+
+  {
+    id: 33,
+    videoId: 'xoGfQtHUUgU',
+    title: 'Good God | Mission House',
+  },
 ];
 export default videos;
