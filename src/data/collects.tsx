@@ -278,6 +278,74 @@ const collects: Prayer[] = [
     ) as ReactNode,
     where: 'Book of Common Prayer (2019)',
   },
+  {
+    id: 13,
+    blurb: 'Te Deum Laudamus (We Praise You, O God)',
+    intro: (
+      <>
+        Canticles are songs the church sings or chants together as a way of
+        praying and praising God. We encourage you to join with your family,
+        spuse, friends in reading this Canticle together this evening.
+      </>
+    ) as ReactNode,
+    text: (
+      <>
+        <div className="pb-2 text-center italic">
+          The following Canticle is sung or said, all standing
+        </div>
+        <div className="pl-4">
+          <div>We praise you, O God; we acclaim you as Lord;</div>
+          <div className="pl-8">
+            all creation worships you, the Father everlasting.
+          </div>
+          <div>To you all angels, all the powers of heaven,</div>
+          <div className="pl-8">
+            the cherubim and seraphim, sing in endless praise:
+          </div>
+          <div>Holy, Holy, Holy, Lord God of power and might,</div>
+          <div className="pl-8">heaven and earth are full of your glory.</div>
+          <div>The glorious company of apostles praise you.</div>
+          <div className="pl-8">
+            The noble fellowship of prophets praise you.
+          </div>
+          <div>The white-robed army of martyrs praise you.</div>
+          <div className="pl-8">
+            Throughout the world the holy Church acclaims you:
+          </div>
+          <div className="pl-8">Father, of majesty unbounded,</div>
+          <div>your true and only Son, worthy of all praise,</div>
+          <div className="pl-8">and the Holy Spirit, advocate and guide.</div>
+          <div>You, Christ, are the king of glory,</div>
+          <div className="pl-8">the eternal Son of the Father.</div>
+          <div>When you took our flesh to set us free</div>
+          <div className="pl-8">you humbly chose the Virgin’s womb.</div>
+          <div>You overcame the sting of death</div>
+          <div className="pl-8">
+            and opened the kingdom of heaven to all believers.
+          </div>
+          <div>You are seated at God’s right hand in glory.</div>
+          <div className="pl-8">
+            We believe that you will come to be our judge.
+          </div>
+          <div>Come then, Lord, and help your people,</div>
+          <div className="pl-8">bought with the price of your own blood,</div>
+          <div>and bring us with your saints</div>
+          <div>to glory everlasting.</div>
+        </div>
+      </>
+    ) as ReactNode,
+    where: 'Book of Common Prayer (2019)',
+    commentary: (
+      <>
+        <span className="font-bold">
+          This Canticle begins our new section in the prayer arena&mdash;People.
+        </span>
+        This week, we will be joining with fellow believers to pray together.
+        This can be your family, your friends, a random person at church,
+        anyone!
+      </>
+    ) as ReactNode,
+  },
 ];
 
 export default collects;

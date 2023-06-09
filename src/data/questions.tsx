@@ -294,6 +294,17 @@ const questions: Question[] = [
           </div>
         ),
       },
+      {
+        id: 7,
+        reference: 'Psalm 34:8',
+        text: (<p>Oh, taste and see that the LORD is good!</p>) as ReactNode,
+        comment: (
+          <span className="text-xl">
+            God loves us with a steadfast love. Rather than seeing prayer as a
+            chore, we can see it as an opportunity to enjoy God Himself.
+          </span>
+        ),
+      },
     ],
   },
 
@@ -449,6 +460,30 @@ const questions: Question[] = [
           </div>
         ) as ReactNode,
       },
+      {
+        id: 7,
+        reference: 'Zephaniah 3:17',
+        text: (
+          <p className="text-center">
+            The Lord your God is in your midst,
+            <br />
+            a mighty one who will save;
+            <br />
+            he will rejoice over you with gladness;
+            <br />
+            he will quiet you by his love;
+            <br />
+            he will exult over you with loud singing.
+          </p>
+        ) as ReactNode,
+        comment: (
+          <span className="text-xl">
+            This same God who loves us and calls us His children, is the same
+            One who sings over His children. He wants so badly to talk with us
+            that He even helps us talk to Him.
+          </span>
+        ),
+      },
     ],
   },
 
@@ -500,6 +535,25 @@ const questions: Question[] = [
               throughout your day?
             </p>
           </div>
+        ),
+      },
+      {
+        id: 7,
+        comment: (
+          <>
+            <p className="text-xl">
+              Throughout the day, we get the chance to talk to God about
+              anything and everything! He delights in our prayers. He enjoys
+              company with us. He wants to hear from you and bless you as a
+              father blesses His beloved child.
+            </p>
+            <p className="text-xl">
+              Not all of us know a loving father here on this earth. But God is
+              truly the Father none of our fathers could ever be. Let&apos;s
+              live in the joy of the Father who loves us and cares for us each
+              moment of each day. Let&apos;s talk to Him.
+            </p>
+          </>
         ),
       },
     ],
