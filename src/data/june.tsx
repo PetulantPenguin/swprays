@@ -165,26 +165,37 @@ const june: Month = {
     },
     {
       day: 9,
+      packetQuestions: {
+        questionIds: ['C1'],
+        days: [1],
+      },
       sessions: [
         {
           session: 'morning',
           psalms: [35],
           collects: [],
+          video: [29, 30],
         },
         {
           session: 'evening',
           psalms: [36],
           collects: [],
+          video: [31],
         },
       ],
     },
     {
       day: 10,
+      packetQuestions: {
+        questionIds: ['C1'],
+        days: [2],
+      },
       sessions: [
         {
           session: 'morning',
           psalms: [37],
           collects: [],
+          video: [32, 33],
         },
         {
           session: 'evening',
@@ -295,7 +306,7 @@ const june: Month = {
       sessions: [
         {
           session: 'morning',
-          psalms: [57.58],
+          psalms: [57, 58],
           collects: [],
         },
         {

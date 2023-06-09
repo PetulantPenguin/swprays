@@ -47,10 +47,12 @@ export async function getStaticPaths() {
 export const getStaticProps: GetStaticProps = async ({ params }) => {
   // @ts-ignore
   const { month, day, session } = params;
+
   const dayInfo = getDayInfo({
     month: parseInt(month, 10),
     day: parseInt(day, 10),
   });
+
   const sessionInfo = getSessionInfo({
     month: parseInt(month, 10),
     day: parseInt(day, 10),
@@ -84,6 +86,7 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 export default function SessionPage(
   props: InferGetStaticPropsType<typeof getStaticProps>
 ) {
+  console.log('props', props);
   return (
     <Main
       meta={
