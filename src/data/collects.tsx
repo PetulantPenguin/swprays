@@ -285,7 +285,7 @@ const collects: Prayer[] = [
       <>
         Canticles are songs the church sings or chants together as a way of
         praying and praising God. We encourage you to join with your family,
-        spuse, friends in reading this Canticle together this evening.
+        spouse, friends in reading this Canticle together this evening.
       </>
     ) as ReactNode,
     text: (
