@@ -272,5 +272,29 @@ const videos: Video[] = [
     videoId: 'xoGfQtHUUgU',
     title: 'Good God | Mission House',
   },
+
+  {
+    id: 34,
+    videoId: 'IqfV0zeEvT8',
+    title: 'House Of The Lord | Phil Wickham',
+  },
+
+  {
+    id: 35,
+    videoId: 'Obp-9BEZe1c',
+    title: 'Amazing Grace (My Chains Are Gone) | Pentatonix',
+  },
+
+  {
+    id: 36,
+    videoId: 'q7ho7OqFk60',
+    title: 'Faithful | Erik Nieder',
+  },
+
+  {
+    id: 37,
+    videoId: 'MCaVjS6i0_8',
+    title: 'O Praise Him | David Crowder Band',
+  },
 ];
 export default videos;

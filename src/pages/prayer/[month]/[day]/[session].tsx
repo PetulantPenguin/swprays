@@ -86,7 +86,6 @@ export const getStaticProps: GetStaticProps = async ({ params }) => {
 export default function SessionPage(
   props: InferGetStaticPropsType<typeof getStaticProps>
 ) {
-  console.log('props', props);
   return (
     <Main
       meta={
