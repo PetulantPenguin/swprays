@@ -207,6 +207,11 @@ function Alerts({ alerts }: { alerts: Alert[] }) {
   );
 }
 
+function getDayName(dateStr: string, locale: string) {
+  const date = new Date(dateStr);
+  return date.toLocaleDateString(locale, { weekday: 'long' });
+}
+
 export default function Session(props: Props) {
   const { month, day, session, psalmText, sessionInfo, dayInfo } = props;
 
@@ -244,8 +249,10 @@ export default function Session(props: Props) {
   return (
     <div className="my-2">
       <h1>
-        {session === 'morning' ? 'Morning' : 'Evening'} of {getMonthName(month)}
-        , {day}
+        {getDayName(`${month}/${day}/2023`, 'en-US')}{' '}
+        {session === 'morning' ? 'Morning' : 'Evening'}
+        <br />
+        {getMonthName(month)} {day}
       </h1>
 
       <NavBar month={month} day={day} session={session} />

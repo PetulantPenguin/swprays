@@ -296,5 +296,53 @@ const videos: Video[] = [
     videoId: 'MCaVjS6i0_8',
     title: 'O Praise Him | David Crowder Band',
   },
+
+  {
+    id: 38,
+    videoId: 'yCTFpPmQyHQ',
+    title: 'Psalm 45 - Fairest of All | Shane & Shane',
+  },
+
+  {
+    id: 39,
+    videoId: 'C7hfRqgjWhg',
+    title: 'Psalm 47 - Clap Your Hands | Shane & Shane',
+  },
+
+  {
+    id: 40,
+    videoId: 'oie0xaDGyXY',
+    title: 'Great is the Lord | Maranatha Music',
+  },
+
+  {
+    id: 41,
+    videoId: 'NgjwBAeRgN4',
+    title: 'Psalm 50 | Poor Bishop Hooper',
+  },
+
+  {
+    id: 42,
+    videoId: '2fVliokreqE',
+    title: 'Create in me a clean heart oh God | Maranatha Singers',
+  },
+
+  {
+    id: 43,
+    videoId: '0e2Nt4tYUx4',
+    title: 'Psalm 53 | The Corner Room',
+  },
+
+  {
+    id: 44,
+    videoId: 'oHTXhI8kAvw',
+    title: 'Psalm 55 | Hope Church Worship',
+  },
+
+  {
+    id: 44,
+    videoId: 'CyHNp-bAT88',
+    title: 'Psalm 56 | Sight and Sound Theaters',
+  },
 ];
 export default videos;
