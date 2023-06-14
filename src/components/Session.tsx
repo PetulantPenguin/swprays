@@ -3,6 +3,7 @@ import { Fragment } from 'react';
 import elders from '@/data/elders';
 import fromSWBC from '@/data/fromSWBC';
 import questions from '@/data/questions';
+import spotify from '@/data/spotify';
 import videos from '@/data/videos';
 import { getDayOfTheWeek, getMonthName } from '@/utils/utilities';
 
@@ -13,6 +14,7 @@ import NavBar from './NavBar';
 import Prayer from './Prayer';
 import Psalm from './Psalm';
 import Quote from './Quote';
+import SpotifyEmbed from './SpotifyEmbed';
 import Verse from './Verse';
 import YoutubeEmbed from './YoutubeEmbed';
 
@@ -197,6 +199,27 @@ function Videos({ vIds }: { vIds: number[] }) {
   );
 }
 
+function Spotifys({ spotIds }: { spotIds: number[] }) {
+  if (!spotIds.length) {
+    return null;
+  }
+  const theVideos = spotify.filter((x: Spotify) => spotIds.includes(x.id));
+  return (
+    <>
+      {theVideos.map((x: any, i: number) => {
+        const { url, title } = x;
+        return (
+          <div key={i} className="mb-8">
+            {title && <h3>{title}</h3>}
+            <SpotifyEmbed url={url} />
+          </div>
+        );
+      })}
+      <hr />
+    </>
+  );
+}
+
 function Alerts({ alerts }: { alerts: Alert[] }) {
   return (
     <div className="pb-2">
@@ -246,6 +269,11 @@ export default function Session(props: Props) {
     ...(Array.isArray(sessionInfo?.video) ? sessionInfo.video : []),
   ];
 
+  const spotIds = [
+    ...(Array.isArray(dayInfo?.spotify) ? dayInfo.spotify : []),
+    ...(Array.isArray(sessionInfo?.spotify) ? sessionInfo.spotify : []),
+  ];
+
   return (
     <div className="my-2">
       <h1>
@@ -276,6 +304,7 @@ export default function Session(props: Props) {
       {quotes.length ? <Quotes quoteIds={quotes} /> : null}
 
       <Videos vIds={vIds} />
+      <Spotifys spotIds={spotIds} />
 
       {psalmText?.length && <Psalms psalmText={psalmText} />}
     </div>

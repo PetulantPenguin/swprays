@@ -251,10 +251,6 @@ const june: Month = {
     },
     {
       day: 13,
-      packetQuestions: {
-        questionIds: ['B7'],
-        days: [2],
-      },
       alerts: [
         {
           level: 'warn',
@@ -282,7 +278,7 @@ const june: Month = {
       day: 14,
       packetQuestions: {
         questionIds: ['B7'],
-        days: [3],
+        days: [2],
       },
       alerts: [
         {
@@ -384,6 +380,7 @@ const june: Month = {
           session: 'morning',
           psalms: [57, 58],
           collects: [],
+          spotify: [1],
         },
         {
           session: 'evening',

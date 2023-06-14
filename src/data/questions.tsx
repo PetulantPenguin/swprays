@@ -657,11 +657,11 @@ const questions: Question[] = [
       {
         id: 2,
         comment: (
-          <>
+          <span className="text-xl">
             Parents have a unique opportunity to pray with their children. This
             week, take the opportunity to pray with your children, teach them to
             pray, and show them how you enjoy spending time with the Lord.
-          </>
+          </span>
         ),
       },
       {
@@ -725,7 +725,7 @@ const questions: Question[] = [
                   </td>
                 </tr>
                 <tr>
-                  <td className="pr-4 align-top">Leader</td>
+                  <td className="pr-4 align-top font-bold">Together</td>
                   <td className="pb-4 align-top">
                     <p className="font-bold">
                       Glory be to the Father, and to the Son, and to the Holy

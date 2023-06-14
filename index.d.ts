@@ -36,6 +36,7 @@ type Day = {
   biblePrayers?: number[];
   fromSWBC?: number[];
   video?: number[];
+  spotify?: number[];
 };
 
 type Quote = {
@@ -72,6 +73,7 @@ type Session = {
   packetQuestions?: PacketQuestion[];
   verses?: Verse[];
   video?: number[];
+  spotify?: number[];
 };
 type Psalms = {
   query: string;
@@ -93,4 +95,10 @@ type Video = {
   videoId: string;
   title?: string;
   comment?: any;
+};
+
+type Spotify = {
+  id: number;
+  url: string;
+  title?: string;
 };
