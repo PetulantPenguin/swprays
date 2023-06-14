@@ -223,6 +223,18 @@ const june: Month = {
     },
     {
       day: 12,
+      packetQuestions: {
+        questionIds: ['B7'],
+        days: [1],
+      },
+      alerts: [
+        {
+          level: 'info',
+          title: 'Join Us for Prayer!',
+          message:
+            'Join the Prayer Team this Wednesday at 7:30pm for group prayer. Message prayer@fastfox.aleeas.com for directions!',
+        },
+      ],
       sessions: [
         {
           session: 'morning',
@@ -239,70 +251,128 @@ const june: Month = {
     },
     {
       day: 13,
+      alerts: [
+        {
+          level: 'warn',
+          title: 'Join Us for Prayer!',
+          message:
+            'Join the Prayer Team this Wednesday at 7:30pm for group prayer. Message prayer@fastfox.aleeas.com for directions!',
+        },
+      ],
       sessions: [
         {
           session: 'morning',
           psalms: [45, 46],
           collects: [],
+          video: [38],
         },
         {
           session: 'evening',
           psalms: [47],
           collects: [],
+          video: [39],
         },
       ],
     },
     {
       day: 14,
+      packetQuestions: {
+        questionIds: ['B7'],
+        days: [2],
+      },
+      alerts: [
+        {
+          level: 'error',
+          title: 'Join Us TODAY for Prayer!',
+          message:
+            'Join the Prayer Team TODAY at 7:30pm for group prayer. Message prayer@fastfox.aleeas.com for directions!',
+        },
+      ],
       sessions: [
         {
           session: 'morning',
           psalms: [48, 49],
           collects: [],
+          video: [40],
         },
         {
           session: 'evening',
           psalms: [50],
           collects: [],
+          video: [41],
         },
       ],
     },
     {
       day: 15,
+      packetQuestions: {
+        questionIds: ['B7'],
+        days: [4],
+      },
+      alerts: [
+        {
+          level: 'info',
+          title: 'Join Us for Prayer!',
+          message:
+            'Join the Prayer Team this Sunday at SWBC during first service at 9:00am for group prayer.',
+        },
+      ],
       sessions: [
         {
           session: 'morning',
           psalms: [51, 52],
           collects: [],
+          video: [42],
         },
         {
           session: 'evening',
           psalms: [53],
           collects: [],
+          video: [43],
         },
       ],
     },
     {
       day: 16,
+      packetQuestions: {
+        questionIds: ['B7'],
+        days: [5],
+      },
+      alerts: [
+        {
+          level: 'info',
+          title: 'Join Us for Prayer!',
+          message:
+            'Join the Prayer Team this Sunday at SWBC during first service at 9:00am for group prayer.',
+        },
+      ],
       sessions: [
         {
           session: 'morning',
           psalms: [54, 55],
           collects: [],
+          video: [44],
         },
         {
           session: 'evening',
           psalms: [56],
           collects: [],
+          video: [45],
         },
       ],
     },
     {
       day: 17,
+      packetQuestions: {
+        questionIds: ['B7'],
+        days: [6],
+      },
       alerts: [
         {
-          message: '2.5 hour prayer challenge!!!',
-          level: 'error',
+          level: 'warn',
+          title: 'Join Us for Prayer tomorrow!',
+          message:
+            'Join the Prayer Team tomorrow at SWBC during first service at 9:00am for group prayer.',
         },
       ],
       sessions: [
@@ -310,6 +380,7 @@ const june: Month = {
           session: 'morning',
           psalms: [57, 58],
           collects: [],
+          spotify: [1],
         },
         {
           session: 'evening',
@@ -325,6 +396,14 @@ const june: Month = {
           session: 'morning',
           psalms: [60, 61],
           collects: [],
+          alerts: [
+            {
+              level: 'error',
+              title: 'Join Us TODAY for Prayer!',
+              message:
+                'Join the Prayer Team TODAY at SWBC during first service at 9:00am for group prayer.',
+            },
+          ],
         },
         {
           session: 'evening',

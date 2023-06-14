@@ -558,5 +558,191 @@ const questions: Question[] = [
       },
     ],
   },
+  {
+    id: 'B7',
+    question: (
+      <div>
+        <p>
+          Have I grown in maturity in my prayer life in that I not only pray for
+          others, but I am also praying with others either individually or
+          corporately? If not, what is keeping me from entering into this?
+        </p>
+      </div>
+    ) as ReactNode,
+    scriptures: [
+      {
+        id: 1,
+        comment: (
+          <span className="text-xl">
+            Throughout Scripture we see people praying together. This week we
+            will take the opportunity to pray with others in many ways.
+          </span>
+        ),
+      },
+      {
+        id: 1,
+        reference: 'Acts 2:42',
+        text: (
+          <>
+            And they devoted themselves to the apostles&apos; teaching and the
+            fellowship, to the breaking of bread and the prayers.
+          </>
+        ),
+        comment: (
+          <span className="text-xl">
+            Today, check out the prayer below. It is a Call and Response prayer
+            where the leader says one line and the group responds with the next
+            line. This is a great way to pray with others.
+          </span>
+        ),
+      },
+      {
+        id: 1,
+        comment: (
+          <div className="m-8 text-xl">
+            <table>
+              <tbody>
+                <tr>
+                  <td className="pr-4 align-top">Leader</td>
+                  <td className="pb-4 align-top">O Lord, open our lips;</td>
+                </tr>
+                <tr>
+                  <td className="pr-4 align-top font-bold">Together</td>
+                  <td className="pb-4 align-top font-bold">
+                    And our mouth shall proclaim your praise.
+                  </td>
+                </tr>
+                <tr>
+                  <td className="pr-4 align-top">Leader</td>
+                  <td className="pb-4 align-top">
+                    O God, make speed to save us;
+                  </td>
+                </tr>
+                <tr>
+                  <td className="pr-4 align-top font-bold">Together</td>
+                  <td className="pb-4 align-top font-bold">
+                    O Lord, make haste to help us.
+                  </td>
+                </tr>
+                <tr>
+                  <td className="pr-4 align-top">Leader</td>
+                  <td className="pb-4 align-top">
+                    Glory be to the Father, and to the Son, and to the Holy
+                    Spirit;
+                  </td>
+                </tr>
+                <tr>
+                  <td className="pr-4 align-top font-bold">Together</td>
+                  <td className="pb-4 align-top font-bold">
+                    As it was in the beginning, is now, and ever shall be, world
+                    without end. Amen.
+                  </td>
+                </tr>
+                <tr>
+                  <td className="pr-4 align-top">Leader</td>
+                  <td className="pb-4 align-top">Praise the Lord.</td>
+                </tr>
+                <tr>
+                  <td className="pr-4 align-top font-bold">Together</td>
+                  <td className="pb-4 align-top font-bold">
+                    The Lord’s Name be praised.
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        ),
+      },
+
+      {
+        id: 2,
+        comment: (
+          <span className="text-xl">
+            Parents have a unique opportunity to pray with their children. This
+            week, take the opportunity to pray with your children, teach them to
+            pray, and show them how you enjoy spending time with the Lord.
+          </span>
+        ),
+      },
+      {
+        id: 2,
+        reference: 'Deuteronomy 6:5-7',
+        text: (
+          <>
+            You shall love the Lord your God with all your heart and with all
+            your soul and with all your might. And these words that I command
+            you today shall be on your heart. You shall teach them diligently to
+            your children, and shall talk of them when you sit in your house,
+            and when you walk by the way, and when you lie down, and when you
+            rise.
+          </>
+        ),
+        comment: (
+          <span className="text-xl">
+            Call and response prayers can be fun to say and have your children
+            respond together. Try this one today from Psalm 134!
+          </span>
+        ),
+      },
+      {
+        id: 2,
+        comment: (
+          <div className="m-8 text-xl">
+            <table>
+              <tbody>
+                <tr>
+                  <td className="pr-4 align-top">Leader</td>
+                  <td className="pb-4 align-top">
+                    <p>Behold now, praise the Lᴏʀᴅ,</p>
+                    <p>all you servants of the Lᴏʀᴅ,</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td className="pr-4 align-top font-bold">Together</td>
+                  <td className="pb-4 align-top font-bold">
+                    <p className="font-bold">
+                      You that stand by night in the house of the Lᴏʀᴅ,
+                    </p>
+                    <p className="font-bold">
+                      even in the courts of the house of our God.
+                    </p>
+                  </td>
+                </tr>
+                <tr>
+                  <td className="pr-4 align-top">Leader</td>
+                  <td className="pb-4 align-top">
+                    <p>Lift up your hands in the sanctuary</p>
+                    <p>and sing praises unto the Lᴏʀᴅ.</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td className="pr-4 align-top font-bold">Together</td>
+                  <td className="pb-4 align-top font-bold">
+                    <p className="font-bold">
+                      The Lᴏʀᴅ who made heaven and earth
+                    </p>
+                    <p className="font-bold">give you blessing out of Zion.</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td className="pr-4 align-top font-bold">Together</td>
+                  <td className="pb-4 align-top">
+                    <p className="font-bold">
+                      Glory be to the Father, and to the Son, and to the Holy
+                      Spirit;
+                    </p>
+                    <p className="font-bold">
+                      as it was in the beginning, is now, and ever shall be,
+                      world without end. Amen.
+                    </p>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        ) as ReactNode,
+      },
+    ],
+  },
 ];
 export default questions;
