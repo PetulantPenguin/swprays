@@ -742,6 +742,63 @@ const questions: Question[] = [
           </div>
         ) as ReactNode,
       },
+
+      {
+        id: 3,
+        comment: (
+          <span className="text-xl">Praying together has great effect!</span>
+        ),
+      },
+      {
+        id: 3,
+        reference: 'Matthew 18:19',
+        text: (
+          <>
+            Again I say to you, if two of you agree on earth about anything they
+            ask, it will be done for them by my Father in heaven.
+          </>
+        ),
+      },
+      {
+        id: 3,
+        reference: 'James 5:16',
+        text: (
+          <>
+            Therefore, confess your sins to one another and pray for one
+            another, that you may be healed. The prayer of a righteous person
+            has great power as it is working.
+          </>
+        ),
+      },
+      {
+        id: 3,
+        reference: 'Acts 2:42',
+        text: (
+          <>
+            And they devoted themselves to the apostles&apos; teaching and the
+            fellowship, to the breaking of bread and the prayers.
+          </>
+        ),
+      },
+      {
+        id: 3,
+        reference: 'James 5:14-15',
+        text: (
+          <>
+            Is anyone among you sick? Let him call for the elders of the church,
+            and let them pray over him, anointing him with oil in the name of
+            the Lord. And the prayer of faith will save the one who is sick, and
+            the Lord will raise him up. And if he has committed sins, he will be
+            forgiven.
+          </>
+        ),
+        comment: (
+          <span className="text-xl">
+            In many more places, the Bible speaks aobut how praying together is
+            better than praying alone. Pray with someone today!
+          </span>
+        ),
+      },
     ],
   },
 ];
