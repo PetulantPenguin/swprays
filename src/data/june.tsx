@@ -307,7 +307,7 @@ const june: Month = {
       day: 15,
       packetQuestions: {
         questionIds: ['B7'],
-        days: [4],
+        days: [3],
       },
       alerts: [
         {
@@ -327,7 +327,7 @@ const june: Month = {
         {
           session: 'evening',
           psalms: [53],
-          collects: [],
+          collects: [14],
           video: [43],
         },
       ],
