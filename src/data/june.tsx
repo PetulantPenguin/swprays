@@ -419,11 +419,13 @@ const june: Month = {
           session: 'morning',
           psalms: [63, 64],
           collects: [],
+          video: [45],
         },
         {
           session: 'evening',
           psalms: [65],
           collects: [],
+          video: [46],
         },
       ],
     },

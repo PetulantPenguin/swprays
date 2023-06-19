@@ -344,5 +344,17 @@ const videos: Video[] = [
     videoId: 'CyHNp-bAT88',
     title: 'Psalm 56 | Sight and Sound Theaters',
   },
+
+  {
+    id: 45,
+    videoId: 'Cd98WeTXI_Y',
+    title: 'Psalm 64 | Smokie Norful',
+  },
+
+  {
+    id: 46,
+    videoId: '0d90aEM69bc',
+    title: 'Psalm 65 | Praise awaits you',
+  },
 ];
 export default videos;
