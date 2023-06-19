@@ -356,5 +356,17 @@ const videos: Video[] = [
     videoId: '0d90aEM69bc',
     title: 'Psalm 65 | Praise awaits you',
   },
+
+  {
+    id: 47,
+    videoId: '7BrfkjHdKVI',
+    title: 'May The Peoples Praise You | Keith & Kristyn Getty',
+  },
+
+  {
+    id: 48,
+    videoId: 'EA1Zj7cfilQ',
+    title: 'Psalm 68 | Let God Arise | Isaac Watts',
+  },
 ];
 export default videos;
