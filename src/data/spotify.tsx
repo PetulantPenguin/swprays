@@ -1,11 +1,11 @@
 const spotify: Spotify[] = [
   {
     id: 1,
-    url: 'https://open.spotify.com/embed/track/1uPwqgdXdSaoUEEyVrWnpe?utm_source=generator',
+    url: 'https://open.spotify.com/embed/track/1uPwqgdXdSaoUEEyVrWnpe',
   },
   {
     id: 2,
-    url: 'https://open.spotify.com/track/6effToB95egFnEFzXNaIxD?si=NfSZ5Y-WTCycjrbnGlov7w',
+    url: 'https://open.spotify.com/embed/track/6effToB95egFnEFzXNaIxD',
   },
 ];
 export default spotify;
