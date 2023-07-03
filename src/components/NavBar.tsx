@@ -55,14 +55,12 @@ export default function NavBar({
         >
           Today
         </Link>
-        {tomorrow !== '6/20' ? (
-          <Link
-            href={`/prayer/${tomorrow}/${session}`}
-            className="grow border text-center align-middle leading-10"
-          >
-            Next ▶
-          </Link>
-        ) : null}
+        <Link
+          href={`/prayer/${tomorrow}/${session}`}
+          className="grow border text-center align-middle leading-10"
+        >
+          Next ▶
+        </Link>
       </div>
       <div className="flex">
         <Link
