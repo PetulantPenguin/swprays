@@ -39,6 +39,14 @@ const july: Month = {
           session: 'morning',
           psalms: [93],
           collects: [],
+          alerts: [
+            {
+              title: 'Prayer Challenge this week!',
+              message:
+                'Check out the prayer challenge schedule on the Resources page.',
+              level: 'info',
+            },
+          ],
         },
         {
           session: 'evening',
@@ -91,6 +99,14 @@ const july: Month = {
           collects: [],
         },
       ],
+      alerts: [
+        {
+          title: 'Prayer Challenge Saturday',
+          message:
+            'Check out the prayer challenge schedule on the Resources page. Give it a try!',
+          level: 'warn',
+        },
+      ],
     },
     {
       day: 7,
@@ -119,6 +135,14 @@ const july: Month = {
           session: 'evening',
           psalms: [],
           collects: [],
+        },
+      ],
+      alerts: [
+        {
+          title: 'Prayer Challenge today!',
+          message:
+            'Check out the prayer challenge schedule on the Resources page.',
+          level: 'error',
         },
       ],
     },
