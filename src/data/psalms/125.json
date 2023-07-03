@@ -1,0 +1,19 @@
+{
+  "query": "Psalm 125",
+  "canonical": "Psalm 125",
+  "parsed": [[19125001, 19125005]],
+  "passage_meta": [
+    {
+      "canonical": "Psalm 125",
+      "chapter_start": [19125001, 19125005],
+      "chapter_end": [19125001, 19125005],
+      "prev_verse": 19124008,
+      "next_verse": 19126001,
+      "prev_chapter": [19124001, 19124008],
+      "next_chapter": [19126001, 19126006]
+    }
+  ],
+  "passages": [
+    "<h2 class=\"extra_text\">Psalm 125</h2>\n<h3 id=\"p19125001_01-1\">The <span class=\"divine-name\">Lord</span> Surrounds His People</h3>\n<h4 id=\"p19125001_06-1\" class=\"psalm-title\">A Song of Ascents.</h4>\n<p class=\"block-indent\"><span class=\"begin-line-group\"></span>\n<span id=\"p19125001_06-1\" class=\"line\"><b class=\"chapter-num\" id=\"v19125001-1\">125:1&nbsp;</b>&nbsp;&nbsp;Those who trust in the LORD are like Mount Zion,</span><br /><span id=\"p19125001_06-1\" class=\"indent line\">&nbsp;&nbsp;&nbsp;&nbsp;which cannot be moved, but abides forever.</span><br /><span id=\"p19125002_06-1\" class=\"line\"><b class=\"verse-num inline\" id=\"v19125002-1\">2&nbsp;</b>&nbsp;&nbsp;As the mountains surround Jerusalem,</span><br /><span id=\"p19125002_06-1\" class=\"indent line\">&nbsp;&nbsp;&nbsp;&nbsp;so the LORD surrounds his people,</span><br /><span id=\"p19125002_06-1\" class=\"indent line\">&nbsp;&nbsp;&nbsp;&nbsp;from this time forth and forevermore.</span><br /><span id=\"p19125003_06-1\" class=\"line\"><b class=\"verse-num inline\" id=\"v19125003-1\">3&nbsp;</b>&nbsp;&nbsp;For the scepter of wickedness shall not rest</span><br /><span id=\"p19125003_06-1\" class=\"indent line\">&nbsp;&nbsp;&nbsp;&nbsp;on the land allotted to the righteous,</span><br /><span id=\"p19125003_06-1\" class=\"line\">&nbsp;&nbsp;lest the righteous stretch out</span><br /><span id=\"p19125003_06-1\" class=\"indent line\">&nbsp;&nbsp;&nbsp;&nbsp;their hands to do wrong.</span><br /><span id=\"p19125004_06-1\" class=\"line\"><b class=\"verse-num inline\" id=\"v19125004-1\">4&nbsp;</b>&nbsp;&nbsp;Do good, O LORD, to those who are good,</span><br /><span id=\"p19125004_06-1\" class=\"indent line\">&nbsp;&nbsp;&nbsp;&nbsp;and to those who are upright in their hearts!</span><br /><span id=\"p19125005_06-1\" class=\"line\"><b class=\"verse-num inline\" id=\"v19125005-1\">5&nbsp;</b>&nbsp;&nbsp;But those who turn aside to their crooked ways</span><br /><span id=\"p19125005_06-1\" class=\"indent line\">&nbsp;&nbsp;&nbsp;&nbsp;the LORD will lead away with evildoers!</span><br /><span id=\"p19125005_06-1\" class=\"indent line\">&nbsp;&nbsp;&nbsp;&nbsp;Peace be upon Israel!</span><br /></p><span class=\"end-line-group\"></span>\n<p>(<a href=\"http://www.esv.org\" class=\"copyright\">ESV</a>)</p>"
+  ]
+}

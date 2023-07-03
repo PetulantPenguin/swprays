@@ -1,0 +1,19 @@
+{
+  "query": "Psalm 123",
+  "canonical": "Psalm 123",
+  "parsed": [[19123001, 19123004]],
+  "passage_meta": [
+    {
+      "canonical": "Psalm 123",
+      "chapter_start": [19123001, 19123004],
+      "chapter_end": [19123001, 19123004],
+      "prev_verse": 19122009,
+      "next_verse": 19124001,
+      "prev_chapter": [19122001, 19122009],
+      "next_chapter": [19124001, 19124008]
+    }
+  ],
+  "passages": [
+    "<h2 class=\"extra_text\">Psalm 123</h2>\n<h3 id=\"p19123001_01-1\">Our Eyes Look to the <span class=\"divine-name\">Lord</span> Our God</h3>\n<h4 id=\"p19123001_09-1\" class=\"psalm-title\">A Song of Ascents.</h4>\n<p class=\"block-indent\"><span class=\"begin-line-group\"></span>\n<span id=\"p19123001_09-1\" class=\"line\"><b class=\"chapter-num\" id=\"v19123001-1\">123:1&nbsp;</b>&nbsp;&nbsp;To you I lift up my eyes,</span><br /><span id=\"p19123001_09-1\" class=\"indent line\">&nbsp;&nbsp;&nbsp;&nbsp;O you who are enthroned in the heavens!</span><br /><span id=\"p19123002_09-1\" class=\"line\"><b class=\"verse-num inline\" id=\"v19123002-1\">2&nbsp;</b>&nbsp;&nbsp;Behold, as the eyes of servants</span><br /><span id=\"p19123002_09-1\" class=\"indent line\">&nbsp;&nbsp;&nbsp;&nbsp;look to the hand of their master,</span><br /><span id=\"p19123002_09-1\" class=\"line\">&nbsp;&nbsp;as the eyes of a maidservant</span><br /><span id=\"p19123002_09-1\" class=\"indent line\">&nbsp;&nbsp;&nbsp;&nbsp;to the hand of her mistress,</span><br /><span id=\"p19123002_09-1\" class=\"line\">&nbsp;&nbsp;so our eyes look to the LORD our God,</span><br /><span id=\"p19123002_09-1\" class=\"indent line\">&nbsp;&nbsp;&nbsp;&nbsp;till he has mercy upon us.</span><br /><span class=\"end-line-group\"></span>\n<span class=\"begin-line-group\"></span>\n<span id=\"p19123003_09-1\" class=\"line\"><b class=\"verse-num inline\" id=\"v19123003-1\">3&nbsp;</b>&nbsp;&nbsp;Have mercy upon us, O LORD, have mercy upon us,</span><br /><span id=\"p19123003_09-1\" class=\"indent line\">&nbsp;&nbsp;&nbsp;&nbsp;for we have had more than enough of contempt.</span><br /><span id=\"p19123004_09-1\" class=\"line\"><b class=\"verse-num inline\" id=\"v19123004-1\">4&nbsp;</b>&nbsp;&nbsp;Our soul has had more than enough</span><br /><span id=\"p19123004_09-1\" class=\"indent line\">&nbsp;&nbsp;&nbsp;&nbsp;of the scorn of those who are at ease,</span><br /><span id=\"p19123004_09-1\" class=\"indent line\">&nbsp;&nbsp;&nbsp;&nbsp;of the contempt of the proud.</span><br /></p><span class=\"end-line-group\"></span>\n<p>(<a href=\"http://www.esv.org\" class=\"copyright\">ESV</a>)</p>"
+  ]
+}
