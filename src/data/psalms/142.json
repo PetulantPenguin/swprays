@@ -1,0 +1,19 @@
+{
+  "query": "Psalm 142",
+  "canonical": "Psalm 142",
+  "parsed": [[19142001, 19142007]],
+  "passage_meta": [
+    {
+      "canonical": "Psalm 142",
+      "chapter_start": [19142001, 19142007],
+      "chapter_end": [19142001, 19142007],
+      "prev_verse": 19141010,
+      "next_verse": 19143001,
+      "prev_chapter": [19141001, 19141010],
+      "next_chapter": [19143001, 19143012]
+    }
+  ],
+  "passages": [
+    "<h2 class=\"extra_text\">Psalm 142</h2>\n<h3 id=\"p19142001_01-1\">You Are My Refuge</h3>\n<h4 id=\"p19142001_05-1\" class=\"psalm-title\">A Maskil of David, when he was in the cave. A Prayer.</h4>\n<p class=\"block-indent\"><span class=\"begin-line-group\"></span>\n<span id=\"p19142001_05-1\" class=\"line\"><b class=\"chapter-num\" id=\"v19142001-1\">142:1&nbsp;</b>&nbsp;&nbsp;With my voice I cry out to the LORD;</span><br /><span id=\"p19142001_05-1\" class=\"indent line\">&nbsp;&nbsp;&nbsp;&nbsp;with my voice I plead for mercy to the LORD.</span><br /><span id=\"p19142002_05-1\" class=\"line\"><b class=\"verse-num inline\" id=\"v19142002-1\">2&nbsp;</b>&nbsp;&nbsp;I pour out my complaint before him;</span><br /><span id=\"p19142002_05-1\" class=\"indent line\">&nbsp;&nbsp;&nbsp;&nbsp;I tell my trouble before him.</span><br /><span class=\"end-line-group\"></span>\n<span class=\"begin-line-group\"></span>\n<span id=\"p19142003_05-1\" class=\"line\"><b class=\"verse-num inline\" id=\"v19142003-1\">3&nbsp;</b>&nbsp;&nbsp;When my spirit faints within me,</span><br /><span id=\"p19142003_05-1\" class=\"indent line\">&nbsp;&nbsp;&nbsp;&nbsp;you know my way!</span><br /><span id=\"p19142003_05-1\" class=\"line\">&nbsp;&nbsp;In the path where I walk</span><br /><span id=\"p19142003_05-1\" class=\"indent line\">&nbsp;&nbsp;&nbsp;&nbsp;they have hidden a trap for me.</span><br /><span id=\"p19142004_05-1\" class=\"line\"><b class=\"verse-num inline\" id=\"v19142004-1\">4&nbsp;</b>&nbsp;&nbsp;Look to the right and see:</span><br /><span id=\"p19142004_05-1\" class=\"indent line\">&nbsp;&nbsp;&nbsp;&nbsp;there is none who takes notice of me;</span><br /><span id=\"p19142004_05-1\" class=\"line\">&nbsp;&nbsp;no refuge remains to me;</span><br /><span id=\"p19142004_05-1\" class=\"indent line\">&nbsp;&nbsp;&nbsp;&nbsp;no one cares for my soul.</span><br /><span class=\"end-line-group\"></span>\n<span class=\"begin-line-group\"></span>\n<span id=\"p19142005_05-1\" class=\"line\"><b class=\"verse-num inline\" id=\"v19142005-1\">5&nbsp;</b>&nbsp;&nbsp;I cry to you, O LORD;</span><br /><span id=\"p19142005_05-1\" class=\"indent line\">&nbsp;&nbsp;&nbsp;&nbsp;I say, \u201cYou are my refuge,</span><br /><span id=\"p19142005_05-1\" class=\"indent line\">&nbsp;&nbsp;&nbsp;&nbsp;my portion in the land of the living.\u201d</span><br /><span id=\"p19142006_05-1\" class=\"line\"><b class=\"verse-num inline\" id=\"v19142006-1\">6&nbsp;</b>&nbsp;&nbsp;Attend to my cry,</span><br /><span id=\"p19142006_05-1\" class=\"indent line\">&nbsp;&nbsp;&nbsp;&nbsp;for I am brought very low!</span><br /><span id=\"p19142006_05-1\" class=\"line\">&nbsp;&nbsp;Deliver me from my persecutors,</span><br /><span id=\"p19142006_05-1\" class=\"indent line\">&nbsp;&nbsp;&nbsp;&nbsp;for they are too strong for me!</span><br /><span id=\"p19142007_05-1\" class=\"line\"><b class=\"verse-num inline\" id=\"v19142007-1\">7&nbsp;</b>&nbsp;&nbsp;Bring me out of prison,</span><br /><span id=\"p19142007_05-1\" class=\"indent line\">&nbsp;&nbsp;&nbsp;&nbsp;that I may give thanks to your name!</span><br /><span id=\"p19142007_05-1\" class=\"line\">&nbsp;&nbsp;The righteous will surround me,</span><br /><span id=\"p19142007_05-1\" class=\"indent line\">&nbsp;&nbsp;&nbsp;&nbsp;for you will deal bountifully with me.</span><br /></p><span class=\"end-line-group\"></span>\n<p>(<a href=\"http://www.esv.org\" class=\"copyright\">ESV</a>)</p>"
+  ]
+}

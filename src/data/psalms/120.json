@@ -1,0 +1,19 @@
+{
+  "query": "Psalm 120",
+  "canonical": "Psalm 120",
+  "parsed": [[19120001, 19120007]],
+  "passage_meta": [
+    {
+      "canonical": "Psalm 120",
+      "chapter_start": [19120001, 19120007],
+      "chapter_end": [19120001, 19120007],
+      "prev_verse": 19119176,
+      "next_verse": 19121001,
+      "prev_chapter": [19119001, 19119176],
+      "next_chapter": [19121001, 19121008]
+    }
+  ],
+  "passages": [
+    "<h2 class=\"extra_text\">Psalm 120</h2>\n<h3 id=\"p19120001_01-1\">Deliver Me, O <span class=\"divine-name\">Lord</span></h3>\n<h4 id=\"p19120001_05-1\" class=\"psalm-title\">A Song of Ascents.</h4>\n<p class=\"block-indent\"><span class=\"begin-line-group\"></span>\n<span id=\"p19120001_05-1\" class=\"line\"><b class=\"chapter-num\" id=\"v19120001-1\">120:1&nbsp;</b>&nbsp;&nbsp;In my distress I called to the LORD,</span><br /><span id=\"p19120001_05-1\" class=\"indent line\">&nbsp;&nbsp;&nbsp;&nbsp;and he answered me.</span><br /><span id=\"p19120002_05-1\" class=\"line\"><b class=\"verse-num inline\" id=\"v19120002-1\">2&nbsp;</b>&nbsp;&nbsp;Deliver me, O LORD,</span><br /><span id=\"p19120002_05-1\" class=\"indent line\">&nbsp;&nbsp;&nbsp;&nbsp;from lying lips,</span><br /><span id=\"p19120002_05-1\" class=\"indent line\">&nbsp;&nbsp;&nbsp;&nbsp;from a deceitful tongue.</span><br /><span class=\"end-line-group\"></span>\n<span class=\"begin-line-group\"></span>\n<span id=\"p19120003_05-1\" class=\"line\"><b class=\"verse-num inline\" id=\"v19120003-1\">3&nbsp;</b>&nbsp;&nbsp;What shall be given to you,</span><br /><span id=\"p19120003_05-1\" class=\"indent line\">&nbsp;&nbsp;&nbsp;&nbsp;and what more shall be done to you,</span><br /><span id=\"p19120003_05-1\" class=\"indent line\">&nbsp;&nbsp;&nbsp;&nbsp;you deceitful tongue?</span><br /><span id=\"p19120004_05-1\" class=\"line\"><b class=\"verse-num inline\" id=\"v19120004-1\">4&nbsp;</b>&nbsp;&nbsp;A warrior\u2019s sharp arrows,</span><br /><span id=\"p19120004_05-1\" class=\"indent line\">&nbsp;&nbsp;&nbsp;&nbsp;with glowing coals of the broom tree!</span><br /><span class=\"end-line-group\"></span>\n<span class=\"begin-line-group\"></span>\n<span id=\"p19120005_05-1\" class=\"line\"><b class=\"verse-num inline\" id=\"v19120005-1\">5&nbsp;</b>&nbsp;&nbsp;Woe to me, that I sojourn in Meshech,</span><br /><span id=\"p19120005_05-1\" class=\"indent line\">&nbsp;&nbsp;&nbsp;&nbsp;that I dwell among the tents of Kedar!</span><br /><span id=\"p19120006_05-1\" class=\"line\"><b class=\"verse-num inline\" id=\"v19120006-1\">6&nbsp;</b>&nbsp;&nbsp;Too long have I had my dwelling</span><br /><span id=\"p19120006_05-1\" class=\"indent line\">&nbsp;&nbsp;&nbsp;&nbsp;among those who hate peace.</span><br /><span id=\"p19120007_05-1\" class=\"line\"><b class=\"verse-num inline\" id=\"v19120007-1\">7&nbsp;</b>&nbsp;&nbsp;I am for peace,</span><br /><span id=\"p19120007_05-1\" class=\"indent line\">&nbsp;&nbsp;&nbsp;&nbsp;but when I speak, they are for war!</span><br /></p><span class=\"end-line-group\"></span>\n<p>(<a href=\"http://www.esv.org\" class=\"copyright\">ESV</a>)</p>"
+  ]
+}

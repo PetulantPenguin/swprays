@@ -1,0 +1,19 @@
+{
+  "query": "Psalm 138",
+  "canonical": "Psalm 138",
+  "parsed": [[19138001, 19138008]],
+  "passage_meta": [
+    {
+      "canonical": "Psalm 138",
+      "chapter_start": [19138001, 19138008],
+      "chapter_end": [19138001, 19138008],
+      "prev_verse": 19137009,
+      "next_verse": 19139001,
+      "prev_chapter": [19137001, 19137009],
+      "next_chapter": [19139001, 19139024]
+    }
+  ],
+  "passages": [
+    "<h2 class=\"extra_text\">Psalm 138</h2>\n<h3 id=\"p19138001_01-1\">Give Thanks to the <span class=\"divine-name\">Lord</span></h3>\n<h4 id=\"p19138001_06-1\" class=\"psalm-title\">Of David.</h4>\n<p class=\"block-indent\"><span class=\"begin-line-group\"></span>\n<span id=\"p19138001_06-1\" class=\"line\"><b class=\"chapter-num\" id=\"v19138001-1\">138:1&nbsp;</b>&nbsp;&nbsp;I give you thanks, O LORD, with my whole heart;</span><br /><span id=\"p19138001_06-1\" class=\"indent line\">&nbsp;&nbsp;&nbsp;&nbsp;before the gods I sing your praise;</span><br /><span id=\"p19138002_06-1\" class=\"line\"><b class=\"verse-num inline\" id=\"v19138002-1\">2&nbsp;</b>&nbsp;&nbsp;I bow down toward your holy temple</span><br /><span id=\"p19138002_06-1\" class=\"indent line\">&nbsp;&nbsp;&nbsp;&nbsp;and give thanks to your name for your steadfast love and your faithfulness,</span><br /><span id=\"p19138002_06-1\" class=\"indent line\">&nbsp;&nbsp;&nbsp;&nbsp;for you have exalted above all things</span><br /><span id=\"p19138002_06-1\" class=\"indent line\">&nbsp;&nbsp;&nbsp;&nbsp;your name and your word.</span><br /><span id=\"p19138003_06-1\" class=\"line\"><b class=\"verse-num inline\" id=\"v19138003-1\">3&nbsp;</b>&nbsp;&nbsp;On the day I called, you answered me;</span><br /><span id=\"p19138003_06-1\" class=\"indent line\">&nbsp;&nbsp;&nbsp;&nbsp;my strength of soul you increased.</span><br /><span class=\"end-line-group\"></span>\n<span class=\"begin-line-group\"></span>\n<span id=\"p19138004_06-1\" class=\"line\"><b class=\"verse-num inline\" id=\"v19138004-1\">4&nbsp;</b>&nbsp;&nbsp;All the kings of the earth shall give you thanks, O LORD,</span><br /><span id=\"p19138004_06-1\" class=\"indent line\">&nbsp;&nbsp;&nbsp;&nbsp;for they have heard the words of your mouth,</span><br /><span id=\"p19138005_06-1\" class=\"line\"><b class=\"verse-num inline\" id=\"v19138005-1\">5&nbsp;</b>&nbsp;&nbsp;and they shall sing of the ways of the LORD,</span><br /><span id=\"p19138005_06-1\" class=\"indent line\">&nbsp;&nbsp;&nbsp;&nbsp;for great is the glory of the LORD.</span><br /><span id=\"p19138006_06-1\" class=\"line\"><b class=\"verse-num inline\" id=\"v19138006-1\">6&nbsp;</b>&nbsp;&nbsp;For though the LORD is high, he regards the lowly,</span><br /><span id=\"p19138006_06-1\" class=\"indent line\">&nbsp;&nbsp;&nbsp;&nbsp;but the haughty he knows from afar.</span><br /><span class=\"end-line-group\"></span>\n<span class=\"begin-line-group\"></span>\n<span id=\"p19138007_06-1\" class=\"line\"><b class=\"verse-num inline\" id=\"v19138007-1\">7&nbsp;</b>&nbsp;&nbsp;Though I walk in the midst of trouble,</span><br /><span id=\"p19138007_06-1\" class=\"indent line\">&nbsp;&nbsp;&nbsp;&nbsp;you preserve my life;</span><br /><span id=\"p19138007_06-1\" class=\"line\">&nbsp;&nbsp;you stretch out your hand against the wrath of my enemies,</span><br /><span id=\"p19138007_06-1\" class=\"indent line\">&nbsp;&nbsp;&nbsp;&nbsp;and your right hand delivers me.</span><br /><span id=\"p19138008_06-1\" class=\"line\"><b class=\"verse-num inline\" id=\"v19138008-1\">8&nbsp;</b>&nbsp;&nbsp;The LORD will fulfill his purpose for me;</span><br /><span id=\"p19138008_06-1\" class=\"indent line\">&nbsp;&nbsp;&nbsp;&nbsp;your steadfast love, O LORD, endures forever.</span><br /><span id=\"p19138008_06-1\" class=\"indent line\">&nbsp;&nbsp;&nbsp;&nbsp;Do not forsake the work of your hands.</span><br /></p><span class=\"end-line-group\"></span>\n<p>(<a href=\"http://www.esv.org\" class=\"copyright\">ESV</a>)</p>"
+  ]
+}

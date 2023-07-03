@@ -1,0 +1,19 @@
+{
+  "query": "Psalm 130",
+  "canonical": "Psalm 130",
+  "parsed": [[19130001, 19130008]],
+  "passage_meta": [
+    {
+      "canonical": "Psalm 130",
+      "chapter_start": [19130001, 19130008],
+      "chapter_end": [19130001, 19130008],
+      "prev_verse": 19129008,
+      "next_verse": 19131001,
+      "prev_chapter": [19129001, 19129008],
+      "next_chapter": [19131001, 19131003]
+    }
+  ],
+  "passages": [
+    "<h2 class=\"extra_text\">Psalm 130</h2>\n<h3 id=\"p19130001_01-1\">My Soul Waits for the Lord</h3>\n<h4 id=\"p19130001_07-1\" class=\"psalm-title\">A Song of Ascents.</h4>\n<p class=\"block-indent\"><span class=\"begin-line-group\"></span>\n<span id=\"p19130001_07-1\" class=\"line\"><b class=\"chapter-num\" id=\"v19130001-1\">130:1&nbsp;</b>&nbsp;&nbsp;Out of the depths I cry to you, O LORD!</span><br /><span id=\"p19130002_07-1\" class=\"indent line\"><b class=\"verse-num inline\" id=\"v19130002-1\">2&nbsp;</b>&nbsp;&nbsp;&nbsp;&nbsp;O Lord, hear my voice!</span><br /><span id=\"p19130002_07-1\" class=\"line\">&nbsp;&nbsp;Let your ears be attentive</span><br /><span id=\"p19130002_07-1\" class=\"indent line\">&nbsp;&nbsp;&nbsp;&nbsp;to the voice of my pleas for mercy!</span><br /><span class=\"end-line-group\"></span>\n<span class=\"begin-line-group\"></span>\n<span id=\"p19130003_07-1\" class=\"line\"><b class=\"verse-num inline\" id=\"v19130003-1\">3&nbsp;</b>&nbsp;&nbsp;If you, O LORD, should mark iniquities,</span><br /><span id=\"p19130003_07-1\" class=\"indent line\">&nbsp;&nbsp;&nbsp;&nbsp;O Lord, who could stand?</span><br /><span id=\"p19130004_07-1\" class=\"line\"><b class=\"verse-num inline\" id=\"v19130004-1\">4&nbsp;</b>&nbsp;&nbsp;But with you there is forgiveness,</span><br /><span id=\"p19130004_07-1\" class=\"indent line\">&nbsp;&nbsp;&nbsp;&nbsp;that you may be feared.</span><br /><span class=\"end-line-group\"></span>\n<span class=\"begin-line-group\"></span>\n<span id=\"p19130005_07-1\" class=\"line\"><b class=\"verse-num inline\" id=\"v19130005-1\">5&nbsp;</b>&nbsp;&nbsp;I wait for the LORD, my soul waits,</span><br /><span id=\"p19130005_07-1\" class=\"indent line\">&nbsp;&nbsp;&nbsp;&nbsp;and in his word I hope;</span><br /><span id=\"p19130006_07-1\" class=\"line\"><b class=\"verse-num inline\" id=\"v19130006-1\">6&nbsp;</b>&nbsp;&nbsp;my soul waits for the Lord</span><br /><span id=\"p19130006_07-1\" class=\"indent line\">&nbsp;&nbsp;&nbsp;&nbsp;more than watchmen for the morning,</span><br /><span id=\"p19130006_07-1\" class=\"indent line\">&nbsp;&nbsp;&nbsp;&nbsp;more than watchmen for the morning.</span><br /><span class=\"end-line-group\"></span>\n<span class=\"begin-line-group\"></span>\n<span id=\"p19130007_07-1\" class=\"line\"><b class=\"verse-num inline\" id=\"v19130007-1\">7&nbsp;</b>&nbsp;&nbsp;O Israel, hope in the LORD!</span><br /><span id=\"p19130007_07-1\" class=\"indent line\">&nbsp;&nbsp;&nbsp;&nbsp;For with the LORD there is steadfast love,</span><br /><span id=\"p19130007_07-1\" class=\"indent line\">&nbsp;&nbsp;&nbsp;&nbsp;and with him is plentiful redemption.</span><br /><span id=\"p19130008_07-1\" class=\"line\"><b class=\"verse-num inline\" id=\"v19130008-1\">8&nbsp;</b>&nbsp;&nbsp;And he will redeem Israel</span><br /><span id=\"p19130008_07-1\" class=\"indent line\">&nbsp;&nbsp;&nbsp;&nbsp;from all his iniquities.</span><br /></p><span class=\"end-line-group\"></span>\n<p>(<a href=\"http://www.esv.org\" class=\"copyright\">ESV</a>)</p>"
+  ]
+}
