@@ -24,11 +24,16 @@ export default function fetchPsalmCache(passages: any): Psalms[] {
 }
 
 export async function fetchPsalms(passages: any): Promise<Psalms> {
+  let query = passages.join(',');
+  if (typeof passages[0] === 'number') {
+    query = `psalm+${passages.join(',+psalm+')}`;
+  }
+  console.log(query);
   const url = new URL('https://api.esv.org/v3/passage/html/');
   const search = new URLSearchParams({
     'include-audio-link': 'false',
     'include-footnotes': 'false',
-    q: `psalm+${passages.join(',+psalm+')}`,
+    q: query,
   });
   url.search = search.toString();
 

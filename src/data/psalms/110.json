@@ -1,0 +1,19 @@
+{
+  "query": "Psalm 110",
+  "canonical": "Psalm 110",
+  "parsed": [[19110001, 19110007]],
+  "passage_meta": [
+    {
+      "canonical": "Psalm 110",
+      "chapter_start": [19110001, 19110007],
+      "chapter_end": [19110001, 19110007],
+      "prev_verse": 19109031,
+      "next_verse": 19111001,
+      "prev_chapter": [19109001, 19109031],
+      "next_chapter": [19111001, 19111010]
+    }
+  ],
+  "passages": [
+    "<h2 class=\"extra_text\">Psalm 110</h2>\n<h3 id=\"p19110001_01-1\">Sit at My Right Hand</h3>\n<h4 id=\"p19110001_06-1\" class=\"psalm-title\">A Psalm of David.</h4>\n<p class=\"block-indent\"><span class=\"begin-line-group\"></span>\n<span id=\"p19110001_06-1\" class=\"line\"><b class=\"chapter-num\" id=\"v19110001-1\">110:1&nbsp;</b>&nbsp;&nbsp;The LORD says to my Lord:</span><br /><span id=\"p19110001_06-1\" class=\"indent line\">&nbsp;&nbsp;&nbsp;&nbsp;\u201cSit at my right hand,</span><br /><span id=\"p19110001_06-1\" class=\"line\">&nbsp;&nbsp;until I make your enemies your footstool.\u201d</span><br /><span class=\"end-line-group\"></span>\n<span class=\"begin-line-group\"></span>\n<span id=\"p19110002_06-1\" class=\"line\"><b class=\"verse-num inline\" id=\"v19110002-1\">2&nbsp;</b>&nbsp;&nbsp;The LORD sends forth from Zion</span><br /><span id=\"p19110002_06-1\" class=\"indent line\">&nbsp;&nbsp;&nbsp;&nbsp;your mighty scepter.</span><br /><span id=\"p19110002_06-1\" class=\"indent line\">&nbsp;&nbsp;&nbsp;&nbsp;Rule in the midst of your enemies!</span><br /><span id=\"p19110003_06-1\" class=\"line\"><b class=\"verse-num inline\" id=\"v19110003-1\">3&nbsp;</b>&nbsp;&nbsp;Your people will offer themselves freely</span><br /><span id=\"p19110003_06-1\" class=\"indent line\">&nbsp;&nbsp;&nbsp;&nbsp;on the day of your power,</span><br /><span id=\"p19110003_06-1\" class=\"indent line\">&nbsp;&nbsp;&nbsp;&nbsp;in holy garments;</span><br /><span id=\"p19110003_06-1\" class=\"line\">&nbsp;&nbsp;from the womb of the morning,</span><br /><span id=\"p19110003_06-1\" class=\"indent line\">&nbsp;&nbsp;&nbsp;&nbsp;the dew of your youth will be yours.</span><br /><span id=\"p19110004_06-1\" class=\"line\"><b class=\"verse-num inline\" id=\"v19110004-1\">4&nbsp;</b>&nbsp;&nbsp;The LORD has sworn</span><br /><span id=\"p19110004_06-1\" class=\"indent line\">&nbsp;&nbsp;&nbsp;&nbsp;and will not change his mind,</span><br /><span id=\"p19110004_06-1\" class=\"line\">&nbsp;&nbsp;\u201cYou are a priest forever</span><br /><span id=\"p19110004_06-1\" class=\"indent line\">&nbsp;&nbsp;&nbsp;&nbsp;after the order of Melchizedek.\u201d</span><br /><span class=\"end-line-group\"></span>\n<span class=\"begin-line-group\"></span>\n<span id=\"p19110005_06-1\" class=\"line\"><b class=\"verse-num inline\" id=\"v19110005-1\">5&nbsp;</b>&nbsp;&nbsp;The Lord is at your right hand;</span><br /><span id=\"p19110005_06-1\" class=\"indent line\">&nbsp;&nbsp;&nbsp;&nbsp;he will shatter kings on the day of his wrath.</span><br /><span id=\"p19110006_06-1\" class=\"line\"><b class=\"verse-num inline\" id=\"v19110006-1\">6&nbsp;</b>&nbsp;&nbsp;He will execute judgment among the nations,</span><br /><span id=\"p19110006_06-1\" class=\"indent line\">&nbsp;&nbsp;&nbsp;&nbsp;filling them with corpses;</span><br /><span id=\"p19110006_06-1\" class=\"line\">&nbsp;&nbsp;he will shatter chiefs</span><br /><span id=\"p19110006_06-1\" class=\"indent line\">&nbsp;&nbsp;&nbsp;&nbsp;over the wide earth.</span><br /><span id=\"p19110007_06-1\" class=\"line\"><b class=\"verse-num inline\" id=\"v19110007-1\">7&nbsp;</b>&nbsp;&nbsp;He will drink from the brook by the way;</span><br /><span id=\"p19110007_06-1\" class=\"indent line\">&nbsp;&nbsp;&nbsp;&nbsp;therefore he will lift up his head.</span><br /></p><span class=\"end-line-group\"></span>\n<p>(<a href=\"http://www.esv.org\" class=\"copyright\">ESV</a>)</p>"
+  ]
+}

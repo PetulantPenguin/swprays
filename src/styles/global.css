@@ -57,3 +57,7 @@ sup.footnote{
   display:none;
 }
 
+  table.challenge td,
+  table.challenge th{
+    @apply border border-gray-400;
+  }
