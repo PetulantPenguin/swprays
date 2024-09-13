@@ -1,42 +1,45 @@
 import type { GetServerSideProps } from 'next';
 
+import Session from '@/components/Session';
 import { Meta } from '@/layouts/Meta';
 import { Main } from '@/templates/Main';
+import { getDayInfo, getSessionInfo } from '@/utils/data_utils';
+import fetchPsalmCache from '@/utils/fetchPsalms';
 
 export const getServerSideProps: GetServerSideProps = async () => {
-  // const now = new Date();
-  // const adjustedTime = new Date(now.getTime() + -5 * 60 * 60 * 1000);
-  // const month = adjustedTime.getMonth() + 1;
-  // const day = adjustedTime.getDate();
-  // const session = adjustedTime.getHours() > 12 ? 'evening' : 'morning';
+  const now = new Date();
+  const adjustedTime = new Date(now.getTime() + -5 * 60 * 60 * 1000);
+  const month = 5;
+  const day = 21;
+  const session = adjustedTime.getHours() > 12 ? 'evening' : 'morning';
 
-  // const dayInfo = getDayInfo({
-  //   month,
-  //   day,
-  // });
+  const dayInfo = getDayInfo({
+    month,
+    day,
+  });
 
-  // const sessionInfo = getSessionInfo({
-  //   month,
-  //   day,
-  //   session,
-  // });
+  const sessionInfo = getSessionInfo({
+    month,
+    day,
+    session,
+  });
 
-  // const psalmText = sessionInfo?.psalms.length
-  //   ? fetchPsalmCache(sessionInfo?.psalms || [])
-  //   : [];
+  const psalmText = sessionInfo?.psalms.length
+    ? fetchPsalmCache(sessionInfo?.psalms || [])
+    : [];
   return {
     props: {
-      // month,
-      // day,
-      // session,
-      // sessionInfo,
-      // dayInfo,
-      // psalmText,
+      month,
+      day,
+      session,
+      sessionInfo,
+      dayInfo,
+      psalmText,
     },
   };
 };
 
-const Index = () => {
+const Index = (props: any) => {
   return (
     <Main
       meta={
@@ -46,17 +49,14 @@ const Index = () => {
         />
       }
     >
-      {/* <Session
+      <Session
         month={props.month}
         day={props.day}
         session={props.session}
         psalmText={props.psalmText}
         sessionInfo={props.sessionInfo}
         dayInfo={props.dayInfo}
-      /> */}
-      <div className="flex h-screen w-screen items-center justify-center">
-        That&apos;s All!
-      </div>
+      />
     </Main>
   );
 };
